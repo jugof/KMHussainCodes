@@ -1,0 +1,25 @@
+    1  cd Samples/Java/Platform-Enterprise/
+    2  netstat -pnlt
+    3  kill 1565
+    4  netstat -pnlt
+    5  cd TCPSocktetTest/demo1/
+    6  java -cp target/classes app.Program &
+    7  nc localhost 4000
+    8  cd ../
+    9  mkdir demo2
+   10  cd demo2
+   11  unzip ~/apache-maven-3.9.5/templates/simple-app.zip 
+   12  code .
+   13  mvn -q compile
+   14  java -cp target/classes/ app.Program localhost
+   15  mvn -q compile
+   16  java -cp target/classes/ app.Program localhost
+   17  mvn -q compile
+   18  java -cp target/classes/ app.Program localhost
+   19  ssh dacfaculty@iitdac.met.edu
+   20  pkill -ef app.Program
+   21  java -cp target/classes/ app.Program localhost
+   22  java -cp target/classes/ app.Program iitdac.met.edu
+   23  ping iitdac.met.edu
+   24  java -cp target/classes/ app.Program iitdac.met.edu
+   25  history > ../../../cmd17-04-2024evening.txt

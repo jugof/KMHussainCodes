@@ -1,0 +1,1000 @@
+  353  wget iitdac.met.edu/shared/java/drivers.tar.gz
+  354  ls
+  355  tar xf drivers.tar.gz 
+  356  ls drivers
+  357  ls
+  358  mkdir JDBCTest
+  359  cd JDBCTest/
+  360  vi Program.java
+  361  javac Program.java 
+  362  java -cp ../drivers/*:. Program 
+  363  vi Program.java
+  364  javac Program.java 
+  365  java -cp ../drivers/*:. Program 
+  366   scott/tige
+  367  vi Program.java
+  368  javac Program.java 
+  369  java -cp ../drivers/*:. Program 
+  370  ping dac-faculty.localdomain
+  371  ping dacfaculty.localdomain
+  372  echo hostname
+  373  hostname
+  374  ping Dac-Faculty
+  375  ping 192.168.1.90
+  376  ping dac-faculty.localdomain
+  377  ping dac-faculty.local
+  378  vi Program.java 
+  379  cd ~
+  380  wget iitdac.met.edu/shared/my.vimrc
+  381  mv my.vimrc .vimrc
+  382  cd Test/JDBCTest/
+  383  vi Program.java 
+  384  mysql --help
+  385  mysql -h dac-faculty.local -u root
+  386  mysql -h 192.168.1.90 -u root
+  387  mysql -h 192.168.1.90 -u root -p
+  388  vi Program.java 
+  389  javac Program.java 
+  390  java -cp ../drivers/*:. Program 
+  391  exit
+  392  clear
+  393  cd DotNet/Enterprise/
+  394  mkdir GrpcServiceTest
+  395  cd GrpcServiceTest/
+  396  dotnet new classlib -o Sales
+  397  cd Sales/
+  398  dotnet add package Google.Protobuf
+  399  dotnet add package Grpc
+  400  dotnet add package Grpc.Tools
+  401  code .
+  402  dotnet build
+  403  cd ..
+  404  dotnet new web -o Server
+  405  cd Server/
+  406  dotnet add reference ../Sales/
+  407  dotnet add package Grpc.AspNetCore.Server
+  408  dotnet add package Microsoft.EntityFrameworkCore.SqlServer
+  409  code .
+  410  dotnet run
+  411  dotnet build
+  412  cd ..
+  413  mkdir DemoApp
+  414  cd DemoApp/
+  415  wget iitdac.met.edu/shared/dotnet/Program.py
+  416  vi Program.py 
+  417  code Program.py 
+  418  python -m grpc_tools.protoc --python_out=. --grpc_python_out=. -I ../Sales/ order_manager.proto
+  419  ls
+  420  python3 Program.py CU201
+  421  python3 Program.py CU203
+  422  python3 Program.py CU204
+  423  python3 Program.py CU205
+  424  python3 Program.py CU204 202 20
+  425  python3 Program.py CU204
+  426  python3 Program.py CU205 203 30
+  427  python3 Program.py CU205 205 30
+  428  pwd
+  429  cd ../../../
+  430  history > cmd0311morning.txt 
+  431  vi cmd0311morning.txt 
+  432  cd ..
+  433  cp -r DotNet /mnt/d/Sample/
+  434  cd DotNet/Enterprise/BlazorWasmTest/
+  435  ls
+  436  vi create.txt
+  437  cd DemoApp/Server/
+  438  ls
+  439  dotnet add reference ../../../GrpcServiceTest/Sales/
+  440  dotnet add package Grpc.Net.ClientFactory
+  441  dotnet add package System.Linq.Async
+  442  code .
+  443  dotnet build
+  444  dotnet run
+  445  code ../Client/
+  446  dotnet run
+  447  pwd
+  448  cd ../../../../
+  449  history > cmd0311evening.txt 
+  450  vi cmd031
+  451  vi cmd0311evening.txt 
+  452  cd ..
+  453  cp -r DotNet /mnt/d/Sample/
+  454  exit
+  455  cd DotNet/Enterprise/GrpcServiceTest/Server/
+  456  ./bin/Debug/net7.0/Server 
+  457  exit
+  458  cd DotNet/Enterprise/GrpcServiceTest/Server/
+  459  ./bin/Debug/net7.0/Server 
+  460  exit
+  461  clear
+  462  pwd
+  463  cd ~/Samples/DotNet/Enterprise/
+  464  ls
+  465  mkdir BlazorWasmTest
+  466  cd BlazorWasmTest/
+  467  dotnet new blazorwasm-empty --hosted --no-https -o DemoApp
+  468  cd DemoApp/
+  469  ls
+  470  cd Server
+  471  code ../Shared/
+  472  exit
+  473  pwd
+  474  cd ..
+  475  ls
+  476  cp gf.tar.gz /mnt/d/
+  477  cd Samples/
+  478  pwd
+  479  exit
+  480  cd.
+  481  cd .\. 
+  482  pwd
+  483  exit
+  484  cd ..
+  485  cd Test
+  486  ls
+  487  cp -r /mnt/d/gf.tar.gz . && tar xvf gf.tar.gz
+  488  ls
+  489  ls glassfish7/
+  490  ls glassfish7/bin/
+  491  rm gf.tar.gz 
+  492  rm -r glassfish7/
+  493  ls
+  494  exit
+  495  clear
+  496  ~/glassfish7/bin/asadmin start-domain
+  497  ~/glassfish7/bin/asadmin stop-domain
+  498  ~/glassfish7/bin/asadmin start-domain
+  499  cd Enterprise/
+  500  ls
+  501  mkdir ServletTest
+  502  cd ServletTest/
+  503  ls
+  504  mkdir demo
+  505  cd demo/
+  506  mkdir ServletDemoApp
+  507  mkdir ServletDemoApp/WEB-INF
+  508  mkdir ServletDemoApp/WEB-INF/classes
+  509  mkdir ServletDemoApp/WEB-INF/lib
+  510  wget iitdac.met.edu/shared/java/web.xml -P ServletDemoApp/WEB-INF/
+  511  ~/glassfish7/bin/asadmin ServletDemoApp
+  512  code .
+  513  ~/glassfish7/bin/asadmin deploy ServletDemoApp
+  514  ~/glassfish7/bin/asadmin undeploy ServletDemoApp
+  515  ~/glassfish7/bin/asadmin deploy ServletDemoApp
+  516  ~/glassfish7/bin/asadmin undeploy ServletDemoApp
+  517  ~/glassfish7/bin/asadmin deploy ServletDemoApp
+  518  export CLASSPATH=~/glassfish7/glassfish/lib/jakartaee.jar 
+  519  javac -d ServletDemoApp/WEB-INF/classes/ components/*.java
+  520  ~/glassfish7/bin/asadmin undeploy ServletDemoApp
+  521  ~/glassfish7/bin/asadmin deploy ServletDemoApp
+  522  javac -d ServletDemoApp/WEB-INF/classes/ components/*.java
+  523  touch ServletDemoApp/.reload
+  524  javac -d ServletDemoApp/WEB-INF/classes/ components/*.java
+  525  touch ServletDemoApp/.reload
+  526  ~/glassfish7/bin/asadmin stop-domain
+  527  pwd
+  528  cd ../../../
+  529  history > cmd0611evening.txt 
+  530  vi cmd0611evening.txt 
+  531  cd ..
+  532  cp -r Java /mnt/d/Sample/
+  533  clear
+  534  ls
+  535  cd ..
+  536  ls
+  537  cd Nilesh
+  538  ls
+  539  mkdir ServletTest
+  540  cd ServletTest/
+  541  mkdir demo
+  542  mkdir demo/components
+  543  vi demo/components/GreetingServlet.java 
+  544  ls
+  545  mkdir ServletDemoApp
+  546  mkdir ServletDemoApp/WEB-INF
+  547  mkdir ServletDemoApp/WEB-INF/classes
+  548  ls
+  549  ls ServletDemoApp/
+  550  clear
+  551  ls ServletDemoApp/
+  552  ls ServletDemoApp/WEB-INF/
+  553  vi ServletDemoApp/WEB-INF/web.xml 
+  554  ls ~
+  555  ~/glassfish7/glassfish/bin/asadmin start-domain
+  556  pwd
+  557  clear
+  558  ls
+  559  ~/glassfish7/glassfish/bin/asadmin deploy ServletDemoApp/
+  560  ls
+  561  mv ServletDemoApp/ NServletDemoApp/
+  562  ls
+  563  clear
+  564  ~/glassfish7/glassfish/bin/asadmin deploy NServletDemoApp/
+  565  ls
+  566  vi demo/components/GreetingServlet.java 
+  567  cd demo/
+  568  ls
+  569  echo $CLASSPATH
+  570  ls
+  571  cd ..
+  572  ls
+  573  mv NServletDemoApp/ demo/
+  574  ls
+  575  cd demo/
+  576  ls
+  577  vi components/GreetingServlet.java 
+  578  ~/glassfish7/glassfish/bin/asadmin deploy NServletDemoApp/
+  579  ~/glassfish7/glassfish/bin/asadmin undeploy NServletDemoApp/
+  580  ~/glassfish7/glassfish/bin/asadmin deploy NServletDemoApp/
+  581  ~/glassfish7/glassfish/bin/asadmin undeploy NServletDemoApp/
+  582  ~/glassfish7/glassfish/bin/asadmin deploy NServletDemoApp/
+  583  ls
+  584  javac -d NServletDemoApp/WEB-INF/classes/ components/GreetingServlet.java 
+  585  ~/glassfish7/glassfish/bin/asadmin undeploy NServletDemoApp/
+  586  ~/glassfish7/glassfish/bin/asadmin deploy NServletDemoApp/
+  587  ~/glassfish7/glassfish/bin/asadmin undeploy NServletDemoApp/
+  588  ~/glassfish7/glassfish/bin/asadmin stop-domain
+  589  exit
+  590  clear
+  591  pwd
+  592  cd Enterprise/
+  593  mkdir JSPTest1
+  594  cd JSPTest1/
+  595  mkdir demo
+  596  cd demo
+  597  mkdir -p JSPDemoApp1/WEB-INF/classes
+  598  cp ../../ServletTest/demo/ServletDemoApp/WEB-INF/web.xml JSPDemoApp1/WEB-INF/
+  599  code .
+  600  ~/glassfish7/bin/asadmin deploy JSPDemoApp1
+  601  ls JSPDemoApp1/
+  602  javac -d JSPDemoApp1/WEB-INF/classes/ components/*.java
+  603  touch JSPDemoApp1/.reload
+  604  pwd
+  605  cd ../../
+  606  cd ..
+  607  history > cmd0711evening.txt 
+  608  vi cmd0711evening.txt 
+  609  cd ..
+  610  cp -r Java /mnt/d/Sample/
+  611  ls
+  612  clear
+  613  ls
+  614  cd ..
+  615  ls
+  616  cd Nilesh/
+  617  ls
+  618  cd ServletTest/
+  619  ls
+  620  cd demo
+  621  ls
+  622  rm -r NServletDemoApp/
+  623  mv ServletDemoApp/ NServletDemoApp/
+  624  ls components/
+  625  ls
+  626  vi components/GreetingServlet.java 
+  627  ls
+  628  ls NServletDemoApp/WEB-INF/web.xml
+  629  vi NServletDemoApp/WEB-INF/web.xml
+  630  ls
+  631  ls components/
+  632  vi components/CountingServlet.java 
+  633  vi ls
+  634  vi NServletDemoApp/formpost.html 
+  635  vi components/CountingServlet.java 
+  636  vi components/PausingFilter.java 
+  637  vi components/CountingServlet.java 
+  638  exit
+  639  clear
+  640  ls
+  641  cd Samples/
+  642  ls
+  643  cd Java/
+  644  cd demo
+  645  cd Enterprise/
+  646  ls
+  647  cd JSPTest2
+  648  ls
+  649  cd demo/
+  650  clear
+  651  code .
+  652  javac -d JSPDemoApp2/WEB-INF/classes/ model/*.java
+  653  touch JSPDemoApp2/.reload
+  654  javac -d JSPDemoApp2/WEB-INF/classes/ model/*.java
+  655  touch JSPDemoApp2/.reload
+  656  javac -d JSPDemoApp2/WEB-INF/classes/ model/*.java
+  657  touch JSPDemoApp2/.reload
+  658  ~/glassfish7/bin/asadmin restart-domain
+  659  pwd
+  660  cd ../../../
+  661  history > cmd0811evening.txt 
+  662  vi cmd0811evening.txt 
+  663  cd ..
+  664  cp -r Java /mnt/d/Sample/
+  665  cd Java/Enterprise/RMIServerTest/
+  666  cd demo/
+  667  java -cp ../../drivers/*:classes Program &
+  668  cd ../..
+  669  mkdir JAXRSTest
+  670  cd JAXRSTest/
+  671  mkdir demo
+  672  cd demo
+  673  mkdir shopping
+  674  cp ../../RMIServerTest/demo/shopping/OrderManager.java shopping/
+  675  cp ../../RMIServerTest/demo/shopping/OrderEntity.java shopping/
+  676  mkdir -p JAXRSDemoApp/WEB-INF/classes
+  677  ~/glassfish7/bin/asadmin start-domain
+  678  export CLASSPATH=~/glassfish7/glassfish/lib/jakartaee.jar 
+  679  cp ../../ServletTest/demo/ServletDemoApp/WEB-INF/web.xml JAXRSDemoApp/WEB-INF/
+  680  code .
+  681  javac -d JAXRSDemoApp/WEB-INF/classes/ shopping/*.java
+  682  ~/glassfish7/bin/asadmin deploy JAXRSDemoApp
+  683  curl localhost:8080/JAXRSDemoApp/api/sales/CU101
+  684  curl localhost:8080/JAXRSDemoApp/api/sales/CU102
+  685  curl localhost:8080/JAXRSDemoApp/api/sales/CU108
+  686  curl localhost:8080/JAXRSDemoApp/api/sales -X POST -H "Content-Type: application/json" -d @data.json 
+  687  javac -d JAXRSDemoApp/WEB-INF/classes/ shopping/*.java
+  688  touch JAXRSDemoApp/.reload
+  689  curl localhost:8080/JAXRSDemoApp/api/sales/CU101
+  690  curl localhost:8080/JAXRSDemoApp/api/sales/CU102
+  691  curl localhost:8080/JAXRSDemoApp/api/sales/CU103
+  692  curl localhost:8080/JAXRSDemoApp/api/sales/CU104
+  693  curl localhost:8080/JAXRSDemoApp/api/sales -X POST -H "Content-Type: application/json" -d @data.json 
+  694  cd JAXRSDemoApp/
+  695  wget iitdac.met.edu/shared/java/reactclient.tar.gz
+  696  tar xf reactclient.tar.gz 
+  697  rm reactclient.tar.gz 
+  698  cd ..
+  699  javac -d JAXRSDemoApp/WEB-INF/classes/ shopping/*.java
+  700  touch JAXRSDemoApp/.reload
+  701  curl localhost:8080/JAXRSDemoApp/api/sales/CU104
+  702  pwd
+  703  cd ../../../
+  704  history > cmd1011morning.txt 
+  705  vi cmd1011morning.txt 
+  706  cd ..
+  707  cp -r Java /mnt/d/Sample/
+  708  ls
+  709  pwd
+  710  cd ..
+  711  ls
+  712  cd Nilesh
+  713  ls
+  714  cd Foundations_C_C++_oldbatch/
+  715  ls
+  716  cd C
+  717  ls
+  718  cd Pointers
+  719  ls
+  720  exit
+  721  cd 
+  722  ls
+  723  cd Samples/
+  724  lks
+  725  ls
+  726  cd ..
+  727  ls
+  728  cd Nilesh/
+  729  ls
+  730  cd Foundations_C_C++_oldbatch/
+  731  ls
+  732  cd C++
+  733  ls
+  734  cd Classes/
+  735  ls
+  736  vi newdelobjtest.cpp
+  737  vi newdelarrtest.cpp
+  738  clear
+  739  ls
+  740  vi objreftest.cpp
+  741  vi comptest.cpp
+  742  vi opovldtest1.cpp
+  743  cd ..
+  744  ls
+  745  cd Inheritance/
+  746  ls
+  747  vi payroll1.h
+  748  vi drvdclasstest.cpp
+  749  vi payroll1.h
+  750  vi drvdclasstest.cpp
+  751  vi payroll2.h
+  752  vi virtfunctest.cpp
+  753  clear
+  754  ls
+  755  vi banking.h
+  756  vi banking1.h
+  757  vi banking1.cpp
+  758  vi banking1.h
+  759  vi banking1.cpp
+  760  ls
+  761  vi adttest1.cpp
+  762  vi adttest2.cpp
+  763  vi banking2.h
+  764  vi banking1.cpp
+  765  vi adttest1.cpp
+  766  vi adttest2.cpp
+  767  vi banking2.h
+  768  vi banking2.cpp
+  769  vi adtmitest.cpp
+  770  vi rttitest1.cpp
+  771  vi rttitest2.cpp
+  772  vi othercasttest.cpp
+  773  exit
+  774  exit
+  775  ls
+  776  cd ..
+  777  ls
+  778  ls DACMarch24/
+  779  cd ..
+  780  clear
+  781  pwd
+  782  mkdir C_Prep
+  783  mkdir C
+  784  ls
+  785  cd cdac/
+  786  ls
+  787  mkdir C_Prep
+  788  ls
+  789  cd C_Prep
+  790  clear
+  791  mkdir basics
+  792  ls
+  793  vi forlooptest.c
+  794  cc forlooptest.c 
+  795  ls
+  796  ./a.out
+  797  ls
+  798  cp forlooptest.c  whilelooptest.c
+  799  ls
+  800  vi whilelooptest.c 
+  801  cc whilelooptest.c 
+  802  clear
+  803  ./a.out
+  804  vi whilelooptest.c 
+  805  cp whilelooptest.c  dowhiletest.c
+  806  vi dowhiletest.c 
+  807  cc dowhiletest.c 
+  808  ./a.out
+  809  vi dowhiletest.c 
+  810  clear
+  811  ls
+  812  vi iftest.c
+  813  cc iftest.c
+  814  ./a.out
+  815  vi iftest.c
+  816  clear
+  817  cc iftest.c
+  818  ./a.out
+  819  vi iftest.c
+  820  cp iftest.c iftest1.c
+  821  vi iftest1.c
+  822  cc iftest1.c
+  823  clear
+  824  vi iftest1.c
+  825  cc iftest1.c
+  826  ./a.out
+  827  vi iftest1.c
+  828  clear
+  829  vi ifelseiftest.c
+  830  cc ifelseiftest.c 
+  831  ./a.out
+  832  vi ifelseiftest.c
+  833  exit
+  834  cd ..
+  835  ls
+  836  ls 
+  837  cd C_Prep
+  838  ls
+  839  cd basics
+  840  ls
+  841  vi switchcasetest.c
+  842  clear
+  843  cc switchcasetest.c
+  844  ./a.ut
+  845  ./a.out
+  846  vi switchcasetest.c
+  847  clear
+  848  cd ..
+  849  mkdir advanced
+  850  cd advanced
+  851  vi arraytest.c
+  852  cc arraytest.c
+  853  ./a.out
+  854  vi arraytest.c
+  855  cc arraytest.c
+  856  ./a.out
+  857  vi arraytest.c
+  858  clear
+  859  cc arraytest.c
+  860  ./a.out 
+  861  vi arraytest.c
+  862  cc arraytest.c
+  863  clear
+  864  ./a.out
+  865  vi arraytest.c
+  866  cc arraytest.c
+  867  ./a.out
+  868  vi arraytest.c
+  869  clear
+  870  vi structtypetest.c
+  871  cc structtypetest.c
+  872  vi structtypetest.c
+  873  cc structtypetest.c
+  874  ./a.out
+  875  vi structtypetest.c
+  876  exit
+  877  ls
+  878  cd ..
+  879  ls
+  880  cd C+Prep
+  881  cd C_Prep
+  882  ls
+  883  cd advanced/
+  884  ls
+  885  vi structtypetest2.c 
+  886  cc structtypetest2.c 
+  887  ./a.out
+  888  vi structtypetest2.c 
+  889  ./a.out
+  890  cc structtypetest2.c 
+  891  ./a.out
+  892  vi structtypetest2.c 
+  893  vi functiontest1.c
+  894  clear
+  895  cc functiontest1.c 
+  896  ./a.out
+  897  vi functiontest1.c
+  898  cc functiontest1.c
+  899  ./a.out
+  900  vi functiontest1.c
+  901  clear
+  902  ls
+  903  cp structtypetest2.c structtypefunctest.c
+  904  vi structtypefunctest.c 
+  905  cc structtypefunctest.c 
+  906  ./a.out
+  907  clear
+  908  vi structtypefunctest.c 
+  909  clear
+  910  ls
+  911  vi functiontest2.c
+  912  cc functiontest2.c
+  913  ./a.out
+  914  ./a.out13
+  915  vi functiontest2.c
+  916  cc functiontest2.c
+  917  clear
+  918  ./a.out
+  919  vi functiontest2.c
+  920  exit
+  921  clear
+  922  ls
+  923  cd ..
+  924  ls
+  925  cd C_Prep
+  926  ls
+  927  cd advanced/
+  928  ls
+  929  vi functiontest2.c
+  930  mkdir primedemo
+  931  cp functiontest2.c primedemo
+  932  cd primedemo/
+  933  ls
+  934  mv functiontest2.c prime.c
+  935  ls
+  936  vi prime.c
+  937  vi prime.h
+  938  vi prime.c
+  939  cc prime.c
+  940  clear
+  941  cc -c prime.c
+  942  ls
+  943  vi primetest.c
+  944  ls
+  945  vi prime.h
+  946  vi primetest.c
+  947  cc primetest.c
+  948  vi primetest.c
+  949  ls
+  950  cc primetest.c prime.o
+  951  ./primetest
+  952  ./a.out
+  953  vi primetest.c
+  954  cc primetest.c prime.o
+  955  ./a.out
+  956  vi primetest.c 
+  957  vi prime.c
+  958  vi prime.h
+  959  vi prime.c
+  960  vi primetest.c 
+  961  cd ..
+  962  mkdir bank
+  963  vi bank.h
+  964  vi bank.c
+  965  cc -c bank.c
+  966  ls
+  967  mv bank.* bank
+  968  ls bank
+  969  cd bank
+  970  ls
+  971  clear
+  972  ls
+  973  vi banktest.c
+  974  cc banktest.c bank.o
+  975  cc banktest.c
+  976  cc banktest.c bank.o
+  977  ./a.out 
+  978  ls
+  979  vi bank.h
+  980  vi bank.c
+  981  vi banktest.c 
+  982  clear
+  983  ls
+  984  cd ..
+  985  ls
+  986  cd ..
+  987  cp C_Prep /mnt/d/
+  988  cp -r C_Prep /mnt/d/
+  989  ls
+  990  exit
+  991  ls
+  992  mkdir OldBatch
+  993  mv -r DotNet/ OldBatch/ 
+  994  mv DotNet/ OldBatch/
+  995  ls
+  996  mv OldBatch/ DotNet
+  997  ls
+  998  ls DotNet/
+  999  ls Java/
+ 1000  ls
+ 1001  cd DotNet/
+ 1002  ls
+ 1003  cd ..
+ 1004  ls
+ 1005  cd ..
+ 1006  ls
+ 1007  cd DACMarch24/
+ 1008  ls
+ 1009  cd ABCD/\
+ 1010  ls
+ 1011  cd ..
+ 1012  ls historyfile 
+ 1013  cd testdir/
+ 1014  ls
+ 1015  cd ..
+ 1016  ls
+ 1017  cd DACMarch24/
+ 1018  ls
+ 1019  rm *.*
+ 1020  rm -r *.*
+ 1021  rm -r ABCD
+ 1022  rm -r abc
+ 1023  rm -r file1
+ 1024  rm -r historyfile 
+ 1025  rm -r newname 
+ 1026  rm -r testdir/
+ 1027  ls
+ 1028  cd ..
+ 1029  ls
+ 1030  cd Test
+ 1031  ls
+ 1032  cd ..
+ 1033  cd Test
+ 1034  cd ..
+ 1035  cd Testing/
+ 1036  ls
+ 1037  cd ..
+ 1038  ls
+ 1039  exit
+ 1040  ls
+ 1041  cd ..
+ 1042  pwd
+ 1043  ls
+ 1044  vi .bashrc 
+ 1045  cp .bashrc /mnt/d/
+ 1046  java -version
+ 1047  ls
+ 1048  exit
+ 1049  cd ..
+ 1050  wget iitdac.met.edu/shared/java/jdk.tar.gz
+ 1051  rm -r jdk-20/
+ 1052  rm -rf jdk-20/
+ 1053  rm jdk.tar.gz
+ 1054  mv jdk.tar.gz.1 jdk.tar.gz
+ 1055  ls
+ 1056  tar xf jdk.tar.gz 
+ 1057  rm jdk.tar.gz 
+ 1058  wget iitdac.met.edu/shared/java/maven.tar.gz
+ 1059  tar xf maven.tar.gz 
+ 1060  ls apache-maven-3.9.5/
+ 1061  rm maven.tar.gz 
+ 1062  wget iitdac.met.edu/shared/java/tomcat.tar.gz
+ 1063  tar xf tomcat.tar.gz 
+ 1064  ls apache-tomcat-10.1.18/
+ 1065  rm tomcat.tar.gz 
+ 1066  ls
+ 1067  rm dotnet-sdk-7.0.401-linux-x64.tar.gz 
+ 1068  rm gf.tar.gz 
+ 1069  ls
+ 1070  ls DACMarch24/
+ 1071  wget https://download.visualstudio.microsoft.com/download/pr/656a3402-6889-400f-927f-7f956856e58b/93750973d6eedd17c6d963658e7ec214/dotnet-sdk-8.0.203-linux-x64.tar.gz
+ 1072  mkdir dotnet
+ 1073  ls
+ 1074  rm -r dotnet
+ 1075  mkdir dotnet
+ 1076  tar zxfv dotnet-sdk-8.0.203-linux-x64.tar.gz -C dotnet/
+ 1077  ls dotnet
+ 1078  cd dotnet/
+ 1079  ls
+ 1080  cd ..
+ 1081  vi ~/.bashrc 
+ 1082  exec bash
+ 1083  java --version
+ 1084  dotnet --vrsion
+ 1085  mvn --help
+ 1086  code .
+ 1087  exit
+ 1088  mkdir -p Java/Language-Runtime
+ 1089  cd Java/Language-Runtime/
+ 1090  java --version
+ 1091  uname -m
+ 1092  uname -a
+ 1093  ls
+ 1094  vi Hello.java
+ 1095  ls
+ 1096  javac Hello.java 
+ 1097  ls
+ 1098  java Greeter 
+ 1099  vi Hello.java
+ 1100  javac Hello.java 
+ 1101  java Greeter 
+ 1102  vi Hello.java
+ 1103  javac Hello.java 
+ 1104  java Greeter 
+ 1105  vi Hello.java
+ 1106  javac Hello.java 
+ 1107  java Greeter 
+ 1108  ls
+ 1109  ssh unipro@linuxarm.km-hussain.xyz
+ 1110  cd ../..
+ 1111  ls
+ 1112  javac Hello.java 
+ 1113  cd Java/Language-Runtime/
+ 1114  vi Hello.java 
+ 1115  pwd
+ 1116  history > ../cmd03-04-2024.txt
+ 1117  ls
+ 1118  ls ../
+ 1119  vi ../cmd03-04-2024.txt 
+ 1120  cd ../../
+ 1121  ls
+ 1122  cp -r Java /mnt/d/
+ 1123  exit
+ 1124  java Hello
+ 1125  cd Java/Language-Runtime/
+ 1126  code .
+ 1127  cd ../..
+ 1128  cd ..
+ 1129  mkdir Test
+ 1130  cd Test
+ 1131  cp ~/Samples/Java/Language-Runtime/Hello.java .
+ 1132  vi Hello.java 
+ 1133  code .
+ 1134  mkdir Greeter
+ 1135  mkdir demo1
+ 1136  cd demo1/
+ 1137  mv ../Hello.java .
+ 1138  code .
+ 1139  export JAVA_HOME=$HOME/jdk-22
+ 1140  echo $PATH
+ 1141  vi ~/.bashrc 
+ 1142  exec bash
+ 1143  vi ~/.bashrc 
+ 1144  java --version
+ 1145  ls
+ 1146  mkdir PrimitiveTypeTest
+ 1147  cd PrimitiveTypeTest/
+ 1148  mkdir demo
+ 1149  cd demo/
+ 1150  code .
+ 1151  ls
+ 1152  javac Program.java 
+ 1153  java Program 
+ 1154  java Program 25000 20
+ 1155  javac Program.java 
+ 1156  java Program 25000 20
+ 1157  java Program 500000 6
+ 1158  javac Program.java 
+ 1159  java Program 25000 20
+ 1160  cd ../..
+ 1161  ls
+ 1162  cp -r PrimitiveTypeTest/ UserDefTypeTest
+ 1163  cd UserDefTypeTest/demo/
+ 1164  code .
+ 1165  javac Program.java 
+ 1166  java Program 25000 20
+ 1167  java Program 50000 5
+ 1168  java Program 500000 5
+ 1169  javac Program.java 
+ 1170  java Program 20000 15
+ 1171  java Program 500000 5
+ 1172  cd ..
+ 1173  ls
+ 1174  history >cmd03-04-2024evening.txt 
+ 1175  ls
+ 1176  cd ~/Test/SpringMVCTest/demo1/
+ 1177  ls
+ 1178  code .
+ 1179  mvn jetty:run
+ 1180  exit
+ 1181  cd Samples/Java/Language-Runtime/UserDefTypeTest/
+ 1182  ls
+ 1183  cp -r demo1/ demo2
+ 1184  cd demo2/
+ 1185  code .
+ 1186  javac Program.java 
+ 1187  java Program 20000 15
+ 1188  java Program 500000 6
+ 1189  javac Program.java 
+ 1190  java Program 20000 15
+ 1191  java Program 500000 6
+ 1192  ls *.class
+ 1193  rm RiskLevel.class 
+ 1194  java Program 500000 6
+ 1195  javac RiskLevel.java 
+ 1196  java Program 500000 6
+ 1197  cd ..
+ 1198  ls
+ 1199  mkdir SubclassTest
+ 1200  cd SubclassTest/
+ 1201  mkdir demo1
+ 1202  cd demo1/
+ 1203  mkdir payroll
+ 1204  touch Program.java
+ 1205  code .
+ 1206  javac payroll/*.java
+ 1207  ls payroll/
+ 1208  pwd
+ 1209  history > ../../../cmd04-04-2024morning
+ 1210  vi ../../../cmd04-04-2024morning
+ 1211  cp ~/Samples/Java/ /mnt/d/
+ 1212  cp -r ~/Samples/Java/ /mnt/d/
+ 1213  vi ../../../cmd04-04-2024morning.txt
+ 1214  history > ../../../cmd04-04-2024morning.txt
+ 1215  rm ../../../cmd04-04-2024morning
+ 1216  cp -r ~/Samples/Java/ /mnt/d/
+ 1217  cd ..
+ 1218  ls
+ 1219  rm cmd03-04-2024.txt 
+ 1220  ls
+ 1221  ls Language-Runtime/
+ 1222  ls Language-Runtime/UserDefTypeTest/
+ 1223  ls Language-Runtime/UserDefTypeTest/demo1/
+ 1224  clear
+ 1225  cd Language-Runtime/SubclassTest/demo1/
+ 1226  code .
+ 1227  javac Program.java 
+ 1228  java Program 
+ 1229  javac Program.java 
+ 1230  java Program 
+ 1231  javac Program.java 
+ 1232  java Program 
+ 1233  cd ..
+ 1234  mkdir demo2
+ 1235  cd demo2
+ 1236  touch Program.java
+ 1237  code .
+ 1238  javap java.lang.Object
+ 1239  javac Program.java 
+ 1240  java Program 
+ 1241  javac Program.java 
+ 1242  java Program 
+ 1243  javac Program.java 
+ 1244  java Program 
+ 1245  javac Program.java 
+ 1246  java Program 
+ 1247  javac Program.java 
+ 1248  java Program 
+ 1249  cd ..
+ 1250  ls
+ 1251  history >cmd04-04-2024evening.txt 
+ 1252  clear
+ 1253  cd Java/Language-Runtime/AbstractTypeTest/bank1/
+ 1254  code src/
+ 1255  javac  src/banking/*.java
+ 1256  ls src/banking/
+ 1257  rm src/banking/*.class
+ 1258  ls
+ 1259  javac -d . src/banking/*.java
+ 1260  ls src/banking/
+ 1261  ls
+ 1262  ls banking/
+ 1263  jar -cf bank-1.0.jar banking/
+ 1264  ls
+ 1265  jar -tf bank-1.0.jar 
+ 1266  cd ..
+ 1267  mkdir demo1
+ 1268  cd demo1/
+ 1269  mkdir lib
+ 1270  cp ../bank1/bank-1.0.jar lib/
+ 1271  code .
+ 1272  cp ../bank1/bank-1.0.jar lib/
+ 1273  javac Program.java 
+ 1274  javac -cp .:lib/bank-1.0.jar Program.java 
+ 1275  java -cp .:lib/bank-1.0.jar Program 
+ 1276  java -cp .:lib/* Program 
+ 1277  java  Program 
+ 1278  ls
+ 1279  java -cp .:lib/bank-1.0.jar Program 
+ 1280  javac -cp .:lib/bank-1.0.jar Program.java 
+ 1281  java -cp .:lib/* Program 2000
+ 1282  java -cp .:lib/* Program 16000
+ 1283  java -cp .:lib/* Program 5OOO
+ 1284  \ls
+ 1285  ls lib
+ 1286  cd ..
+ 1287  ls
+ 1288  history cmd05-04-2024evening.txt
+ 1289  history>cmd05-04-2024evening.txt
+ 1290  vi cmd05-04-2024evening.txt 
+ 1291  clear
+ 1292  cd Language-Runtime/
+ 1293  ll
+ 1294  mkdir GenericMethodTest
+ 1295  cd GenericMethodTest/
+ 1296  mkdir demo
+ 1297  cd demo/
+ 1298  code .
+ 1299  javac Program1.java 
+ 1300  java Program 
+ 1301  java Program 23
+ 1302  java Program 32
+ 1303  javac Program1.java 
+ 1304  java Program 23
+ 1305  java Program 32
+ 1306  javac Program2.java 
+ 1307  java Program 23
+ 1308  java Program 32
+ 1309  javac Program2.java 
+ 1310  java Program 32
+ 1311  javac Program2.java 
+ 1312  java Program 32
+ 1313  java Program 23
+ 1314  javac Program3.java 
+ 1315  java Program 32
+ 1316  java Program 23
+ 1317  cd ..
+ 1318  ls
+ 1319  history >cmd07-04-2024single.txt
+ 1320  ls
+ 1321  cd Language-Runtime/AbstractTypeTest/bank1/
+ 1322  code src
+ 1323  cd Samples/Java/Language-Runtime/AbstractTypeTest/bank1/
+ 1324  code .
+ 1325  code src/
+ 1326  cd Samples/Java/Language-Runtime/GenericMethodTest/demo/
+ 1327  code .
+ 1328  javap java.lang.Object
+ 1329  javap java.lang.CompareTo
+ 1330  javap java.lang.Comparable
+ 1331  javac Program3.java 
+ 1332  java Program \
+ 1333  java Program 
+ 1334  javap java.lang.String
+ 1335  javap java.lang.Double
+ 1336  cp ../../SubclassTest/demo2/Interval.java .
+ 1337  javac Program3.java 
+ 1338  java Program 
+ 1339  cd ../..
+ 1340  mkdir GenericClassTest
+ 1341  cd GenericClassTest/
+ 1342  mkdir demo1
+ 1343  cd demo1/
+ 1344  code .
+ 1345  javac Program1.java 
+ 1346  java Program 
+ 1347  javac Program1.java 
+ 1348  java Program 
+ 1349  cp ../../GenericMethodTest/demo/Interval.java  .
+ 1350  javac Program1.java 
+ 1351  java Program 
+ 1352  history >cmd:08-04-2024
