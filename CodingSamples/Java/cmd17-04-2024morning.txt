@@ -1,0 +1,32 @@
+    1  cd Platform-Enterprise/
+    2  ls
+    3  mkdir TCPSocktetTest
+    4  cd TCPSocktetTest/
+    5  mkdir demo1
+    6  cd demo1/
+    7  unzip ~/apache-maven-3.9.5/templates/simple-app.zip 
+    8  wget iitdac.met.edu/shared/java/CitiTek.xml
+    9  code .
+   10  mvn -q compile
+   11  java -cp target/classes/ app.Program 
+   12  java -cp target/classes/ app.Program &
+   13  java -cp target/classes/ app.Program
+   14  nc localhost 4000
+   15  ps
+   16  netstat -pnlt
+   17  sudo apt install net-tools
+   18  netstat -pnlt
+   19  kill 22042
+   20  netstat -pnlt
+   21  nc localhost 4000
+   22  mvn compile
+   23  java -cp target/classes/ app.Program &
+   24  netstat -pnlt
+   25  nc 127.0.0.1 4000
+   26  nc Dac-Faculty 4000
+   27  nc localhost 4000
+   28  pkill -ef app.Program
+   29  mvn -q compile
+   30  java -cp target/classes/ app.Program &
+   31  nc localhost 4000
+   32  history > ../../../cmd17-04-2024morning.txt

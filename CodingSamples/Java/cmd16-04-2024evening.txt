@@ -1,0 +1,96 @@
+    1  cd Platform-Enterprise/
+    2  ls
+    3  mkdir FileStreamTest
+    4  mkdir demo1
+    5  cd demo1/
+    6  unzip ~/apache-maven-3.9.5/templates/simple-app.zip 
+    7  sudo apt install unzip
+    8  unzip ~/apache-maven-3.9.5/templates/simple-app.zip 
+    9  code .
+   10  mvn package
+   11  ls target/
+   12  java -cp target/classes/ app.Program
+   13  ls
+   14  chmod u+x run.sh 
+   15  ./run.sh 
+   16  vi run.sh 
+   17  pwd
+   18  cd ..
+   19  ls
+   20  mv demo1 FileStreamTest/
+   21  cd FileStreamTest/demo1/
+   22  ls
+   23  code .
+   24  cp ../../ThreadTest/demo2/Program3.java data1.java
+   25  mv data1.java data.txt
+   26  ls
+   27  ./run.sh data.txt edata.txt
+   28  ls
+   29  ./run.sh edata.txt odata.txt
+   30  cd ../
+   31  ls
+   32  mkdir met-tour
+   33  cd met-tour/
+   34  unzip ~/apache-maven-3.9.5/templates/simple-lib.zip 
+   35  code .
+   36  javap java.util.Date
+   37  javap java.lang.String
+   38  history ../../../cmd16-04-2024morning.txt 
+   39  history > ../../../cmd16-04-2024morning.txt 
+   40  vi ../../../cmd16-04-2024morning.txt 
+   41  cd ../../../../
+   42  ls
+   43  cp -r Java /mnt/d/
+   44  ls
+   45  cd Java/
+   46  ls
+   47  cd Platform-Enterprise/
+   48  ls
+   49  clear
+   50  ls
+   51  cd FileStreamTest/
+   52  ls
+   53  cd ..
+   54  ls
+   55  cd FileStreamTest/
+   56  ls
+   57  cd met-tour/
+   58  ls
+   59  clear
+   60  ls
+   61  mvn package
+   62  mvn install
+   63* ls ~/.m2/repository/cdac/samples/java/met-tour/1.0.0/
+   64  cd ..
+   65  ls
+   66  mkdir demo2
+   67  cd demo2
+   68  unzip ~/apache-maven-3.9.5/templates/simple-app.zip 
+   69  code .
+   70  ls
+   71  ./run.sh
+   72  bash run.sh Jack
+   73  bash run.sh Jill
+   74  ls
+   75  bash run.sh
+   76  bash run.sh Jack
+   77  bash run.sh
+   78  bash run.sh John
+   79  bash run.sh
+   80  bash run.sh Jack
+   81  bash run.sh
+   82  vi CitiZoo.store 
+   83  rm CitiZoo.store 
+   84  ls
+   85  bash run.sh
+   86  bash run.sh Jack
+   87  bash run.sh Jill
+   88  bash run.sh John
+   89  bash run.sh Jill
+   90  bash run.sh
+   91  ls
+   92  cd ..
+   93  ls
+   94  cd ..
+   95  ls
+   96  history >cmd16-04-2024evening.txt 

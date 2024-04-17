@@ -1,0 +1,15 @@
+    1  cd Samples/Java/Language-Runtime/AbstractTypeTest/
+    2  ls
+    3  cp -r bank1/ bank2/
+    4  cd bank2/
+    5  ls
+    6  rm bank-1.0.jar 
+    7  code src/
+    8  javac -d . src/**/*.java
+    9  ls banking/
+   10  javap banking.Profitable
+   11  jar -cf bank-2.0.jar banking
+   12  ls
+   13  jar -tf bank-2.0.jar 
+   14  pwd
+   15  history > ../../../cmd06-04-2024morning.txt 

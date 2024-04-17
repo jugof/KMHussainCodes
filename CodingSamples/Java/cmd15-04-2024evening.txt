@@ -1,0 +1,28 @@
+    1  cd Samples/Java/Platform-Enterprise/ThreadTest/demo2/
+    2  ls
+    3  javac Program2.java 
+    4  java Program
+    5  javac Program3.java
+    6  java Program
+    7  cd ../..
+    8  mkdir AsyncParallelTest
+    9  cd AsyncParallelTest/
+   10  mkdir demo1
+   11  cd demo1/
+   12  cp ../../ThreadTest/demo1/Activity.java .
+   13  code .
+   14  javac Program1.java 
+   15  java Program 10
+   16  java Program 20
+   17  java Program 30
+   18  javac Program2.java 
+   19  java Program 10
+   20* javac Program2.java
+   21  java Program 20
+   22  java Program 10
+   23  java Program 20
+   24  javac Program3.java 
+   25  java Program 20
+   26  cd ..
+   27  ls
+   28  history >cmd15-04-2024evening.txt 

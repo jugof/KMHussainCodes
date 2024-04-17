@@ -1,0 +1,35 @@
+    1  vi whiletest.cpp
+    2  c++ whiletest.cpp -o program
+    3  ./program 
+    4  vi whiletest.cpp
+    5  vi fortest.cpp
+    6  c++ fortest.cpp -o program 
+    7  ./program 
+    8  vi fortest.cpp
+    9  ls
+   10  cd ..
+   11  mkdir Functions
+   12  cd Functions/
+   13  ls
+   14  vi callfunctest.cpp
+   15  c++ callfunctest.cpp -o program
+   16  ./program 
+   17  vi callfunctest.cpp
+   18  c++ callfunctest.cpp -o program
+   19  ./program 
+   20  vi callfunctest.cpp
+   21  c++ callfunctest.cpp -o program
+   22  ./program 
+   23  vi callfunctest.cpp
+   24  c++ callfunctest.cpp -o program
+   25  ./program 
+   26  vi callfunctest.cpp
+   27  c++ callfunctest.cpp -o program
+   28  vi callfunctest.cpp
+   29  c++ callfunctest.cpp -o program
+   30  vi callfunctest.cpp
+   31  c++ callfunctest.cpp -o program
+   32  vi callfunctest.cpp
+   33  c++ callfunctest.cpp -o program
+   34  vi callfunctest.cpp
+   35  history >> cmd-2024-03-20-2.txt 

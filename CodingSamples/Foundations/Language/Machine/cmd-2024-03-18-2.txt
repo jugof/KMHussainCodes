@@ -1,0 +1,16 @@
+    1  ls
+    2  vi condjumptest.s 
+    3  cp condjumptest.s callproctest.s
+    4  vi callproctest.s 
+    5  as callproctest.s -o callproctest.
+    6  rm callproctest.
+    7  as callproctest.s -o callproctest.o
+    8  ls
+    9  cp ~/Support/asm-x64/system.o .
+   10  ld callproctest.o system.o -o program
+   11  ./program 
+   12  vi callproctest.s 
+   13  cp callproctest.s memaddrtest.s
+   14  cp memaddrtest.s 
+   15  vi memaddrtest.s 
+   16  history >> cmd-2024-03-18-2.txt 

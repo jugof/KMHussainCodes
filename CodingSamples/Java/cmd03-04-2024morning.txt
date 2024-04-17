@@ -1,0 +1,29 @@
+    1  mkdir -p Java/Language-Runtime
+    2  cd Java/Language-Runtime/
+    3  java --version
+    4  uname -m
+    5  uname -a
+    6  ls
+    7  vi Hello.java
+    8  ls
+    9  javac Hello.java 
+   10  ls
+   11  java Greeter 
+   12  vi Hello.java
+   13  javac Hello.java 
+   14  java Greeter 
+   15  vi Hello.java
+   16  javac Hello.java 
+   17  java Greeter 
+   18  vi Hello.java
+   19  javac Hello.java 
+   20  java Greeter 
+   21  ls
+   22  ssh unipro@linuxarm.km-hussain.xyz
+   23  cd ../..
+   24  ls
+   25  javac Hello.java 
+   26  cd Java/Language-Runtime/
+   27  vi Hello.java 
+   28  pwd
+   29  history > ../cmd03-04-2024.txt

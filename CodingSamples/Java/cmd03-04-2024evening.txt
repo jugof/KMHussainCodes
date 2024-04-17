@@ -1,0 +1,30 @@
+    1  ls
+    2  mkdir PrimitiveTypeTest
+    3  cd PrimitiveTypeTest/
+    4  mkdir demo
+    5  cd demo/
+    6  code .
+    7  ls
+    8  javac Program.java 
+    9  java Program 
+   10  java Program 25000 20
+   11  javac Program.java 
+   12  java Program 25000 20
+   13  java Program 500000 6
+   14  javac Program.java 
+   15  java Program 25000 20
+   16  cd ../..
+   17  ls
+   18  cp -r PrimitiveTypeTest/ UserDefTypeTest
+   19  cd UserDefTypeTest/demo/
+   20  code .
+   21  javac Program.java 
+   22  java Program 25000 20
+   23  java Program 50000 5
+   24  java Program 500000 5
+   25  javac Program.java 
+   26  java Program 20000 15
+   27  java Program 500000 5
+   28  cd ..
+   29  ls
+   30  history >cmd03-04-2024evening.txt 

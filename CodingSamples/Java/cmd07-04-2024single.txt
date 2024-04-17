@@ -1,0 +1,29 @@
+    1  clear
+    2  cd Language-Runtime/
+    3  ll
+    4  mkdir GenericMethodTest
+    5  cd GenericMethodTest/
+    6  mkdir demo
+    7  cd demo/
+    8  code .
+    9  javac Program1.java 
+   10  java Program 
+   11  java Program 23
+   12  java Program 32
+   13  javac Program1.java 
+   14  java Program 23
+   15  java Program 32
+   16  javac Program2.java 
+   17  java Program 23
+   18  java Program 32
+   19  javac Program2.java 
+   20  java Program 32
+   21  javac Program2.java 
+   22  java Program 32
+   23  java Program 23
+   24  javac Program3.java 
+   25  java Program 32
+   26  java Program 23
+   27  cd ..
+   28  ls
+   29  history >cmd07-04-2024single.txt

@@ -1,0 +1,51 @@
+    1  cd ../../
+    2  cd ..
+    3  mkdir Platform-Enterprise
+    4  cd Platform-Enterprise/
+    5  mkdir ThreadTest
+    6  cd ThreadTest/
+    7  mkdir demo1
+    8  cd demo1/
+    9  code .
+   10  javac Program.java 
+   11  rm Program1.class 
+   12  javac Program.java 
+   13  java Program 
+   14  javac Program.java 
+   15  java Program 
+   16  javac Program1.java 
+   17  javap java.lang.Runnable
+   18  javac Program2.java 
+   19  java Program
+   20  javac Program2.java 
+   21  java Program
+   22  javac Program2.java 
+   23  java Program
+   24  javac Program2.java 
+   25  java Program
+   26  javac Program3.java 
+   27  java Program
+   28  java Program 3
+   29  java Program 4
+   30  java Program 5
+   31  java Program 6
+   32  javac Program3.java 
+   33  java Program 4
+   34  java Program 6
+   35  java Program 5
+   36  java Program 10
+   37  java Program
+   38  javac Program3.java 
+   39  java Program
+   40  cd ..
+   41  mkdir demo2
+   42  cd demo2/
+   43  cp ../demo1/Activity.java .
+   44  code .
+   45  javac Program1.java 
+   46  java Program 
+   47  javac Program1.java 
+   48  java Program 
+   49  javac Program1.java 
+   50  java Program 
+   51  history >  ../../../cmd15-04-2024morning.txt 

@@ -1,0 +1,23 @@
+    1  cd Samples/Java/Language-Runtime/MethodRefTest/demo/
+    2  code .
+    3  javac Program1.java 
+    4  javap InterestRate
+    5  javap java.lang.Runable
+    6  javap java.lang.Runnable
+    7  javap java.lang.Comparable
+    8  javap java.lang.Iterable
+    9  javap java.util.Iterator
+   10  javap java.io.Serializable
+   11  javac Program2.java 
+   12  java Program 30000 15
+   13  ls *.class
+   14  rm 'Program$SafeScheme.class'
+   15  java Program 30000 15
+   16  ls
+   17  javac Program2.java 
+   18  java Program 30000 15
+   19  javap -p Program
+   20  javac Program2.java 
+   21  java Program 30000 15
+   22  cd ..
+   23  history >cmd10-04-2024evening.txt

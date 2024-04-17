@@ -1,0 +1,1000 @@
+ 1029  mv demo/ demo1
+ 1030  ls
+ 1031  unzip ~/Support/maven-templates/simple-web-app-jetty.zip -d demo2
+ 1032  cd demo2/
+ 1033  ls
+ 1034  code .
+ 1035  mvn jetty:run
+ 1036  cd ..
+ 1037  l
+ 1038  ls
+ 1039  cd ..
+ 1040  ls
+ 1041  mvn jetty:help run
+ 1042  mvn jetty:help 
+ 1043  cd ServletTest/
+ 1044  mvn jetty:help run
+ 1045  mvn jetty:help
+ 1046  cd demo/
+ 1047  mvn jetty:help run
+ 1048  cd ..
+ 1049  ls
+ 1050  mkdir SpringMVCTest
+ 1051  cd SpringMVCTest/
+ 1052  unzip ~/Support/maven-templates/jetty-web-app.zip -d demo
+ 1053  cd demo/
+ 1054  la
+ 1055  code .
+ 1056  mvn jetty:run
+ 1057  mv Course/MET/JavaGRPC/ Course/Basil/
+ 1058  cd Course/MET/Java/Enterprise/
+ 1059  ls
+ 1060  mv SpringMVCTest/ ControllerTest
+ 1061  cd ControllerTest/
+ 1062  cd demo/
+ 1063  vi pom.xml 
+ 1064  code .
+ 1065  mvn jetty:run
+ 1066  cd Course/MET/Java/Enterprise/ControllerTest/demo/
+ 1067  ls
+ 1068  code .
+ 1069  mvn jetty:run
+ 1070  cd ../..
+ 1071  cd ~/Test
+ 1072  mkdir SCITest
+ 1073  cd SCITest
+ 1074  ls
+ 1075  mkdir greeting
+ 1076  cd greeting/
+ 1077  unzip ~/Support/maven-templates/simple-app.zip 
+ 1078  vi pom.xml 
+ 1079  rm -r run.sh 
+ 1080  rm -r src/main/java/app
+ 1081  code .
+ 1082  ls
+ 1083  mvn clean compile
+ 1084  mvn clean package
+ 1085  ls target/
+ 1086  cd 
+ 1087  cd ~/Test/SCITest/greeting/
+ 1088  ls
+ 1089  code .
+ 1090  mvn clean install
+ 1091  cd ..
+ 1092  unzip ~/Support/maven-templates/jetty-web-app.zip -d demo
+ 1093  cd demo/
+ 1094  vi ../greeting/src/main/resources/META-INF/services/jakarta.servlet.ServletContainerInitializer 
+ 1095  code .
+ 1096  vi ../greeting/pom.xml 
+ 1097  mvn jetty:run
+ 1098  cd ../greeter
+ 1099  cd ../greeting/
+ 1100  ls
+ 1101  vi src/main/java/in/hussain/km/greeting/GreeterServletContainerInitializer.java 
+ 1102  mvn clean install
+ 1103  vi src/main/java/in/hussain/km/greeting/GreeterServletContainerInitializer.java 
+ 1104  mvn clean install
+ 1105  cd ../demo/
+ 1106  mvn clean jetty:run
+ 1107  mvn clean jetty:run-war
+ 1108  ls target/
+ 1109  jar tf target/demo-app-1.0.0.war 
+ 1110  jar tf ../greeting/target/greeter-lib-1.0.0.jar 
+ 1111  vi ../greeting/src/main/resources/META-INF/services/jakarta.servlet.ServletContainerInitializer 
+ 1112  cd ../greeting/
+ 1113  javap -cp target/greeter-lib-1.0.0.jar in.hussain.km.greeting.GreeterServletContainerInitializer
+ 1114  mv src/main/resources/META-INF/services/jakarta.servlet.ServletContainerInitializer src/main/resources/META-INF/services/jakarta.servlet.ServletContainerInitializer
+ 1115  cd ../demo/
+ 1116  ls
+ 1117  jar tf ../greeting/target/greeter-lib-1.0.0.jar 
+ 1118  jar tf target/demo-app-1.0.0.war 
+ 1119  jar tf target/demo-app-1.0.0/WEB-INF/lib/greeter-lib-1.0.0.jar 
+ 1120  mvn clean jetty:run
+ 1121  code .
+ 1122  mvn clean jetty:run
+ 1123  rm -r ~/.m2/repository/in
+ 1124  cd ../greeting/
+ 1125  mvn clean install
+ 1126  cd ../demo/
+ 1127  mvn clean 
+ 1128  ls
+ 1129  mvn jetty:run
+ 1130  mvn jetty:run-war
+ 1131  ls target/demo-app-1.0.0
+ 1132  ls target/demo-app-1.0.0/WEB-INF/lib/
+ 1133  jar tf target/demo-app-1.0.0/WEB-INF/lib/greeter-lib-1.0.0.jar 
+ 1134  cp target/demo-app-1.0.0/WEB-INF/lib/greeter-lib-1.0.0.jar ~/Temp/
+ 1135  cd ~/Temp/
+ 1136  ls
+ 1137  mkdir greeter-lib
+ 1138  cd greeter-lib/
+ 1139  mv ../greeter-lib-1.0.0.jar .
+ 1140  jar xf greeter-lib-1.0.0.jar 
+ 1141  ls
+ 1142  vi META-INF/services/jakarta.servlet.ServletContainerInitializer 
+ 1143  cd ~/Test/SCITest/greeting/
+ 1144  vi src/main/resources/META-INF/services/jakarta.servlet.ServletContainerInitializer 
+ 1145  rm -r ~/.m2/repository/in
+ 1146  mvn clean install
+ 1147  cd ../demo/
+ 1148  cd ../greeting/
+ 1149  rm -r ~/.m2/repository/in
+ 1150  vi src/main/java/in/hussain/km/greeting/GreeterServletContainerInitializer.java 
+ 1151  cd ../demo/
+ 1152  mvn clean
+ 1153  mvn jetty:run-war
+ 1154  cd ../greeting/
+ 1155  mvn clean install
+ 1156  cd ../demo/
+ 1157  mvn jetty:run-war
+ 1158  cd ../greeting/
+ 1159  ls
+ 1160  code .
+ 1161  rm -r ~/.m2/repository/in
+ 1162  mvn clean install
+ 1163  cd ../demo/
+ 1164  ls
+ 1165  mvn clean jetty:run-war
+ 1166  mvn clean jetty:run
+ 1167  cd Test/SCITest/greeting/
+ 1168  mvn clean install
+ 1169  rm -r ~/.m2/repository/in/
+ 1170  mvn clean install
+ 1171  rm -r ~/.m2/repository/in/
+ 1172  mvn clean install
+ 1173  cd Course/MET/Java/Enterprise/ServletTest/demo/
+ 1174  vi pom.xml 
+ 1175  mvn clean run
+ 1176  mvn clean jetty:run
+ 1177  cp pom.xml ../../JSPTest/demo2/
+ 1178  ls
+ 1179  cd ../../JSPTest/demo2
+ 1180  ls
+ 1181  vi pom.xml 
+ 1182  vi src/main/webapp/index.jsp 
+ 1183  vi src/main/webapp/detail.jsp 
+ 1184  mvn jetty:run
+ 1185  vi src/main/webapp/index.jsp 
+ 1186  mvn  clean jetty:run
+ 1187  code .
+ 1188  mvn  clean jetty:run
+ 1189  mvn clean jetty:run
+ 1190  vi src/main/webapp/WEB-INF/web.xml 
+ 1191  mvn clean jetty:run
+ 1192  cd ../demo1/
+ 1193  vi pom.xml 
+ 1194  cp ../../ServletTest/demo/pom.xml .
+ 1195  vi pom.xml 
+ 1196  mvn -q clean jetty:run
+ 1197  cd ~/Temp/
+ 1198  ls
+ 1199  rm -r simple-web-app/
+ 1200  unzip ~/Support/maven-templates/jetty-web-app.zip -d jetty-web-app
+ 1201  cd jetty-web-app/
+ 1202  ls
+ 1203  cp ~/Course/MET/Java/Enterprise/ServletTest/demo/pom.xml .
+ 1204  vi pom.xml 
+ 1205  zip -r ~/Support/maven-templates/jetty-web-app.zip *
+ 1206  cd ~/Course/MET/Java/Enterprise/ControllerTest/demo/
+ 1207  vi pom.xml 
+ 1208  cp ../../ServletTest/demo/pom.xml .
+ 1209  vi pom.xml 
+ 1210  mvn clean jetty:run
+ 1211  cd ~/Test/SCITest/demo/
+ 1212  vi pom.xml 
+ 1213  cp ~/Course/MET/Java/Enterprise/ServletTest/demo/pom.xml .
+ 1214  mvn clean jetty:run
+ 1215  cd ../greeting/
+ 1216  mvn clean install
+ 1217  cd ../demo/
+ 1218  mvn clean jetty:run
+ 1219  ls
+ 1220  mvn compile
+ 1221  code .
+ 1222  mvn clean jetty:run
+ 1223  cd ..
+ 1224  ls
+ 1225  mv greeting/ paging
+ 1226  cd paging/
+ 1227  ls
+ 1228  rm -r target/
+ 1229  rm -r ~/.m2/repository/in/
+ 1230  vi pom.xml 
+ 1231  code .
+ 1232  mvn clean install
+ 1233  cd ..
+ 1234  cd demo/
+ 1235  code .
+ 1236  mvn clean jetty:run
+ 1237  mvn clean jetty:run-war
+ 1238  jar tf target/demo-app-1.0.0/WEB-INF/lib/paging-lib-1.0.0.jar 
+ 1239  mkdir temp
+ 1240  cd temp/
+ 1241  jar xf ../target/demo-app-1.0.0/WEB-INF/lib/paging-lib-1.0.0.jar 
+ 1242  ls
+ 1243  vi META-INF/services/jakarta.servlet.ServletContainerInitializer 
+ 1244  cd ../..
+ 1245  cd paging/
+ 1246  vi src/main/resources/META-INF/services/jakarta.servlet.ServletContainerInitializer 
+ 1247  rm -r ~/.m2/repository/course/
+ 1248  mvn clean install
+ 1249  cd ../demo/
+ 1250  mvn clean jetty:run-war
+ 1251  jar xf ../target/demo-app-1.0.0/WEB-INF/lib/paging-lib-1.0.0.jar 
+ 1252  rm -r temp/*
+ 1253  jar xf ../target/demo-app-1.0.0/WEB-INF/lib/paging-lib-1.0.0.jar 
+ 1254  cd temp/
+ 1255  jar xf ../target/demo-app-1.0.0/WEB-INF/lib/paging-lib-1.0.0.jar 
+ 1256  vi META-INF/services/jakarta.servlet.ServletContainerInitializer 
+ 1257  cd ../
+ 1258  mvn clean jetty:run-war
+ 1259  mvn clean jetty:run
+ 1260  ls
+ 1261  ls jsp/
+ 1262  rm -r jsp/
+ 1263  ls
+ 1264  mvn clean jetty:run
+ 1265  ls
+ 1266  ls target/
+ 1267  cd ..
+ 1268  mkdir SpringBootTest
+ 1269  cd SpringBootTest/
+ 1270  unzip "~/Downloads/demo (1).zip"
+ 1271  unzip "~/Downloads/demo1.zip"
+ 1272  unzip ~/Downloads/demo1.zip 
+ 1273  code .
+ 1274  cd demo/
+ 1275  code .
+ 1276  tree 
+ 1277  cd Test
+ 1278  ls
+ 1279  rm SpringBootTest/
+ 1280  rm -r SpringBootTest/
+ 1281  mkdir SprimgBootTest
+ 1282  cd SprimgBootTest/
+ 1283  cd ..
+ 1284  mv SprimgBootTest/ SpringBootTest/
+ 1285  cd SpringBootTest/
+ 1286  unzip ~/Downloads/demo.zip 
+ 1287  code .
+ 1288  cd demo/
+ 1289  mvn clean
+ 1290  code .
+ 1291  "/home/unipro/Test/SpringBootTest/demo/mvnw" clean -f "/home/unipro/Test/SpringBootTest/demo/pom.xml"
+ 1292  "/home/unipro/Test/SpringBootTest/demo/mvnw" compile -f "/home/unipro/Test/SpringBootTest/demo/pom.xml"
+ 1293  cd Test/SpringBootTest/demo/
+ 1294  code .
+ 1295  mvn package
+ 1296  mvn spring:run
+ 1297  bash mvnw
+ 1298  mvn spring-boot:run
+ 1299  mvn clean spring-boot:run
+ 1300  ls target/
+ 1301  mvn package
+ 1302  ls target/
+ 1303  java -jar target/demo-0.0.1-SNAPSHOT.war 
+ 1304  cd ~/Course/MET/Java/Enterprise/ControllerTest/demo/
+ 1305  ls
+ 1306  code .
+ 1307  mvn clean jetty:run
+ 1308  cd ../..
+ 1309  cd ~/Test/
+ 1310  ls
+ 1311  mv SpringBootTest/ SpringBootJspTest/
+ 1312  rm ~/Downloads/demo.zip 
+ 1313  mkdir SpringBootJPATest
+ 1314  cd SpringBootJPATest/
+ 1315  unzip ~/Downloads/demo.zip 
+ 1316  rm ~/Downloads/demo.zip 
+ 1317  ls
+ 1318  code .
+ 1319  mvn clean spring-boot:run
+ 1320  mvn clean springboot:run
+ 1321  cd demo
+ 1322  mvn clean spring-boot:run
+ 1323  ls
+ 1324  rm site.db.mv.db 
+ 1325  mvn clean spring-boot:run
+ 1326  ls
+ 1327  mvn clean spring-boot:run
+ 1328  ls
+ 1329  vi site.mv.db 
+ 1330  rm site.mv.db 
+ 1331  mvn clean spring-boot:run
+ 1332  cd Test
+ 1333  ls
+ 1334  mv SpringBootJspTest/ SpringBootJSPTest/
+ 1335  ls
+ 1336  mv SpringBootJPATest/ ~/Temp/
+ 1337  ls
+ 1338  cd ~/Course/MET/Java/Enterprise/
+ 1339  ls
+ 1340  mv ServletTest/ ServletJSPTest
+ 1341  mv ServletJSPTest/ ServletTest
+ 1342  mv ControllerTest/ SpringControllerTest
+ 1343  mkdir SpringModelTest
+ 1344  cd SpringModelTest/
+ 1345  ls
+ 1346  rm ~/Downloads/demo.zip 
+ 1347  ls
+ 1348  mv start-spring-io.jpg 
+ 1349  mv start.spring.io.jpg start-spring-io.jpg 
+ 1350  ls
+ 1351  unzip ~/Downloads/demo.zip 
+ 1352  cd demo/
+ 1353  ls
+ 1354  vi pom.xml 
+ 1355  code .
+ 1356  vi ~/Temp/SpringBootJPATest/demo/src/main/resources/templates/index.html 
+ 1357  vi ~/Temp/SpringBootJPATest/demo/src/main/resources/application.properties 
+ 1358  cp ~/Temp/SpringBootJPATest/demo/site.mv.db .
+ 1359  ls
+ 1360  vi ~/Temp/SpringBootJPATest/demo/src/main/resources/templates/index.html 
+ 1361  ls
+ 1362  rm site.mv.db 
+ 1363  ps
+ 1364  netstat -pnlt
+ 1365  kill 17044
+ 1366  mvn spring-boot:run
+ 1367  vi ~/Temp/SpringBootJPATest/demo/src/main/java/app/controllers/HomeController.java 
+ 1368  vi ~/Temp/SpringBootJPATest/demo/src/main/resources/templates/create.html 
+ 1369  ls
+ 1370  rm site.mv.db 
+ 1371  ls
+ 1372  mvn clean spring-boot:run
+ 1373  rm -r ~/Temp/SpringBootJPATest/
+ 1374  cp -r ../../SpringModelTest/ ~/Temp/SpringBootJPATest
+ 1375  ls
+ 1376  rm site.mv.db 
+ 1377  code .
+ 1378  mvn clean spring-boot:run
+ 1379  rm site.mv.db 
+ 1380  mvn clean spring-boot:run
+ 1381  rm site.mv.db 
+ 1382  mvn clean spring-boot:run
+ 1383  ls
+ 1384  rm site.mv.db 
+ 1385  mvn clean spring-boot:run
+ 1386  rm site.mv.db 
+ 1387  mvn clean spring-boot:run
+ 1388  rm site.mv.db 
+ 1389  mvn clean spring-boot:run
+ 1390  rm site.mv.db 
+ 1391  mvn clean spring-boot:run
+ 1392  rm site.mv.db 
+ 1393  mvn clean spring-boot:run
+ 1394  rm site.mv.db 
+ 1395  mvn clean spring-boot:run
+ 1396  rm site.mv.db 
+ 1397  mvn clean spring-boot:run
+ 1398  rm site.mv.db 
+ 1399  mvn clean spring-boot:run
+ 1400  rm site.mv.db 
+ 1401  mvn clean spring-boot:run
+ 1402  rm site.mv.db 
+ 1403  mvn clean spring-boot:run
+ 1404  cd Tp
+ 1405  cd Temp
+ 1406  dotnet new console -o ServerDemoApp -n DemoApp
+ 1407  ls
+ 1408  cd ServerDemoApp/
+ 1409  ls
+ 1410  exit
+ 1411  vi Course/MET/Java/Enterprise/SpringModelTest/demo/src/main/resources/application.properties 
+ 1412  cd Course/MET/Java/Enterprise/SpringModelTest/demo
+ 1413  ls
+ 1414  mvn spring-boot:run
+ 1415  ls
+ 1416  rm site.trace.db 
+ 1417  vi src/main/resources/application.properties 
+ 1418  mvn spring-boot:run
+ 1419  vi src/main/resources/application.properties 
+ 1420  mvn spring-boot:run
+ 1421  rm -r site.mv.db 
+ 1422  mvn spring-boot:run
+ 1423  ls
+ 1424  mvn spring-boot:run
+ 1425  rm -r target/
+ 1426  cd ../..
+ 1427  cd SpringModelTest/
+ 1428  ls
+ 1429  mv ../SpringModelTest/ ~/Temp/
+ 1430  ls
+ 1431  cd ..
+ 1432  ls
+ 1433  ls ~/Temp/SpringModelTest/
+ 1434  cd ~/Course/MET/Java/Enterprise/
+ 1435  ls
+ 1436  mkdir SpringModelTest
+ 1437  cd SpringModelTest/
+ 1438  ls
+ 1439  rm ~/Downloads/demo.zip 
+ 1440  unzip ~/Downloads/demo.zip 
+ 1441  ls
+ 1442  cd demo/
+ 1443  code .
+ 1444  rm site.mv.db 
+ 1445  mvn spring-boot:run
+ 1446  cd Test
+ 1447  ls
+ 1448  cp -r ~/Course/MET/Java/Enterprise/SpringControllerTest/ .
+ 1449  cd SpringControllerTest/demo/
+ 1450  ls
+ 1451  code .
+ 1452  mvn clean jetty:run
+ 1453  vi pom.xml 
+ 1454  rm -r ~/Course/MET/Java/Enterprise/SpringControllerTest/
+ 1455  cp -r ../../SpringControllerTest/ ~/Course/MET/Java/Enterprise/
+ 1456  exit
+ 1457  mkdir -r Test/Foundations/Language/Machine
+ 1458  mkdir -p Test/Foundations/Language/Machine
+ 1459  cd Test/Foundations/Language/Machine
+ 1460  tar xf ~/Support/asm-x64.tar.gz 
+ 1461  ls
+ 1462  vi llhello.s
+ 1463  cp ~/.vimrc .
+ 1464  vi .vimrc 
+ 1465  vi llhello.s
+ 1466  as llhello.s -o hello.o
+ 1467  ls
+ 1468  rm console.*
+ 1469  cp ~/Support/asm-x64/* .
+ 1470  ls
+ 1471  as llhello.s -o hello.o
+ 1472  vi common.i 
+ 1473  vi llhello.s 
+ 1474  as llhello.s -o hello.o
+ 1475  ls
+ 1476  ld hello.o -o hello
+ 1477  ld hello.o system.o -o hello
+ 1478  ./hello 
+ 1479  vi common.h
+ 1480  vi hlhello1.cpp
+ 1481  c++ -S hlhello1.cpp
+ 1482  ls
+ 1483  as hlhello1.s -o hello.o
+ 1484  ld hello.o system.o -o hello
+ 1485  ./hello 
+ 1486  cp .vimrc ~/Support/asm-x64
+ 1487  ls
+ 1488  rm *
+ 1489  ll
+ 1490  rm .vimrc 
+ 1491  ls
+ 1492  cp ~/Support/asm-x64/*
+ 1493  cp ~/Support/asm-x64/* .
+ 1494  ll
+ 1495  rm *
+ 1496  cp -r ~/Support/asm-x64/* .
+ 1497  ll
+ 1498  ls -a
+ 1499  rm *
+ 1500  ls
+ 1501  cp -a ~/Support/asm-x64/* .
+ 1502  ls
+ 1503  ll
+ 1504  ll -a
+ 1505  ll -h
+ 1506  rm *
+ 1507  cp -a ~/Support/asm-x64/. .
+ 1508  ls
+ 1509  ll
+ 1510  cd Course/MET/Java/Enterprise/SpringControllerTest/demo/
+ 1511  ls
+ 1512  code .
+ 1513  mvn jetty:run
+ 1514  cd ../..
+ 1515  cd JSPTest/demo
+ 1516  cd JSPTest/demo1/
+ 1517  ls
+ 1518  code .
+ 1519  mvn jetty:run
+ 1520  cd ../..
+ 1521  cd SpringControllerTest/demo/
+ 1522  code .
+ 1523  mvn jetty:run
+ 1524  cp ../../JSPTest/demo1/src/main/java/app/components/StockQuote.java src/main/java/app/components/
+ 1525  cp ../../JSPTest/demo1/src/main/webapp/quoteview.jsp src/main/webapp/
+ 1526  mvn jetty:run
+ 1527  cd ../../JSPTest/demo1
+ 1528  code .
+ 1529  mvn -q jetty:run
+ 1530  cd ../../SpringControllerTest/demo/
+ 1531  code .
+ 1532  mvn -q jetty:run
+ 1533  cd Test/Foundations/Language/Machine/
+ 1534  ls
+ 1535  ll
+ 1536  code hello1.s
+ 1537  ls
+ 1538  code hello.s
+ 1539  ls
+ 1540  code .
+ 1541  code hello1.s
+ 1542  as hello1.s -o hello.o
+ 1543  ls
+ 1544  as hello1.s -o hello.o
+ 1545  ld hello.o system.o -o hello
+ 1546  ls
+ 1547  ./hello
+ 1548  vi hello1.s
+ 1549  ls
+ 1550  as hello1.s -o hello1.o
+ 1551  ls
+ 1552  vi hello1.s
+ 1553  vi hello1.o
+ 1554  ld hello1.o system.o -o hello
+ 1555  ls
+ 1556  ./hello
+ 1557  vi hello1.s
+ 1558  ld hello1.o system.o -o hello
+ 1559  ls
+ 1560  hello 
+ 1561  ./hello 
+ 1562  vi hello1.s 
+ 1563  ./hello 
+ 1564  as hello1.s -o hello1.o
+ 1565  ./hello
+ 1566  ld hello1.o system.o -o hello
+ 1567  ./hello 
+ 1568  vi hello1.s
+ 1569  ./hello 
+ 1570  ./hello
+ 1571  vi hello1.s
+ 1572  as hello1.s -o hello1.o
+ 1573  vi hello1.s
+ 1574  as hello1.s -o hello1.o
+ 1575  ld hello1.o system.o -o hello
+ 1576  vi hello1.s
+ 1577  as hello1.s -o hello1.o
+ 1578  ld hello1.o system.o -o hello
+ 1579  ./hello
+ 1580  as hello1.s -o hello1.o
+ 1581  vi hello1.s
+ 1582  as hello1.s -o hello1.o
+ 1583  ld hello1.o system.o -o hello
+ 1584  ./hello
+ 1585  vi hello1.s
+ 1586  ./hello
+ 1587  as hello1.s -o hello1.o
+ 1588  ld hello1.o system.o -o hello
+ 1589  ./hello
+ 1590  vi hello1.s
+ 1591  as hello1.s -o hello1.o
+ 1592  ld hello1.o system.o -o hello
+ 1593  ./hello
+ 1594  vi hello1.s
+ 1595  as hello1.s -o hello1.o
+ 1596  ld hello1.o system.o -o hello
+ 1597  ./hello
+ 1598  vi hello1.s
+ 1599  vi common.i
+ 1600  vi hello1.s
+ 1601  vi common.i
+ 1602  vi hello1.s
+ 1603  ld hello1.o  -o hello
+ 1604  vi hello1.s
+ 1605  ls
+ 1606  history >> cmd-2024-03-16.txt
+ 1607  vi cmd-2024-03-16.txt 
+ 1608  cd Course/MET/Java/Enterprise/JSPTest/demo1/
+ 1609  code .
+ 1610  mvn jetty:run
+ 1611  mvn -q jetty:run
+ 1612  mvn -q clean jetty:run
+ 1613  cd ../..
+ 1614  cd SpringControllerTest/demo/
+ 1615  ls
+ 1616  cp ../../JSPTest/demo1/src/main/java/app/components/GreeterBean.java src/main/java/app/components/
+ 1617  cp ../../JSPTest/demo1/src/main/webapp/greetlight.jsp src/main/webapp/
+ 1618  cp ../../JSPTest/demo1/src/main/webapp/greetdark.jsp src/main/webapp/
+ 1619  code .
+ 1620  vi ../../JSPTest/demo1/src/main/java/app/components/GreeterServlet.java 
+ 1621  mvn -q clean jetty:run
+ 1622  cd Temp/
+ 1623  ls
+ 1624  mkdir simple-lib
+ 1625  cd simple-lib/
+ 1626  unzip ~/Support/maven-templates/simple-app.zip 
+ 1627  rm -r src/main/resources/
+ 1628  rm -r src/main/java/app/
+ 1629  rm run.sh 
+ 1630  ls
+ 1631  zip -r simple-lib.jar *
+ 1632  mv simple-lib.jar ~/Support/maven-templates/
+ 1633  vi pom.xml 
+ 1634  zip -r simple-lib.jar *
+ 1635  mv simple-lib.jar ~/Support/maven-templates/
+ 1636  cd ..
+ 1637  rm simple-lib/
+ 1638  rm -r simple-lib/
+ 1639  cd ../Course/MET/Java/
+ 1640  mv Enterprise/ Platform-Enterprise
+ 1641  cd Platform-Enterprise/
+ 1642  ls
+ 1643  mkdir FileIOTest
+ 1644  cd FileIOTest/
+ 1645  ls
+ 1646  mkdir tour-manager
+ 1647  cd tour-manager/
+ 1648  unzip ~/Support/maven-templates/simple-lib.jar 
+ 1649  code .
+ 1650  mvn clean install
+ 1651  exit
+ 1652  vi hello1.s 
+ 1653  as hello1.s -o hello1.o
+ 1654  ld hello1.o system.o -o hello
+ 1655  ./hello 
+ 1656  vi registertest.s
+ 1657  as registertest.s -o registertest.o
+ 1658  ld registertest.o system.o -o program
+ 1659  ./program 
+ 1660  vi registertest.s
+ 1661  as registertest.s -o registertest.o
+ 1662  ./program 
+ 1663  ld registertest.o system.o -o program
+ 1664  ./program 
+ 1665  vi registertest.s
+ 1666  as registertest.s -o registertest.o
+ 1667  ld registertest.o system.o -o program
+ 1668  ./program 
+ 1669  vi registertest.s
+ 1670  as registertest.s -o registertest.o
+ 1671  ld registertest.o system.o -o program
+ 1672  ./program 
+ 1673  vi registertest.s
+ 1674  as registertest.s -o registertest.o
+ 1675  ld registertest.o system.o -o program
+ 1676  ./program 
+ 1677  vi registertest.s
+ 1678  as registertest.s -o registertest.o
+ 1679  vi registertest.s
+ 1680  as registertest.s -o registertest.o
+ 1681  ld registertest.o system.o -o program
+ 1682  ./program 
+ 1683  vi registertest.s
+ 1684  as registertest.s -o registertest.o
+ 1685  ld registertest.o system.o -o program
+ 1686  ./program 
+ 1687  vi registertest.s
+ 1688  vi condjumptest.s
+ 1689  as condjumptest.s -o condjumptest.o
+ 1690  ld condjumptest.o system.o -o program
+ 1691  ./program 
+ 1692  vi condjumptest.s
+ 1693  ./program 
+ 1694  vi condjumptest.s
+ 1695  as condjumptest.s -o condjumptest.o
+ 1696  ld condjumptest.o system.o -o program
+ 1697  ./program 
+ 1698  vi condjumptest.s
+ 1699  ./program 
+ 1700  vi condjumptest.s
+ 1701  history >> cmd-2024-03-18-1.txt 
+ 1702  rm *.o program 
+ 1703  ls
+ 1704  vi condjumptest.s 
+ 1705  cp condjumptest.s callproctest.s
+ 1706  vi callproctest.s 
+ 1707  as callproctest.s -o callproctest.
+ 1708  rm callproctest.
+ 1709  as callproctest.s -o callproctest.o
+ 1710  ls
+ 1711  cp ~/Support/asm-x64/system.o .
+ 1712  ld callproctest.o system.o -o program
+ 1713  ./program 
+ 1714  vi callproctest.s 
+ 1715  cp callproctest.s memaddrtest.s
+ 1716  cp memaddrtest.s 
+ 1717  vi memaddrtest.s 
+ 1718  history >> cmd-2024-03-18-2.txt 
+ 1719  exit
+ 1720  cd Test
+ 1721  vi hello.c
+ 1722  ls
+ 1723  cd Foundations/Language/Machine/
+ 1724  ls
+ 1725  vi hello2.c
+ 1726  cc -S masm=intel hello2.c 
+ 1727  cc -S -masm=intel hello2.c 
+ 1728  ls
+ 1729  as hello2.s -o hello2.o
+ 1730  ld hello2.o system.o -o hello
+ 1731  ./hello 
+ 1732  exit
+ 1733  cd Test/Foundations/Language/Machine/
+ 1734  vi hello2.s
+ 1735  objdump -t system.o 
+ 1736  vi hello2.s
+ 1737  cc -static -S -masm=intel hello2.c 
+ 1738  vi hello2.s
+ 1739  cc -S hello2.c 
+ 1740  vi hello2.s
+ 1741  exit
+ 1742  vi memaddrtest.s 
+ 1743  as memaddrtest.s -o memaddrtest.o
+ 1744  ls memaddrtest.o system.o -o program
+ 1745  ld memaddrtest.o system.o -o program
+ 1746  ./program 
+ 1747  vi memaddrtest.s 
+ 1748  ./program 
+ 1749  vi memaddrtest.s 
+ 1750  vi condjumptest.s 
+ 1751  vi callproctest.s 
+ 1752  vi callconv.txt
+ 1753  vi dijkstra.s
+ 1754  as dijkstra.s -o dijkstra.o
+ 1755  vi extproctest.s
+ 1756  as extproctest.s -o extproctest.o
+ 1757  ld extproctest.o system.o -o program
+ 1758  ld extproctest.o system.o dijkstra.o -o program
+ 1759  vi extproctest.s
+ 1760  ld extproctest.o system.o dijkstra.o -o program
+ 1761  ./program 
+ 1762  vi dijkstra.s 
+ 1763  vi common.i
+ 1764  vi dijkstra.s 
+ 1765  as dijkstra.s -o dijkstra.o
+ 1766  ld extproctest.o system.o dijkstra.o -o program
+ 1767  vi dijkstra.s 
+ 1768  vi extproctest.s
+ 1769  as extproctest.s -o extproctest.o
+ 1770  ld extproctest.o system.o dijkstra.o -o program
+ 1771  as dijkstra.s -o dijkstra.o
+ 1772  ld extproctest.o system.o dijkstra.o -o program
+ 1773  history >> cmd-2024-03-19-1.txt
+ 1774  vi cmd-2024-03-19-1.txt 
+ 1775  cd Test
+ 1776  vi hello.cpp
+ 1777  c++ hello.cpp -o run
+ 1778  ./run 
+ 1779  exit
+ 1780  vi hello2.c
+ 1781  ls hello2.*
+ 1782  cc -S hello2.c
+ 1783  ls hello2.*
+ 1784  as hello2.s -o hello2.o
+ 1785  ls hello2.*
+ 1786  ld hello2.o system.o -o hello2
+ 1787  ls hello2.*
+ 1788  ls hello2*
+ 1789  ./hello2
+ 1790  cc -S hello2.c
+ 1791  vi hello2.c
+ 1792  vi hello1.s
+ 1793  vi hello2.c
+ 1794  ll hell
+ 1795  ll hello
+ 1796  ll hello2
+ 1797  cd ../Control/
+ 1798  vi hello.cpp
+ 1799  c++ hello.cpp -o hello
+ 1800  ls
+ 1801  ./hello
+ 1802  vi hello.cpp
+ 1803  c++ hello.cpp -o hello
+ 1804  ./hello
+ 1805  vi hello.cpp
+ 1806  ls
+ 1807  vi /usr/include/c++/11/cstdio
+ 1808  vi hello.cpp
+ 1809  c++ hello.cpp -o hello
+ 1810  ./hello
+ 1811  vi hello.cpp
+ 1812  ./hello
+ 1813  c++ hello.cpp -o hello
+ 1814  ./hello
+ 1815  ll hello
+ 1816  vi variabletest.cpp
+ 1817  c++ variabletest.cpp -o program
+ 1818  vi variabletest.cpp
+ 1819  c++ variabletest.cpp -o program
+ 1820  ./program 
+ 1821  vi variabletest.cpp
+ 1822  c++ variabletest.cpp -o program
+ 1823  ./program 
+ 1824  vi variabletest.cpp
+ 1825  ls
+ 1826  history >> cmd-2024-03-19-2.txt 
+ 1827  rm hello program 
+ 1828  exit
+ 1829  ls
+ 1830  vi variabletest.cpp 
+ 1831  vi arraytest.cpp
+ 1832  c++ arraytest.cpp -o program
+ 1833  ./program 
+ 1834  vi arraytest.cpp
+ 1835  vi ifelsetest.cpp
+ 1836  c++ ifelsetest.cpp -o program 
+ 1837  ./program 
+ 1838  vi ifelsetest.cpp
+ 1839  vi switchtest.cpp
+ 1840  c++ switchtest.cpp -o program
+ 1841  vi switchtest.cpp
+ 1842  c++ switchtest.cpp -o program
+ 1843  ./program 
+ 1844  vi switchtest.cpp
+ 1845  vi dowhiletest.cpp
+ 1846  c++ dowhiletest.cpp  -o program
+ 1847  vi dowhiletest.cpp
+ 1848  c++ dowhiletest.cpp  -o program
+ 1849  ./program 
+ 1850  vi dowhiletest.cpp
+ 1851  c++ dowhiletest.cpp  -o program
+ 1852  ./program 
+ 1853  vi dowhiletest.cpp
+ 1854  ls
+ 1855  history >> cmd-2024-03-10-1.txt 
+ 1856  rm -r program 
+ 1857  mv cmd-2024-03-10-1.txt cmd-2024-03-20-1.txt 
+ 1858  vi cmd-2024-03-20-1.txt 
+ 1859  vi whiletest.cpp
+ 1860  c++ whiletest.cpp -o program
+ 1861  ./program 
+ 1862  vi whiletest.cpp
+ 1863  vi fortest.cpp
+ 1864  c++ fortest.cpp -o program 
+ 1865  ./program 
+ 1866  vi fortest.cpp
+ 1867  ls
+ 1868  cd ..
+ 1869  mkdir Functions
+ 1870  cd Functions/
+ 1871  ls
+ 1872  vi callfunctest.cpp
+ 1873  c++ callfunctest.cpp -o program
+ 1874  ./program 
+ 1875  vi callfunctest.cpp
+ 1876  c++ callfunctest.cpp -o program
+ 1877  ./program 
+ 1878  vi callfunctest.cpp
+ 1879  c++ callfunctest.cpp -o program
+ 1880  ./program 
+ 1881  vi callfunctest.cpp
+ 1882  c++ callfunctest.cpp -o program
+ 1883  ./program 
+ 1884  vi callfunctest.cpp
+ 1885  c++ callfunctest.cpp -o program
+ 1886  vi callfunctest.cpp
+ 1887  c++ callfunctest.cpp -o program
+ 1888  vi callfunctest.cpp
+ 1889  c++ callfunctest.cpp -o program
+ 1890  vi callfunctest.cpp
+ 1891  c++ callfunctest.cpp -o program
+ 1892  vi callfunctest.cpp
+ 1893  history >> cmd-2024-03-20-2.txt 
+ 1894  rm -r program 
+ 1895  rm -r ../Control/program 
+ 1896  exit
+ 1897  ls
+ 1898  rm -rf jdk-22
+ 1899  wget https://download.oracle.com/java/22/latest/jdk-22_linux-x64_bin.tar.gz
+ 1900  tar xvf jdk-22_linux-x64_bin.tar.gz 
+ 1901  java --version
+ 1902  vi .bashrc 
+ 1903  exec bash
+ 1904  java --version
+ 1905  exit
+ 1906  java --version
+ 1907  cd Course/MET/Java/Platform-Enterprise/JSPTest/demo
+ 1908  cd Course/MET/Java/Platform-Enterprise/JSPTest/demo1
+ 1909  ls
+ 1910  vi pom.xml 
+ 1911  mvn clean jetty:run
+ 1912  vi pom.xml 
+ 1913  mvn clean jetty:run
+ 1914  exit
+ 1915  ls
+ 1916  vi callfunctest.cpp 
+ 1917  vi funcovldtest.cpp
+ 1918  c++ funcovldtest.cpp -o program
+ 1919  ./program 
+ 1920  vi funcovldtest.cpp
+ 1921  c++ funcovldtest.cpp -o program
+ 1922  ./program 
+ 1923  vi funcovldtest.cpp
+ 1924  objdump -t program 
+ 1925  vi funcovldtest.cpp
+ 1926  vi callfunctest.cpp 
+ 1927  c++ callfunctest.cpp
+ 1928  ls
+ 1929  objdump -t a.out
+ 1930  cp ../Machine/dijkstra.o .
+ 1931  vi externfunctest.cpp
+ 1932  c++ externfunctest.cpp -o program
+ 1933  c++ externfunctest.cpp dijkstra.o -o program
+ 1934  objdump -t dijkstra.o 
+ 1935  vi externfunctest.cpp
+ 1936  c++ externfunctest.cpp dijkstra.o -o program
+ 1937  ./program 
+ 1938  vi externfunctest.cpp
+ 1939  vi ../Machine/callconv.txt 
+ 1940  vi exceptiontest.cpp
+ 1941  vi coputation.cpp
+ 1942  vi exceptiontest.cpp
+ 1943  ls
+ 1944  mv coputation.cpp computation.cpp
+ 1945  ls
+ 1946  c++ -c computation.cpp 
+ 1947  ls
+ 1948  vi computation.cpp 
+ 1949  c++ -c computation.cpp 
+ 1950  vi computation.o
+ 1951  vi exceptiontest.cpp 
+ 1952  objdump -t computation.o
+ 1953  vi exceptiontest.cpp 
+ 1954  c++ exceptiontest.cpp -o program
+ 1955  c++ exceptiontest.cpp computation.o -o program
+ 1956  ./program 
+ 1957  vi exceptiontest.cpp 
+ 1958  c++ exceptiontest.cpp computation.o -o program
+ 1959  vi exceptiontest.cpp 
+ 1960  c++ exceptiontest.cpp computation.o -o program
+ 1961  ./program 
+ 1962  vi exceptiontest.cpp 
+ 1963  c++ exceptiontest.cpp computation.o -o program
+ 1964  ./program 
+ 1965  vi exceptiontest.cpp 
+ 1966  c++ exceptiontest.cpp computation.o -o program
+ 1967  ./program 
+ 1968  vi exceptiontest.cpp 
+ 1969  vi computation.cpp 
+ 1970  vi exceptiontest.cpp 
+ 1971  c++ exceptiontest.cpp computation.o -o program
+ 1972  ./program 
+ 1973  vi exceptiontest.cpp 
+ 1974  ./program 
+ 1975  vi exceptiontest.cpp 
+ 1976  vi computation.cpp 
+ 1977  vi exceptiontest.cpp 
+ 1978  vi computation.cpp 
+ 1979  vi exceptiontest.cpp 
+ 1980  c++ -c computation.cpp 
+ 1981  vi exceptiontest.cpp 
+ 1982  c++ exceptiontest.cpp computation.o -o program
+ 1983  ./program 
+ 1984  vi exceptiontest.cpp 
+ 1985  c++ exceptiontest.cpp computation.o -o program
+ 1986  ./program 
+ 1987  vi exceptiontest.cpp 
+ 1988  c++ exceptiontest.cpp computation.o -o program
+ 1989  ./program 
+ 1990  vi exceptiontest.cpp 
+ 1991  c++ exceptiontest.cpp computation.o -o program
+ 1992  ./program 
+ 1993  vi exceptiontest.cpp 
+ 1994  history >> cmd-2024-03-21-1.txt 
+ 1995  exit
+ 1996  cd METDACMar24/Foundations/Language/Functions/
+ 1997  vi computation.cpp 
+ 1998  vi exceptiontest.cpp 
+ 1999  vi pointertest.cpp
+ 2000  c++ pointertest.cpp -o program 
+ 2001  ./program 
+ 2002  vi pointertest.cpp
+ 2003  c++ pointertest.cpp -o program 
+ 2004  ./program 
+ 2005  vi pointertest.cpp
+ 2006  c++ pointertest.cpp -o program 
+ 2007  vi pointertest.cpp
+ 2008  c++ pointertest.cpp -o program 
+ 2009  ./program 
+ 2010  vi pointertest.cpp
+ 2011  objdump program 
+ 2012  objdump -t program 
+ 2013  vi pointertest.cpp
+ 2014  c++ pointertest.cpp -o program 
+ 2015  ./program 
+ 2016  objdump -t program 
+ 2017  mv pointertest.cpp pointertest1.cpp
+ 2018  vi pointertest2.cpp 
+ 2019  c++ pointertest2.cpp -o program
+ 2020  ./program 
+ 2021  vi pointertest2.cpp 
+ 2022  c++ pointertest2.cpp -o program
+ 2023  ./program 
+ 2024  vi pointertest2.cpp 
+ 2025  c++ pointertest2.cpp -o program
+ 2026  ./program 
+ 2027  vi pointertest2.cpp 
+ 2028  history >> cmd-2024-03-21-2.txt

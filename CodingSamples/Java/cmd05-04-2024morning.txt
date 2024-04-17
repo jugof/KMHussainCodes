@@ -1,0 +1,15 @@
+    1  cd Samples/Java/Language-Runtime/SubclassTest/demo2/
+    2  ls
+    3  code .
+    4  javap java.lang.Object
+    5  javac Program.java 
+    6  java Program 
+    7  cd ../..
+    8  mkdir AbstractTypeTest
+    9  cd AbstractTypeTest/
+   10  mkdir bank1
+   11  cd bank1/
+   12  mkdir src
+   13  code src
+   14  pwd
+   15  history > ../../../cmd05-04-2024morning.txt 

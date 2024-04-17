@@ -1,0 +1,25 @@
+    1  ls
+    2  vi funcptrtest.cpp
+    3  c++ funcptrtest.cpp -o program 
+    4  vi funcptrtest.cpp
+    5  c++ funcptrtest.cpp -o program 
+    6  ./program 
+    7  vi funcptrtest.cpp
+    8  vi pointertest1.cpp 
+    9  vi funcptrtest.cpp
+   10  c++ funcptrtest.cpp -o program 
+   11  ./program 
+   12  vi funcptrtest.cpp
+   13  c++ funcptrtest.cpp -o program 
+   14  vi funcptrtest.cpp
+   15  c++ funcptrtest.cpp -o program 
+   16  vi funcptrtest.cpp
+   17  c++ funcptrtest.cpp -o program 
+   18  vi funcptrtest.cpp
+   19  c++ funcptrtest.cpp -o program 
+   20  vi funcptrtest.cpp
+   21  c++ funcptrtest.cpp -o program 
+   22  vi funcptrtest.cpp
+   23  c++ funcptrtest.cpp -o program 
+   24  vi funcptrtest.cpp
+   25  c++ funcptrtest.cpp -o program 

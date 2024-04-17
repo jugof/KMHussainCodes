@@ -1,0 +1,20 @@
+    1  pwd
+    2  cd ../../GenericClassTest/demo1/
+    3  code .
+    4  cd ../
+    5  mkdir demo2
+    6  cd demo2
+    7  cp ../demo1/SimpleStack.java .
+    8  cp ../demo1/Interval.java  .
+    9  code .
+   10  javap java.util.Iterator
+   11  javac Program.java 
+   12  java Program 
+   13  javac Program.java 
+   14  java Program 
+   15  javac Program.java 
+   16  java Program 
+   17  javap java.lang.Iterable
+   18  javac Program.java 
+   19  java Program 
+   20  history > ../../../cmd08-04-2024.txt

@@ -1,0 +1,32 @@
+    1  cd Java/Language-Runtime/AbstractTypeTest/bank2/
+    2  code src/
+    3  javac -d . src/**/*.java
+    4  jar -cf bank-2.0.jar banking/
+    5  cd ../
+    6  mkdir demo2
+    7  cd demo2
+    8  mkdir lib
+    9  cp ../bank2/bank-2.0.jar lib/
+   10  code .
+   11  javac -cp .:lib/* Program.java 
+   12  java -cp .:lib/* Program
+   13  javac -cp .:lib/* Program.java 
+   14  java -cp .:lib/* Program
+   15  cd ..
+   16  mkdir demo3
+   17  cd demo3
+   18  code .
+   19  javac Program1.java 
+   20  ls
+   21  java Program John 150
+   22  java Program Jack 40
+   23  java Program Jim 80
+   24  javac Program1.java 
+   25  java Program John 150
+   26  java Program Jim 80
+   27  javac Program2.java 
+   28  java Program John 150
+   29  java Program Jim 80
+   30  cd ..
+   31  ls
+   32  history >cmd06-04-2024evening.txt 

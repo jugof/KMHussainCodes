@@ -1,0 +1,52 @@
+    1  mkdir demo2
+    2  cd demo2
+    3  code .
+    4  javac hosting/*.java
+    5  javac services/*.java
+    6  javac Program.java 
+    7  java Program 
+    8  javac Program.java 
+    9  java Program 
+   10  javac services/*.java
+   11  javac Program.java 
+   12  java Program 
+   13  javac services/*.java
+   14  javac hosting/*.java
+   15  java Program 
+   16  javac Program.java 
+   17  java Program 
+   18  history > ../../../cmd13-04-2024morning.txt
+   19  code .
+   20  cd ../..
+   21  javap java.lang.Object
+   22  mkdir NativeMethodTest
+   23  cd NativeMethodTest/
+   24  mkdir demo
+   25  cd demo/
+   26  code .
+   27  javac Transformer1.java 
+   28  javac Program.java 
+   29  java Program monday
+   30  java Program NLMGBZ
+   31  java Program HELLO
+   32  java Program kfool
+   33  javac -h . Transformer2.java 
+   34  ls
+   35  java Program monday
+   36  javac -h . Transformer2.java 
+   37  java Program monday
+   38  vi Transformer.h 
+   39  vi jnitfm.cpp
+   40  vi Transformer.h 
+   41  c++ -c jnitfm.cpp 
+   42  c++ -c -I ~/jdk-22/include/ jnitfm.cpp 
+   43  c++ -c -I ~/jdk-22/include/ -I ~/jdk-22/include/linux/ jnitfm.cpp 
+   44  ls
+   45  c++ -shared -fPIC -I ~/jdk-22/include/ -I ~/jdk-22/include/linux/ jnitfm.cpp -o libjnitfm.so
+   46  ls
+   47  java Program monday
+   48  java -Djava.library.path=. Program monday
+   49  c++ -shared -fPIC -I ~/jdk-22/include/ -I ~/jdk-22/include/linux/ jnitfm.cpp -o libjnitfm.so
+   50  java -Djava.library.path=. Program monday
+   51  cd ..
+   52  history >cmd13-04-2024evening.txt 

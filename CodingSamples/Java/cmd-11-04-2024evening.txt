@@ -1,0 +1,38 @@
+    1  clear
+    2  javac Program1.java 
+    3  java Program items intel
+    4  java Program items samsung
+    5  java Program items microsoft
+    6  java Program items apple
+    7  javac Program2.java 
+    8  java Program items samsung
+    9  java Program items logitech
+   10  java Program items hp
+   11  javac Program2.java 
+   12  java Program items samsung
+   13  javac Program2.java 
+   14  java Program customers 0
+   15  javac Program2.java 
+   16  java Program customers 0
+   17  java Program customers 50000
+   18  java Program customers 75000
+   19  java Program customers 95000
+   20  java Program customers 150000
+   21  javac Program2.java 
+   22  java Program customers 0
+   23  javac Program2.java 
+   24  java Program customers 0
+   25  javac Program2.java 
+   26  java Program customers 0
+   27  java Program customers 50000
+   28  java Program customers 75000
+   29  javac Program2.java 
+   30  java Program items samsung
+   31  javac Program2.java 
+   32  java Program customers 75000
+   33  java Program customers 85000
+   34  javap java.util.stream.Stream
+   35  javac Program2.java 
+   36  java Program customers 85000
+   37  cd ../..
+   38  history > ../cmd-11-04-2024.txt

@@ -1,0 +1,47 @@
+    1  vi hello2.c
+    2  ls hello2.*
+    3  cc -S hello2.c
+    4  ls hello2.*
+    5  as hello2.s -o hello2.o
+    6  ls hello2.*
+    7  ld hello2.o system.o -o hello2
+    8  ls hello2.*
+    9  ls hello2*
+   10  ./hello2
+   11  cc -S hello2.c
+   12  vi hello2.c
+   13  vi hello1.s
+   14  vi hello2.c
+   15  ll hell
+   16  ll hello
+   17  ll hello2
+   18  cd ../Control/
+   19  vi hello.cpp
+   20  c++ hello.cpp -o hello
+   21  ls
+   22  ./hello
+   23  vi hello.cpp
+   24  c++ hello.cpp -o hello
+   25  ./hello
+   26  vi hello.cpp
+   27  ls
+   28  vi /usr/include/c++/11/cstdio
+   29  vi hello.cpp
+   30  c++ hello.cpp -o hello
+   31  ./hello
+   32  vi hello.cpp
+   33  ./hello
+   34  c++ hello.cpp -o hello
+   35  ./hello
+   36  ll hello
+   37  vi variabletest.cpp
+   38  c++ variabletest.cpp -o program
+   39  vi variabletest.cpp
+   40  c++ variabletest.cpp -o program
+   41  ./program 
+   42  vi variabletest.cpp
+   43  c++ variabletest.cpp -o program
+   44  ./program 
+   45  vi variabletest.cpp
+   46  ls
+   47  history >> cmd-2024-03-19-2.txt 

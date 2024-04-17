@@ -1,0 +1,12 @@
+Calling Convention - It is a machine specific standard commonly prescribed
+by the operating system for implementing a procedure in a module which
+can be called from external modules. The calling convention specified by
+a UNIX type system for x64 machine includes following guidelines for
+using registers involved in a procedure call
+1. The caller will pass first six integer type arguments in RDI, RSI, RDX,
+   RCX, R8, R9 registers and will expect an integer type result in RAX
+   register after the procedure returns.
+2. The caller will preserve values in RAX, RCX, RDX, RSI, RDI, R8-R11
+   registers but will expect the other registers to be restored to their
+   original values before the procedure returns.
+

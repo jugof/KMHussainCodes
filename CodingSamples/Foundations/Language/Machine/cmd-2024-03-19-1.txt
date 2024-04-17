@@ -1,0 +1,31 @@
+    1  vi memaddrtest.s 
+    2  as memaddrtest.s -o memaddrtest.o
+    3  ls memaddrtest.o system.o -o program
+    4  ld memaddrtest.o system.o -o program
+    5  ./program 
+    6  vi memaddrtest.s 
+    7  ./program 
+    8  vi memaddrtest.s 
+    9  vi condjumptest.s 
+   10  vi callproctest.s 
+   11  vi callconv.txt
+   12  vi dijkstra.s
+   13  as dijkstra.s -o dijkstra.o
+   14  vi extproctest.s
+   15  as extproctest.s -o extproctest.o
+   16  ld extproctest.o system.o -o program
+   17  ld extproctest.o system.o dijkstra.o -o program
+   18  vi extproctest.s
+   19  ld extproctest.o system.o dijkstra.o -o program
+   20  ./program 
+   21  vi dijkstra.s 
+   22  vi common.i
+   23  vi dijkstra.s 
+   24  as dijkstra.s -o dijkstra.o
+   25  ld extproctest.o system.o dijkstra.o -o program
+   26  vi dijkstra.s 
+   27  vi extproctest.s
+   28  as extproctest.s -o extproctest.o
+   29  ld extproctest.o system.o dijkstra.o -o program
+   30  as dijkstra.s -o dijkstra.o
+   31  ld extproctest.o system.o dijkstra.o -o program

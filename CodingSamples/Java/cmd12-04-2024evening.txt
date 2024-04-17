@@ -1,0 +1,30 @@
+    1  clear
+    2  ls
+    3  clear
+    4  ls
+    5  cd Language-Runtime/ReflectionTest/demo/
+    6  cd ../..
+    7  cp -r ReflectionTest/ AnnotationTest
+    8  cd AnnotationTest/demo/
+    9  code .
+   10  javac Program.java 
+   11  java Program 1200000 EducationLoan scholar
+   12  java Program 1200000 EducationLoan common
+   13  javac finance/*.java
+   14  java Program 1200000 EducationLoan common
+   15  java Program 1200000 EducationLoan scholar
+   16  java Program 1200000 EducationLoan common
+   17  java Program 1200000 PersonalLoan common
+   18  java Program 1200000 PersonalLoan employee
+   19  java Program 1200000 HomeLoan common
+   20  java Program 1200000 HomeLoan woman
+   21  java Program 1200000 HomeLoan welfare
+   22  java Program 1200000 CarLoan common
+   23  javac finance/*.java
+   24  java Program 1200000 CarLoan common
+   25  cd ..
+   26  mv demo/ demo1
+   27  cd demo1/
+   28  cd ..
+   29  ls
+   30  history > cmd13-04-2024morning.txt 

@@ -1,0 +1,79 @@
+Modularization: Dividing the implementation of a large software into smaller
+sets of related functions known as modules is called modularization. 
+A module can publish a subset of its functions so that they can be called 
+from external modules.
+
+Modularization can enable multiple programmers to simultaneously and 
+independently implement, test and maintain different parts of a software
+provided it is performed according to following rules
+1. Functions whose internal implementations depend upon each other
+   should be defined within the same module.
+2. A module should only share the immutable information required to
+   call its published functions with external modules.
+
+
+Data Abstraction: It is a modularization methodology (systamatic style) 
+in which the data processed by a program is divided into smaller blocks 
+known as objects so that each object controls its own state (data) and 
+supports its own behaviour (code).
+  A class defines a set of members for a particular type of object and
+these members include fields (variables) whose values indicate the state
+of that object and methods (functions) whose implementation describe the
+behaviour of the that object. It provides support for following mechanisms
+1. Activation - Each object refers to a block of memory known as the
+   instance of its class and this block contains separate values of 
+   the fields defined by that class initialized by calling a special 
+   method known as the constructor of that class.
+2. Binding - Every instance has unique identity (address) and when a 
+   method defined by a class is called on its object the identity of 
+   the instance it refers to is passed (as this argument) to the 
+   implementation of that method.
+
+
+Subtype Polymorphism: It is a modularization methodology based upon
+data abstraction for enabling same operation to be performed on multiple
+(poly) forms (morps) of objects which share some common behaviour.
+  A subclass supports inheritance (automatic availability) of members
+defined by an existing (base or super) class with ability to override 
+(provide new implementations for) the methods it inherits. It provides 
+support for
+1. Dispatch - When a method defined by a class is called on an object
+   that refers to an instance of its subclass which has overridden this
+   method then the call is forwarded to the implementation provided 
+   by the subclass.
+2. Interface - An abstract type does not support activation but can 
+   define pure (unimplemented) methods which must be overridden by
+   any class that inherits them in order to support activation.
+
+SOLID Principles
+
+1. Single Responsibility Principle (SRP): There should be exactly one reason 
+   for changing the functionality supported by an object.
+   Rule: Define only members in a class which are required by all of its 
+   instances in an identical manner.
+
+2. Open Closed Principle (OCP): The functionality exposed by an object should
+   be open for extension but closed for modification.
+   Rule: Use a class only by calling methods defined by that class on its
+   instances.
+ 
+3. Liskov's Substitution Principle (LSP): An object of a sub-type should
+   be acceptable where ever an object of the original type is required.
+   Rule: Define members required by only some objects of a class within
+   the subclass of that class.
+
+4. Interface Seggregation Principle (ISP): The consumer of an object
+   should not be forced to depend on an interface of that object which
+   it does not require.
+   Rule: Define classes with common methods as subclasses of an abstract
+   type in which those methods are pure.
+
+5. Dependency Inversion Principle (DIP): An object should be consumed
+   through its interface and not through its implementation.
+   Rule: Use a class that inherits from an abstract type only for
+   indirectly activating instances for that abstract type.
+
+Object Oriented Programming (OOP): It is an paradigm (approach) for implementing
+complex software applications using data abstraction and polymorphic
+subtyping according to SOLID principles.
+

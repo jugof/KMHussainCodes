@@ -1,0 +1,32 @@
+    1  ls
+    2  mkdir -p Foundations/Methodology/Inheritance
+    3  cd Foundations/Methodology/Inheritance/
+    4  vi boards1.h
+    5  vi virtualbasetest.cpp
+    6  c++ virtualbasetest.cpp -o program
+    7  ./program 
+    8  vi virtualbasetest.cpp
+    9  c++ virtualbasetest.cpp -o program
+   10  ./program 
+   11  vi virtualbasetest.cpp
+   12  c++ virtualbasetest.cpp -o program
+   13  ./program 
+   14  vi virtualbasetest.cpp
+   15  c++ virtualbasetest.cpp -o program
+   16  ./program 
+   17  vi virtualbasetest.cpp
+   18  c++ virtualbasetest.cpp -o program
+   19  vi boards1.h
+   20  c++ virtualbasetest.cpp -o program
+   21  ./program 
+   22  cp boards1.h boards2.h 
+   23  vi boards2.h 
+   24  vi virtualbasetest.cpp 
+   25  c++ virtualbasetest.cpp -o program
+   26  vi boards2.h 
+   27  c++ virtualbasetest.cpp -o program
+   28  vi boards2.h 
+   29  cd ..
+   30  ls
+   31  cd Foundations/
+   32  history >cmd01-04-24.txt

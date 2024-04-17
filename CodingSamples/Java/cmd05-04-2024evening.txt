@@ -1,0 +1,38 @@
+    1  clear
+    2  cd Java/Language-Runtime/AbstractTypeTest/bank1/
+    3  code src/
+    4  javac  src/banking/*.java
+    5  ls src/banking/
+    6  rm src/banking/*.class
+    7  ls
+    8  javac -d . src/banking/*.java
+    9  ls src/banking/
+   10  ls
+   11  ls banking/
+   12  jar -cf bank-1.0.jar banking/
+   13  ls
+   14  jar -tf bank-1.0.jar 
+   15  cd ..
+   16  mkdir demo1
+   17  cd demo1/
+   18  mkdir lib
+   19  cp ../bank1/bank-1.0.jar lib/
+   20  code .
+   21  cp ../bank1/bank-1.0.jar lib/
+   22  javac Program.java 
+   23  javac -cp .:lib/bank-1.0.jar Program.java 
+   24  java -cp .:lib/bank-1.0.jar Program 
+   25  java -cp .:lib/* Program 
+   26  java  Program 
+   27  ls
+   28  java -cp .:lib/bank-1.0.jar Program 
+   29  javac -cp .:lib/bank-1.0.jar Program.java 
+   30  java -cp .:lib/* Program 2000
+   31  java -cp .:lib/* Program 16000
+   32  java -cp .:lib/* Program 5OOO
+   33  \ls
+   34  ls lib
+   35  cd ..
+   36  ls
+   37  history cmd05-04-2024evening.txt
+   38  history>cmd05-04-2024evening.txt

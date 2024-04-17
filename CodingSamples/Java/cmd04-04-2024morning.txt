@@ -1,0 +1,34 @@
+    1  cd Samples/Java/Language-Runtime/UserDefTypeTest/
+    2  ls
+    3  cp -r demo1/ demo2
+    4  cd demo2/
+    5  code .
+    6  javac Program.java 
+    7  java Program 20000 15
+    8  java Program 500000 6
+    9  javac Program.java 
+   10  java Program 20000 15
+   11  java Program 500000 6
+   12  ls *.class
+   13  rm RiskLevel.class 
+   14  java Program 500000 6
+   15  javac RiskLevel.java 
+   16  java Program 500000 6
+   17  cd ..
+   18  ls
+   19  mkdir SubclassTest
+   20  cd SubclassTest/
+   21  mkdir demo1
+   22  cd demo1/
+   23  mkdir payroll
+   24  touch Program.java
+   25  code .
+   26  javac payroll/*.java
+   27  ls payroll/
+   28  pwd
+   29  history > ../../../cmd04-04-2024morning
+   30  vi ../../../cmd04-04-2024morning
+   31  cp ~/Samples/Java/ /mnt/d/
+   32  cp -r ~/Samples/Java/ /mnt/d/
+   33  vi ../../../cmd04-04-2024morning.txt
+   34  history > ../../../cmd04-04-2024morning.txt

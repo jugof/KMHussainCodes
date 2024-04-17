@@ -1,0 +1,49 @@
+    1  cd Language-Runtime/NativeMethodTest/demo/
+    2  ls
+    3  rm libjnitfm.so jnitfm.o
+    4  ls
+    5  wget iitdac.met.edu/shared/java/Makefile
+    6  ls
+    7  make output=libjnitfm.so
+    8  ls
+    9  java Program monday
+   10  java -Djava.library.path=. Program monday
+   11  vi run.sh
+   12  chmod a+x run.sh 
+   13  ./run.sh monday
+   14  vi jnitfm.cpp 
+   15  make output=libjnitfm.so
+   16  ./run.sh monday
+   17  ./run.sh IKJ@E]
+   18  vi jnitfm.cpp 
+   19  javac -h . Transformer2.java 
+   20  javap -s Transformer
+   21  vi jnitfm.cpp 
+   22  make output=libjnitfm.so
+   23  ./run.sh monday
+   24  rm libjnitfm.so 
+   25  make output=libjnitfm.so
+   26  ./run.sh monday
+   27  vi jnitfm.cpp 
+   28  make output=libjnitfm.so
+   29  ./run.sh monday
+   30  vi jnitfm.cpp 
+   31  cd ..
+   32  mkdir ForeignFunctionTest
+   33  cd ForeignFunctionTest/
+   34  mkdir demo
+   35  cd demo
+   36  wget -qO- iitdac.met.edu/shared/java/legacy.tar.gz | tar x
+   37  ls
+   38  code .
+   39  javac *.java
+   40  java Program 10 20
+   41  java --enable-native-access=ALL-UNNAMED Program 10 20
+   42  vi run.sh
+   43  chmod u+x run.sh 
+   44  ./run.sh 10 20
+   45  ./run.sh 10 100
+   46  ./run.sh 100 10000
+   47  javac *.java
+   48  ./run.sh 10 30
+   49  history > ../../../cmd14-04-2024sunday.txt

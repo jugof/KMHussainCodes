@@ -1,0 +1,20 @@
+    1  clear
+    2  cd Language-Runtime/MethodRefTest/demo/
+    3  code .
+    4  cd ../
+    5  cd ..
+    6  mkdir FunctionalStreamTest
+    7  cd FunctionalStreamTest/
+    8  mkdir demo
+    9  cd demo/
+   10  code .
+   11  javac Item.java 
+   12  javap Item
+   13  javap -p Item
+   14  javap java.util.stream.Stream
+   15  ls ..
+   16  cd ..
+   17  ls
+   18  cd ..
+   19  ls
+   20  history >cmd11-04-2024morning.txt 

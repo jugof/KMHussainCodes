@@ -1,0 +1,22 @@
+    1  vi ../notes.txt 
+    2  vi ../Classes/reftypetest.cpp 
+    3  vi ../notes.txt 
+    4  cp ../Classes/banner3.h banners.h
+    7  vi banners.h 
+    8  cp ../Classes/reftypetest.cpp derivedclasstest.cpp
+    9  vi derivedclasstest.cpp 
+   10  c++ derivedclasstest.cpp -o program
+   11  ./program 
+   12  vi derivedclasstest.cpp 
+   13  c++ derivedclasstest.cpp -o program
+   14  ./program 
+   15  vi derivedclasstest.cpp 
+   16  vi ../notes.txt 
+   17  vi banners.h 
+   18  c++ derivedclasstest.cpp -o program
+   19  ./program 
+   20  vi derivedclasstest.cpp 
+   21  vi banners.h 
+   22  vi derivedclasstest.cpp 
+   23  c++ derivedclasstest.cpp -o program
+   24  ./program 

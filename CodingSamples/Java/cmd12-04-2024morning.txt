@@ -1,0 +1,61 @@
+    1  cd ~/Samples/Java/Language-Runtime/
+    2  ls
+    3  mkdir ReflectionTest
+    4  cd ReflectionTest/
+    5  mkdir demo
+    6  fetchsup java finance
+    7  ls
+    8  mv finance/ demo/
+    9  cd demo/
+   10  ls
+   11  code .
+   12  javac Program1.java 
+   13  java Program 1200000 EducationScheme
+   14  java Program 1200000 EducationLoan
+   15  java Program 1200000 PersonalLoan
+   16  java Program 1200000 HomeLoan
+   17  java Program 1200000 CarLoan
+   18  ls
+   19  mkdir finance/
+   20  mkdir lib/
+   21  mv finance/ lib/
+   22  ls
+   23  java Program 1200000 CarLoan
+   24  java Program 1200000 HomeLoan
+   25  java -Djava.class.path=.:lib Program 1200000 EducationLoan
+   26  java -cp .:lib Program 1200000 EducationLoan
+   27  mv lib/finance/ .
+   28* 
+   29  ls
+   30  java Program 1200000 EducationLoan
+   31  javap java.lang.Class
+   32  javac Program2.java 
+   33  java Program 1200000 finance.EducationLoan common
+   34  java Program 1200000 finance.EducationLoan scholar
+   35  javac Program2.java 
+   36  java Program 1200000 EducationLoan scholar
+   37  java Program 1200000 PersonalLoan common
+   38  java Program 1200000 PersonalLoan employee
+   39  java Program 1200000 HomeLoan common
+   40  java Program 1200000 HomeLoan woman
+   41  java Program 1200000 HomeLoan welfare
+   42  java Program 1200000 HomeLoan soldier
+   43  javac Program2.java 
+   44  java Program 1200000 HomeLoan soldier
+   45  java Program 1200000 HomeLoan xyz
+   46  javac Program2.java 
+   47  java Program 1200000 HomeLoan soldier
+   48  javac finance/*.java
+   49  java Program 1200000 HomeLoan soldier
+   50  javac finance/*.java
+   51  java Program 1200000 HomeLoan soldier
+   52  java Program 1200000 CarLoan common
+   53  javac finance/*.java
+   54  java Program 1200000 CarLoan common
+   55  java Program 1200000 CarLoan employee
+   56  history > ../../../cmd-12-04-2024morning.txt
+   57  ls
+   58  cd ..
+   59  ls
+   60  cd ..
+   61  history >cmd12-04-2024morning.txt 
