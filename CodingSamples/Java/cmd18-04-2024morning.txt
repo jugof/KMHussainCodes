@@ -1,0 +1,30 @@
+    1  javap java.sql.Connection
+    2  cd Samples/Java/Platform-Enterprise/
+    3  ls
+    4  mkdir JDBCTest
+    5  cd JDBCTest/
+    6  mysql -h Dac-Faculty.local -u root -proot -D sales
+    7  mysql -h Dac-Faculty -u root -proot -D sales
+    8  mysql -h Dac-Faculty.local -u root -proot -D sales
+    9  unzip -d demo1 ~/apache-maven-3.9.5/templates/simple-app.zip 
+   10  cd demo1/
+   11  ls
+   12  code .
+   13  mvn -q compile
+   14  ls target/classes/
+   15* mvn -q compile dependency:copy-dependencie
+   16  ls target/dependency/
+   17  java -cp target/classes/:target/dependency/* app.Program 
+   18  bash run.sh 
+   19  wget iitdac.met.edu/shared/data/salesmy.sql
+   20  bash run.sh 
+   21  bash run.sh  302
+   22  bash run.sh 
+   23  bash run.sh 305
+   24  ssh dacfaculty@iitdac.met.edu
+   25  cd ..
+   26  unzip -d demo2 ~/apache-maven-3.9.5/templates/simple-app.zip 
+   27  cd demo2
+   28  code .
+   29  bash run.sh 
+   30  history > ../../../cmd18-04-2024morning.txt 
