@@ -1,0 +1,7 @@
+>ssh March2024Batch@iitdac.met.edu
+pass:cdac@123
+
+>sqlplus
+
+id:dac2
+pass:dac2
