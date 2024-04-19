@@ -1,0 +1,13 @@
+    1  cd Java/Platform-Enterprise/JDBCTest/demo2/
+    2  bash run.sh CU101 105 9
+    3  bash run.sh CU103 107 15
+    4  bash run.sh CU103 102 15
+    5  cd ..
+    6  cp -r demo2 demo3
+    7  cd demo3
+    8  code .
+    9  wget iitdac.met.edu/shared/data/salesora.sql
+   10  bash run.sh CU104 102 8
+   11  bash run.sh CU106 103 11
+   12  bash run.sh CU103 103 11
+   13  history > cmd18-04-2024evening.txt

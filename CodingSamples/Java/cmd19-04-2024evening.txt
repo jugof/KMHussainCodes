@@ -1,0 +1,17 @@
+    1  cd Samples/Java/Platform-Enterprise/HibernateJPATest/demo1/
+    2  code .
+    3  cd ../..
+    4  cd HibernateJPATest/
+    5  unzip -d demo2 ~/apache-maven-3.9.5/templates/simple-app.zip 
+    6  code .
+    7  cd demo2
+    8  code .
+    9  cp ../demo1/src/main/resources/META-INF/persistence.xml src/main/resources/META-INF/
+   10  bash run.sh 
+   11  bash run.sh 103
+   12  bash run.sh 105
+   13  bash run.sh 101
+   14  bash run.sh 102
+   15  ping www.met.edu
+   16  history > ../../../cmd19-04-2024evening.text
+   17  history > ../../../cmd19-04-2024evening.txt
