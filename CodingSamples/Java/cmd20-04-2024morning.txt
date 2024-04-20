@@ -1,0 +1,9 @@
+    1  cd ../..
+    2  mkdir ServletAPITest
+    3  cd ServletAPITest/
+    4  unzip -d demo ~/apache-maven-3.9.5/templates/simple-webapp.zip 
+    5  cd demo/
+    6  code .
+    7  mvn jetty:run
+    8  mvn -q jetty:run
+    9  history > ../../../cmd20-04-2024morning.txt
