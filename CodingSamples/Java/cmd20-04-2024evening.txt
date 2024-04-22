@@ -1,0 +1,20 @@
+    1  ls
+    2  cd Java/
+    3  ls
+    4  cd Platform-Enterprise/
+    5  ls
+    6  cd ServletAPITest/
+    7  clear
+    8  mvn jetty:run
+    9  cd demo/
+   10  mvn jetty:run
+   11  mvn -q jetty:run
+   12  mvn package
+   13  ls target/
+   14  ~/apache-tomcat-10.1.18/bin/startup.sh 
+   15  cp target/demo-web-app-1.0.0.war ~/apache-tomcat-10.1.18/webapps/demowebapp.war
+   16  rm -r ~/apache-tomcat-10.1.18/webapps/demowebapp*
+   17  ~/apache-tomcat-10.1.18/bin/shutdown.sh 
+   18  ls
+   19  cd ..
+   20  history >cmd20-04-2024evening.txt 

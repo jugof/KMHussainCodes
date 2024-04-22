@@ -1,0 +1,5 @@
+    1  code .
+    2  wget iitdac.met.edu/shared/java/taglib.tld -P src/main/webapp/WEB-INF/
+    3  mvn jetty:run
+    4  cd ..
+    5  history >cmd22-04-2024evening.txt 

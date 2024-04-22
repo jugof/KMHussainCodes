@@ -1,0 +1,9 @@
+    1  cd Samples/Java/Platform-Enterprise/
+    2  ls
+    3  mkdir JSPTest
+    4  cd JSPTest/
+    5  unzip -d demo ~/apache-maven-3.9.5/templates/simple-webapp.zip 
+    6  cd demo/
+    7  code .
+    8  mvn -q jetty:run
+    9  history > ../../../cmd22-04-2024morning.txt 
