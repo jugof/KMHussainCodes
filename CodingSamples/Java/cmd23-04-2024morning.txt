@@ -1,0 +1,9 @@
+    1  cd Platform-Enterprise/
+    2  ls
+    3  mkdir SpringMVCTest
+    4  cd SpringMVCTest/
+    5  unzip -d demo1 ~/apache-maven-3.9.5/templates/simple-webapp.zip 
+    6  cd demo1/
+    7  code .
+    8  mvn jetty:run
+    9  history > ../../../cmd23-04-2024morning.txt 
