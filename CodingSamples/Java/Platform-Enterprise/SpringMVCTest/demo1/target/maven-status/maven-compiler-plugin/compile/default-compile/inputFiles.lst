@@ -1,2 +1,6 @@
+/home/cdac/Samples/Java/Platform-Enterprise/SpringMVCTest/demo1/src/main/java/app/aspects/EchoAspect.java
 /home/cdac/Samples/Java/Platform-Enterprise/SpringMVCTest/demo1/src/main/java/app/controllers/GreeterController.java
+/home/cdac/Samples/Java/Platform-Enterprise/SpringMVCTest/demo1/src/main/java/app/components/Counter.java
+/home/cdac/Samples/Java/Platform-Enterprise/SpringMVCTest/demo1/src/main/java/app/components/CommonCounter.java
+/home/cdac/Samples/Java/Platform-Enterprise/SpringMVCTest/demo1/src/main/java/app/components/NamedCounter.java
 /home/cdac/Samples/Java/Platform-Enterprise/SpringMVCTest/demo1/src/main/java/app/DemoWebAppInitializer.java
