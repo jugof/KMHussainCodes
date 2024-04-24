@@ -6,8 +6,10 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.orm.jpa.JpaTransactionManager;
 import org.springframework.orm.jpa.LocalEntityManagerFactoryBean;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
+import org.springframework.web.servlet.ViewResolver;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
+import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 @Configuration
 @ComponentScan
@@ -27,7 +29,7 @@ public class DemoWebAppInitializer extends AbstractAnnotationConfigDispatcherSer
 
     @Override
     protected String[] getServletMappings() {
-        return new String[] {"/"};
+        return new String[] {"/hotel/*"};
     }
 
     @Bean
@@ -43,4 +45,8 @@ public class DemoWebAppInitializer extends AbstractAnnotationConfigDispatcherSer
         return new JpaTransactionManager(factory);
     }
     
+    @Bean
+    public ViewResolver defaultViewResolver(){
+        return new InternalResourceViewResolver("/WEB-INF/views/", ".jsp");
+    }
 }

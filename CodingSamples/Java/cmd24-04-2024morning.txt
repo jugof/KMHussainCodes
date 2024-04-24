@@ -1,0 +1,5 @@
+    1  cd Platform-Enterprise/
+    2  ls
+    3  cd SpringMVCTest/
+    4  code .
+    5  history > ../../cmd24-04-2024morning.txt 
