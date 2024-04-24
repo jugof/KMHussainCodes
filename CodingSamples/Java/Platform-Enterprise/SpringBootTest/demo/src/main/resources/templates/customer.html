@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>demo-web-app</title>
+    </head>
+    <body>
+        <h1>Welcome Customer</h1>
+        <h3 th:if="${param.error}">Authentication Failed</h3>
+        <form method="post" th:action="@{/login}">
+            <p>
+                <b>Customer ID</b><br/>
+                <input type="text" name="username"/>
+            </p>
+            <p>
+                <b>Password</b><br/>
+                <input type="password" name="password"/>
+            </p>
+            <input type="submit" value="Log In"/>
+        </form>
+    </body>
+</html>

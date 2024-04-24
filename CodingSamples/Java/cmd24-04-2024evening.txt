@@ -1,0 +1,14 @@
+    1  cd Samples/Java/Platform-Enterprise/
+    2  ls
+    3  mkdir SpringBootTest
+    4  cd SpringBootTest/
+    5  unzip /mnt/c/Users/efaculty1/Downloads/demo.zip 
+    6  rm /mnt/c/Users/efaculty1/Downloads/demo.zip 
+    7  cd demo/
+    8  ls
+    9  code .
+   10  mvn spring-boot:run
+   11  cp ../../HibernateJPATest/demo2/src/main/java/app/data/Order.java src/main/java/app/data/
+   12  mvn spring-boot:run
+   13  cd ..
+   14  history >cmd24-04-2024evening.txt 
