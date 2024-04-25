@@ -1,0 +1,50 @@
+    1  code .
+    2  cd demo/
+    3  code .
+    4  mvn spring-boot:run
+    5  history > ../../../cmd25-04-2024morning.txt 
+    6  vi ../../../cmd25-04-2024morning.txt 
+    7  cd ../../../../
+    8  cp -r Java /mnt/d/
+    9  cd Java/Platform-Enterprise/
+   10  ls
+   11  mkdir MicroserviceTest
+   12  cd MicroserviceTest/
+   13  mkdir contract
+   14  cd contract/
+   15  unzip ~/apache-maven-3.9.5/templates/grpc-proto.zip 
+   16  code .
+   17  mvn clean install
+   18  cd ..
+   19  mkdir server
+   20  cd server/
+   21  unzip ~/apache-maven-3.9.5/templates/simple-app.zip 
+   22  mkdir src/main/java/app/data
+   23  cp ../../HibernateJPATest/demo2/src/main/java/app/data/Order.java src/main/java/app/data/
+   24  cp ../../HibernateJPATest/demo2/src/main/resources/META-INF/ src/main/resources/META-INF/
+   25  cp ../../HibernateJPATest/demo2/src/main/resources/META-INF/persistence.xml src/main/resources/META-INF/
+   26  code .
+   27  vi ../contract/src/main/proto/order_manager.proto 
+   28  netstat -pnlt
+   29  cd ..
+   30  mkdir demo
+   31  cd demo/
+   32  wget iitdac.met.edu/shared/Program.py
+   33  vi Program.py 
+   34  pip install grpcio grpcio.tools
+   35  python -m grpc_tools.protoc --python_out=. --grpc_python_out=. order_manager.proto -I ../contract/src/main/proto/
+   36  ls
+   37  python Program.py CU101
+   38  python Program.py CU104
+   39  python Program.py CU103
+   40  python Program.py CU102
+   41  python Program.py CU108
+   42  python Program.py CU102 103 15
+   43  python Program.py CU102
+   44  python Program.py CU104 108 5
+   45  python Program.py CU104
+   46  vi Program.py \
+   47  vi Program.py
+   48  cd ..
+   49  ls
+   50  history >cmd25-04-2024evening.txt 

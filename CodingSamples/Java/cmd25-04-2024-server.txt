@@ -1,0 +1,60 @@
+    1  exit
+    2  cd Samples/Java/Platform-Enterprise/
+    3  ls
+    4  mkdir HibernateJPATest
+    5  cd HibernateJPATest/
+    6  unzip -d demo1 ~/apache-maven-3.9.5/templates/simple-app.zip 
+    7  code .
+    8  cd demo1/
+    9  code .
+   10  wget iitdac.met.edu/shared/java/persistence.xml -P src/main/resources/META-INF/
+   11  wget iitdac.met.edu/shared/java/orm.xml -P src/main/resources/META-INF/
+   12  bash run.sh Jack
+   13  bash run.sh Jill
+   14  bash run.sh Jack
+   15  bash run.sh Jim
+   16  bash run.sh John
+   17  bash run.sh Jill
+   18  bash run.sh Jack
+   19  bash run.sh
+   20  history > ../../../cmd10-04-2024morning.txt
+   21  ls
+   22  cd ..
+   23  ls
+   24  history >cmd19-04-2024morning.txt 
+   25  exit
+   26  mysql -h Dac-Faculty.local -u root -proot
+   27  exit
+   28  clear
+   29  exit
+   30  cd Samples/Test/
+   31  ls
+   32  cd SpringMVCTest/demo2/
+   33  ls
+   34  vi src/main/resources/META-INF/persistence.xml 
+   35  vi src/main/java/app/DemoWebAppInitializer.java 
+   36  mvn jetty:run
+   37  pwd
+   38  vi src/main/java/app/controllers/HotelController.java 
+   39  mvn jetty:run
+   40  mysql -h dac-faculty.local -u root -proot
+   41  mvn jetty:run
+   42  cd Samples/Java/Platform-Enterprise/HibernateJPATest/demo1/
+   43  ls
+   44  bash run.sh
+   45  bash run.sh John
+   46  bash run.sh
+   47  cd Platform-Enterprise/
+   48  ls
+   49  cd SpringMVCTest/
+   50  code .
+   51  history > ../../cmd24-04-2024morning.txt 
+   52  vi  ../../cmd24-04-2024morning.txt
+   53  cp -r  ../../../Java/ /mnt/d/
+   54  python --version
+   55  exit
+   56  cd Samples/Java/Platform-Enterprise/MicroserviceTest/server/
+   57  ls
+   58  bash run.sh 
+   59  history >cmd25-04-2024-server
+   60  history >cmd25-04-2024-server.txt
