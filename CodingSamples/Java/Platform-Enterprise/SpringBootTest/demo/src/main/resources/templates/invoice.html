@@ -2,8 +2,34 @@
 <html xmlns:th="http://www.thymeleaf.org">
     <head>
         <title>demo-web-app</title>
+        <style>
+            .link_button {
+                background: none;
+                border: none;
+                color: blue;
+                text-decoration: underline;
+                cursor: pointer;
+            }
+        </style>
     </head>
     <body>
         <h1 th:text="|Welcome Customer ${customer.id}|"></h1>
+        <table border="1">
+            <tr>
+                <th>Product No</th>
+                <th>Quantity</th>
+                <th>Order Date</th>
+            </tr>
+            <tr th:each="entry : ${customer.orders}">
+                <td th:text="${entry.productNo}"></td>
+                <td th:text="${entry.quantity}"></td>
+                <td th:text="${entry.orderDateAsString}"></td>
+            </tr>
+        </table>
+        <p>
+            <form method="post" th:action="@{/logout}">
+                <input type="submit" value="Logout" class="link_button"/>
+            </form>
+        </p>
     </body>
 </html>

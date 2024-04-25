@@ -1,0 +1,5 @@
+    1  code .
+    2  cd demo/
+    3  code .
+    4  mvn spring-boot:run
+    5  history > ../../../cmd25-04-2024morning.txt 
