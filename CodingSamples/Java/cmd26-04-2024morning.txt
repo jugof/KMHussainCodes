@@ -1,0 +1,14 @@
+    1  cd Platform-Enterprise/MicroserviceTest/server/
+    2  java -cp target/classes/:target/dependency/* app.Program &> app.log &
+    3  ls
+    4  cd ../demo/
+    5  python Program.py CU103
+    6  vi ../server/app.log 
+    7  cd ../..
+    8  mkdir RestApiTest
+    9  cd RestApiTest/
+   10  unzip /mnt/c/Users/efaculty1/Downloads/demo.zip 
+   11  rm /mnt/c/Users/efaculty1/Downloads/demo.zip 
+   12  cd demo/
+   13  code .
+   14  history > ../../../cmd26-04-2024morning.txt 
