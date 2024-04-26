@@ -2,11 +2,14 @@ package app.rest;
 
 import java.util.Collection;
 
+import org.springframework.stereotype.Service;
+
 import io.grpc.ManagedChannelBuilder;
 import sales.OrderManagerGrpc;
 import sales.OrderManagerOuterClass.CustomerInput;
 import sales.OrderManagerOuterClass.OrderInput;
 
+@Service
 public class SalesAgentModel {
     
     public void loadOrders(String customerId, Collection<OrderResource> entries) {

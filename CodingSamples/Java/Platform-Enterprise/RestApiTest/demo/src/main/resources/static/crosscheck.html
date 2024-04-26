@@ -1,0 +1,45 @@
+<html>
+	<head>
+		<title>demo-web-app</title>
+		<link rel="stylesheet" href="common.css"></link>
+	</head>
+	<body>
+		<h1>Cross Check Customer</h1>
+		<form>
+			<p>
+				<b>Customer ID: </b>
+				<input type="text" id="customerIdInput"/>
+				<input type="button" id="rankButton" value="Ranking"/>
+			</p>
+			<h2 id="rankOutput"></h2>
+		</form>
+		<script type="text/javascript">
+			let customerIdInput = document.getElementById("customerIdInput");
+			let rankButton = document.getElementById("rankButton");
+			let rankOutput = document.getElementById("rankOutput");
+			rankButton.onclick = async function(){
+				let response = await fetch("http://localhost:8080/api/sales/" + customerIdInput.value);
+				if(response.ok){
+					let result = await response.json();
+					let total = 0;
+					for(const entry of result){
+						total += parseInt(entry.quantity);
+					}
+					let count = parseInt(total / 10);
+					if(count == 0)
+						count = 1;
+					if(count > 5)
+						count = 5;
+					rankOutput.innerHTML = "&#9734;".repeat(count);
+				}else{
+					rankOutput.innerText = "";
+				}
+			};
+		</script>
+	</body>
+
+</html>
+<!--
+python3 -m http.server 5000
+-->
+

@@ -1,0 +1,18 @@
+body {
+	background-color: black;
+	color: white;
+}
+
+th, td{
+	text-align: left;
+	width: 8em;
+}
+
+h1, h2, h4{
+	color: greenyellow;
+}
+
+.form-entry {
+	padding-bottom: 1em;
+};
+
