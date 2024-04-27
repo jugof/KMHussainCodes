@@ -1,0 +1,62 @@
+    1  exit
+    2  dotnet --version
+    3  cd Samples/
+    4  mkdir DotNet
+    5  cd DotNet/
+    6  mkdir Language-Runtime
+    7  cd Language-Runtime/
+    8  wget iitdac.met.edu/dotnet/iltools.tar.gz
+    9  wget iitdac.met.edu/shared/dotnet/iltools.tar.gz
+   10  ls
+   11  tar xf iltools.tar.gz -C ~
+   12  vi Hello.il
+   13  dotnet ilasm -dll Hello.il 
+   14  ls
+   15  vi Hello.runtimeconfig.json
+   16  dotnet Hello.dll
+   17  uname
+   18  uname -a
+   19  ssh unipro@linuxarm.km-hussain.xyz
+   20  vi Hello.il 
+   21  ls ~/dotnet/shared/Microsoft.NETCore.App/8.0.3/System.Console.*
+   22  vi Hello.il 
+   23  dotnet ilasm -dll Hello.il 
+   24  dotnet ilasm -quiet -dll Hello.il 
+   25  dotnet Hello.dll 
+   26  vi Hello.il 
+   27  dotnet ilasm -quiet -dll Hello.il 
+   28  dotnet Hello.dll 
+   29  vi Hello.il 
+   30  dotnet ilasm -quiet -dll Hello.il 
+   31  dotnet Hello.dll 
+   32  mkdir PrimitiveTypeTest
+   33  cd PrimitiveTypeTest/
+   34  mkdir DemoApp
+   35  cd DemoApp/
+   36  vi Program.cs
+   37  vi DemoApp.csproj
+   38  dotnet build
+   39  ls bin/Debug/net8.0/
+   40  dotnet bin/Debug/net8.0/DemoApp.dll
+   41  bin/Debug/net8.0/DemoApp
+   42  vi DemoApp.csproj
+   43  vi Program.cs 
+   44  dotnet bin/Debug/net8.0/DemoApp.dll
+   45  dotnet run
+   46  code .
+   47  dotnet run
+   48  pwd
+   49  history > ../../../cmd27-04-2024morning.txt
+
+======= TEST PROMPT =======
+  112  cd Test
+  113  ls
+  114  wget iitdac.met.edu/shared/dotnet/dotnet-csc
+  115  ls
+  116  chmod u+x dotnet-csc 
+  117  vi Hello.cs
+  118  ./dotnet-csc Hello.cs 
+  119  ls
+  120  vi Hello.runtimeconfig.json 
+  121  dotnet Hello.dll 
+ 
