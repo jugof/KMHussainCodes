@@ -1,0 +1,31 @@
+    1  cd DotNet/Language-Runtime/
+    2  mkdir ClassTypeTest
+    3  cd ClassTypeTest
+    4  mkdir DemoApp1
+    5  cd DemoApp1/
+    6  cp ../../UserDefValTypeTest/DemoApp1/DemoApp.csproj .
+    7  code .
+    8  cd ../../UserDefValTypeTest/DemoApp2/
+    9  code .
+   10  cd ../../ClassTypeTest/DemoApp1/
+   11  code .
+   12  dotnet build
+   13  ls
+   14  rm DemoApp1.sln 
+   15  dotnet build
+   16  dotnet ildasm bin/Debug/net8.0/DemoApp.dll > DemoApp.il
+   17  code .
+   18  dotnet build
+   19  dotnet run
+   20  dotnet build
+   21  ls
+   22  dotnet build DemoApp
+   23  dotnet build DemoApp.csproj 
+   24  dotnet run
+   25  dotnet build DemoApp
+   26  dotnet run
+   27  cd ..
+   28  ls
+   29  cd ..
+   30  ls
+   31  history >cmd29-04-2024evening.txt 

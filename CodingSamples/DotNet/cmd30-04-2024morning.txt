@@ -1,0 +1,8 @@
+    1  mkdir DemoApp2
+    2  cd DemoApp2
+    3  cp ../DemoApp1/DemoApp.csproj .
+    4  code .
+    5  dotnet run
+    6  dotnet ildasm bin/Debug/net8.0/DemoApp.dll 
+    7  cd ..
+    8  history > cmd30-04-2024morning.txt 

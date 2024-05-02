@@ -1,0 +1,17 @@
+    1  cd Language-Runtime/
+    2  ls
+    3  cd UserDefValTypeTest/
+    4  ls
+    5  cd -r DemoApp1/ DemoApp2
+    6  cp -r DemoApp1/ DemoApp2
+    7  cd DemoApp2/
+    8  code .
+    9  dotnet run 60000 8
+   10  dotnet run 200000 6
+   11  dotnet run 60000 8
+   12  dotnet run 200000 6
+   13  dotnet run 80000 10 
+   14  dotnet run 10000 5
+   15  dotnet run 60000 8
+   16  dotnet run 10000 5
+   17  history > ../../../cmd29-04-2024morning.txt 

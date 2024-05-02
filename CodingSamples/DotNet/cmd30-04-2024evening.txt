@@ -1,0 +1,19 @@
+    1  cd Samples/DotNet/Language-Runtime/
+    2  dotnet new console -n DemoApp -o DemoApp1
+    3  dotnet new classlib -n Banking -o BankLib1
+    4  ls
+    5  rm -r BankLib1/ DemoApp1/
+    6  mkdir AbstractTypeTest
+    7  cd AbstractTypeTest/
+    8  dotnet new console -n DemoApp -o DemoApp1
+    9  dotnet new classlib -n Banking -o BankLib1
+   10  ls
+   11  code .
+   12  cd DemoApp1/
+   13  dotnet run
+   14  dotnet run 7000
+   15  dotnet run 17000
+   16  dotnet run 3OOO
+   17  dotnet run
+   18  ls bin/Debug/net8.0/*.dll
+   19  history > ../../../cmd30-04-2024evening.txt 

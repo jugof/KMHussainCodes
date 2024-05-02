@@ -1,0 +1,26 @@
+    1  ls
+    2  cd Samples/DotNet/
+    3  ls
+    4  cd Language-Runtime/
+    5  ls
+    6  cd PrimitiveTypeTest/
+    7  ls
+    8  cd DemoApp/
+    9  code .
+   10  dotnet run 60000 15
+   11  cd ../..
+   12  cp -r PrimitiveTypeTest/ UserDefValTypeTest
+   13  cd UserDefValTypeTest/DemoApp/
+   14  code .
+   15  dotnet run 60000 15
+   16  dotnet run 200000 5
+   17  dotnet run 60000 8
+   18  dotnet run 200000 4
+   19  dotnet run 60000 8
+   20  dotnet run 200000 4
+   21  cd ..
+   22  mv DemoApp/ DemoApp1/
+   23  cd DemoApp1/
+   24  code .
+   25  cd ..
+   26  history >cmd27-04-2024evening.txt 

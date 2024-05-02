@@ -59,4 +59,12 @@
   119  ls
   120  vi Hello.runtimeconfig.json 
   121  dotnet Hello.dll 
- 
+  122  ssh unipro@linuxarm.km-hussain.xyz
+  123  cd ..
+  124  rm -r dotnet/*
+  125  ls
+  126  cd dotnet/
+  127  tar xzvf ../dotnet-sdk-8.0.203-linux-x64.tar.gz 
+  128  cd ..
+  129  cd Test
+  130  dotnet --version
