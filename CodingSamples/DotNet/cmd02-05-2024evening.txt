@@ -1,0 +1,44 @@
+    1  cd Language-Runtime/
+    2  cd AbstractTypeTest/
+    3  ls
+    4  dotnet new console -n DemoApp -o DemoApp2 --use-program-main
+    5  cd DemoApp2
+    6  ls
+    7  code .
+    8  dotnet build
+    9  rm -r ~/.nuget/packages/met.bank/
+   10  dotnet build
+   11  mkdir packages
+   12  cp ../BankLib2/bin/Release/MET.Bank.1.0.0.nupkg  packages/
+   13  ls
+   14  dotnet build
+   15  dotnet restore
+   16  ls
+   17  dotnet restore -s packages/
+   18  dotnet build
+   19  rm -r ~/.nuget/packages/met.bank/
+   20  rm -r packages/
+   21  dotnet build
+   22  dotnet restore
+   23  dotnet restore -s ../BankLib2/bin/Release/
+   24  dotnet build
+   25  dotnet run
+   26  cd ..
+   27  dotnet new console -n DemoApp -o DemoApp3 --use-program-main
+   28  cd DemoApp3
+   29  ls
+   30  code .
+   31  dotnet run john 200
+   32  dotnet run jack 8
+   33  dotnet run jim 85
+   34  dotnet run jack 8
+   35  dotnet run jim 85
+   36  dotnet run jack 8
+   37  dotnet run john 200
+   38  dotnet run jack 8
+   39  dotnet run jim 85
+   40  cd ..
+   41  ls
+   42  vi cmd02-05-2024evening.txt 
+   43  mv cmd02-05-2024evening.txt cmd02-05-2024morning.txt 
+   44  history >cmd02-05-2024evening.txt 

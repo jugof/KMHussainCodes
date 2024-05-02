@@ -11,7 +11,7 @@ jill.Deposit(15000);
 try
 {
     double payment = double.Parse(args[0]);
-    Banker.Transfer(jill, jack, payment);
+    jill.Transfer(jack, payment); //Banker.Transfer(jill, jack, payment);
     Console.WriteLine("Funds transferred.");
 }
 catch(InsufficientFundsException)

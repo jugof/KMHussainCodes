@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>MET.Bank</id>
+    <version>1.0.0</version>
+    <authors>Banking</authors>
+    <description>Package Description</description>
+    <repository type="git" />
+    <dependencies>
+      <group targetFramework="net8.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="/home/cdac/Samples/DotNet/Language-Runtime/AbstractTypeTest/BankLib2/bin/Release/net8.0/Banking.dll" target="lib/net8.0/Banking.dll" />
+  </files>
+</package>

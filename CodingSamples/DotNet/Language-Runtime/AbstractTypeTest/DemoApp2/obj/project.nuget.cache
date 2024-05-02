@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "UTPXlu1Fd1LgtqYDUgsFSUUG6vcqmTYkAI8UsWPIVlEgCinXXsmr/24ZpeQ4zTvMhLWQY7BJcKaGRVBG56cNpg==",
+  "success": true,
+  "projectFilePath": "/home/cdac/Samples/DotNet/Language-Runtime/AbstractTypeTest/DemoApp2/DemoApp.csproj",
+  "expectedPackageFiles": [
+    "/home/cdac/.nuget/packages/met.bank/1.0.0/met.bank.1.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

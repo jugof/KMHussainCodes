@@ -1,0 +1,10 @@
+    1  dotnet run 3000
+    2  cd ..
+    3  cp -r BankLib1/ BankLib2
+    4  cd BankLib2/
+    5  code .
+    6  dotnet pack
+    7  jar -t -f bin/Release/MET.Bank.1.0.0.nupkg 
+    8  cd ..
+    9  ls
+   10  history >cmd02-05-2024evening.txt
