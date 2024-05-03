@@ -38,7 +38,7 @@ class Program
     static void Main(string[] args)
     {
         try
-        {
+        {`
             string m = args[0].ToLower();
             int n = int.Parse(args[1]);
             Process(m, n); 

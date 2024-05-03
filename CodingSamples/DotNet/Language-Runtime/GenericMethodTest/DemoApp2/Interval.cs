@@ -1,8 +1,7 @@
-//primary constructor with positional parameters which are
-//available through out the class
-class Interval(int min, int sec)
+using System.Numerics;
+
+class Interval(int min, int sec) : IComparable<Interval>, IAdditionOperators<Interval, Interval, Interval>
 {
-    //read-only property can only be set in internal initializer
     public int Minutes { get; } = min + sec / 60;
 
     public int Seconds { get; } = sec % 60;
@@ -34,5 +33,10 @@ class Interval(int min, int sec)
         if(other is Interval that)
             return (this.Minutes == that.Minutes) && (this.Seconds == that.Seconds);
         return false;
+    }
+
+    public int CompareTo(Interval that)
+    {
+        return this.Time() - that.Time();
     }
 }

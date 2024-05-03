@@ -1,0 +1,21 @@
+    1  dotnet run
+    2  dotnet run abcd
+    3  dotnet run 87
+    4  dotnet run 78
+    5  dotnet ildasm bin/Debug/net8.0/DemoApp.dll 
+    6  dotnet run 87
+    7  dotnet run 78
+    8* dotnet run 87 65
+    9  dotnet run 78 65
+   10  dotnet run 87
+   11  dotnet run 78
+   12  dotnet ildasm bin/Debug/net8.0/DemoApp.dll 
+   13  cd ..
+   14  dotnet new console -n DemoApp -o DemoApp2 --use-pogram-main
+   15  dotnet new console -n DemoApp -o DemoApp2 --use-program-main
+   16  cd DemoApp2
+   17  cp ../../ClassTypeTest/DemoApp2/Interval.cs .
+   18  code .
+   19  vi ../../ClassTypeTest/DemoApp2/Interval.cs
+   20  dotnet run
+   21  history > ../../../cmd03-05-2024morning.txt 

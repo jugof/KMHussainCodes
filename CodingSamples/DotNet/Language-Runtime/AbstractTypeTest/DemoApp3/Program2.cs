@@ -5,7 +5,7 @@ namespace DemoApp;
 class Program
 {
     //nested class
-    class Auditor : IDisposable
+    class Auditor
     {
         internal Auditor()
         {
@@ -29,10 +29,16 @@ class Program
     static void Process(string name, int count)
     {
         ITaxPayer t = name == "jack" ? new Supervisor(count) : new Worker(count);
-        using(Auditor a = new Auditor())
+        Auditor a = new Auditor();
+        try
         {
             a.Audit(name, t);
         }
+        finally
+        {
+            a.Dispose();
+        }
+        
     }
 
     static void Main(string[] args)

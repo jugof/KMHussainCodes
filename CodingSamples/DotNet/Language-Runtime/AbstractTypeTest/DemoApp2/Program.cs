@@ -30,6 +30,9 @@ class Program
             //if acc does not refer to an instance of class compatible with 
             //IProfitable then as operator returns null
             IProfitable p = acc as IProfitable;
+
+                       
+
             p?.AddInterest(12); //if(p != null) p.AddInterest(12)
         }
     }
