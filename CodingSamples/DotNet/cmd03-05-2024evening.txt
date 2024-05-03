@@ -1,0 +1,24 @@
+    1  cd DotNet/Language-Runtime/
+    2  ls
+    3  mkdir GenericTypeTest
+    4  cd Generic
+    5  cd GenericTypeTest/
+    6  dotnet new console -n DemoApp -o DemoApp1 --use-program-main
+    7  cd DemoApp1/
+    8  code .
+    9  cp ../../GenericMethodTest/DemoApp2/Interval.cs .
+   10  dotnet run
+   11  cd ../
+   12  dotnet new console -n DemoApp -o DemoApp3
+   13  cd DemoApp3/
+   14  ls
+   15  pwd
+   16  ls ..
+   17  cd ..
+   18  mv DemoApp3 DemoApp2
+   19  cd DemoApp2
+   20  ls
+   21  cp ../DemoApp1/SimpleStack.cs .
+   22  code .
+   23  dotnet run
+   24  history > ../../../cmd03-05-2024evening.txt
