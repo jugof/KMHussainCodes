@@ -1,0 +1,10 @@
+    1  cd GenericTypeTest/DemoApp2
+    2  code .
+    3  dotnet run
+    4  cd ..
+    5  dotnet new console -n DemoApp -o DemoApp3 --use-program-main
+    6  cd DemoApp3/
+    7  cp ../../GenericMethodTest/DemoApp2/Interval.cs .
+    8  code .
+    9  dotnet run
+   10  history > ../../../cmd04-05-2024morning.txt
