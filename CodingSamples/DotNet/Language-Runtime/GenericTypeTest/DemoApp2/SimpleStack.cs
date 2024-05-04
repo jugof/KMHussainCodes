@@ -18,22 +18,21 @@ class SimpleStack<E>
 
     internal struct Navigator(SimpleStack<E> outer)
     {
-        Node node = outer.top;
+        Node next = outer.top;
 
         public bool MoveNext()
         {
-            return node != null;
+            if(next != null)
+            {
+                Current = next.Value;
+                next = next.Below;
+                return true;
+            }
+            return false;
         }
 
-        public E Current
-        {
-            get
-            {
-                E item = node.Value;
-                node = node.Below;
-                return item;
-            }
-        }
+        public E Current { get; private set; }
+
     }   
 
     private Node top;

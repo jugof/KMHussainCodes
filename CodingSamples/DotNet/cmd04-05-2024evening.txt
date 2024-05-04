@@ -1,0 +1,15 @@
+    1  cd ../DemoApp2/
+    2  code .
+    3  dotnet run
+    4  cd ../DemoApp3
+    5  ls
+    6  code .
+    7  dotnet run show
+    8  dotnet run find wednesday
+    9  dotnet run find friday
+   10  dotnet run find sunday
+   11  dotnet run find
+   12  dotnet run find monday
+   13  dotnet run find saturday
+   14  dotnet run find
+   15  history > ../../../cmd04-05-2024evening.txt
