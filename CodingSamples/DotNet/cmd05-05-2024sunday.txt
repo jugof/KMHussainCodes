@@ -1,0 +1,27 @@
+    1  ls
+    2  clear
+    3  pwd
+    4  cd ../..
+    5  ls
+    6  mkdir DelegateTest
+    7  cd DelegateTest/
+    8  dotnet new console -n DemoApp --use-program-main
+    9  cd DemoApp/
+   10  ls
+   11  code .
+   12  dotnet run 60000 8
+   13  dotnet run 300000 2
+   14  dotnet run 60000 8
+   15  dotnet run 300000 2
+   16  cd ..
+   17  mkdir LinqTest
+   18  cd LinqTest/
+   19  dotnet new console -o DemoApp
+   20  cd DemoApp/
+   21  ls
+   22  code .
+   23  dotnet run items
+   24  history > ../../../cmd05-05-2024sunday.txt
+
+documentation link:
+https://learn.microsoft.com/en-us/dotnet/api/system.linq.queryable.where?view=net-8.0#system-linq-queryable-where-1(system-linq-iqueryable((-0))-system-linq-expressions-expression((system-func((-0-system-boolean)))))
