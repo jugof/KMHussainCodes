@@ -1,3 +1,5 @@
+namespace DemoApp;
+
 static class Printable
 {
     //a fluent method returns a result to which other such method can be applied

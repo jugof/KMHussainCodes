@@ -1,0 +1,8 @@
+Assignment#5
+
+Declare delegate of bool return type and one input type of int.
+NumberCheck delegate returns bool takes int. 
+Write a class which has totalsum method, 
+two data members lower and higher which specifies range for total sum. 
+Totalsum takes one parameter of delegate type. 
+Write functions iseven isodd isprime whose declaration match delegate type. Write test program and call totalsum by passing above totalsum function as delegate.
