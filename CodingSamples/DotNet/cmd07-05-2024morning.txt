@@ -1,0 +1,19 @@
+    1  clear
+    2  cd ..
+    3  ls
+    4  cd ..
+    5  mkdir CustomAttributeTest
+    6  cd CustomAttributeTest/
+    7  cp -r ../ReflectionTest/FinLib/ .
+    8  dotnet new console -n DemoApp -o DemoApp1
+    9  cd DemoApp1/
+   10  dotnet add reference ../FinLib/
+   11  code ..
+   12  dotnet run 2000000 EductionLoan Common
+   13  dotnet run 2000000 EducationLoan Common
+   14  dotnet run 2000000 EducationLoan Scholar
+   15  dotnet run 2000000 HomeLoan Common
+   16  dotnet run 2000000 HomeLoan Welfare
+   17  dotnet run 2000000 PersonalLoan Common
+   18  dotnet ildasm bin/Debug/net8.0/FinLib.dll > FinLib.il
+   19  history > ../../../cmd07-05-2024morning.txt 
