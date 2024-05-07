@@ -1,0 +1,7 @@
+    1  cd ..
+    2  dotnet new console -n DemoApp -o DemoApp2
+    3  cd DemoApp2
+    4  ls
+    5  code .
+    6  dotnet run
+    7  history > ../../../cmd07-05-2024evening.txt
