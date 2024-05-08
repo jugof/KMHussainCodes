@@ -21,7 +21,9 @@ unsafe class Primes
         PrimesRange* pRange = &range;
         fixed(ulong* pStore = &store[0])
         {
-            FetchSelected(pRange, pStore, null);
+            FetchSelected(pRange, pStore, &IsFavorite);
         }
     }
+
+    private static int IsFavorite(ulong prime) => (prime - 1) % 4 == 0 ? 1 : 0;
 }

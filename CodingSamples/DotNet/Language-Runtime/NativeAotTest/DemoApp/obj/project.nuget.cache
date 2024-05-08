@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "3V8r2g8gxdGpaoXU4ZRAM24if8AloEXaEdxna3sXVNfhR+3wXF/a3NJ1zcFrksfwcxnBThuoYTSj0uffgcuDQA==",
+  "success": true,
+  "projectFilePath": "/home/cdac/Samples/DotNet/Language-Runtime/NativeAotTest/DemoApp/DemoApp.csproj",
+  "expectedPackageFiles": [
+    "/home/cdac/.nuget/packages/microsoft.dotnet.ilcompiler/8.0.3/microsoft.dotnet.ilcompiler.8.0.3.nupkg.sha512",
+    "/home/cdac/.nuget/packages/microsoft.net.illink.tasks/8.0.3/microsoft.net.illink.tasks.8.0.3.nupkg.sha512",
+    "/home/cdac/.nuget/packages/runtime.linux-x64.microsoft.dotnet.ilcompiler/8.0.3/runtime.linux-x64.microsoft.dotnet.ilcompiler.8.0.3.nupkg.sha512",
+    "/home/cdac/.nuget/packages/microsoft.netcore.app.runtime.linux-x64/8.0.3/microsoft.netcore.app.runtime.linux-x64.8.0.3.nupkg.sha512",
+    "/home/cdac/.nuget/packages/microsoft.aspnetcore.app.runtime.linux-x64/8.0.3/microsoft.aspnetcore.app.runtime.linux-x64.8.0.3.nupkg.sha512",
+    "/home/cdac/.nuget/packages/runtime.linux-x64.microsoft.dotnet.ilcompiler/8.0.3/runtime.linux-x64.microsoft.dotnet.ilcompiler.8.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
