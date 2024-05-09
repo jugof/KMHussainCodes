@@ -1,0 +1,94 @@
+{
+  "version": 3,
+  "targets": {
+    "net8.0": {
+      "FinLib/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/FinLib.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FinLib.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "FinLib/1.0.0": {
+      "type": "project",
+      "path": "../FinLib/FinLib.csproj",
+      "msbuildProject": "../FinLib/FinLib.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net8.0": [
+      "FinLib >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "/home/cdac/.nuget/packages/": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/home/cdac/Samples/DotNet/Language-Runtime/ReflectionTest/DemoApp2/DemoApp.csproj",
+      "projectName": "DemoApp",
+      "projectPath": "/home/cdac/Samples/DotNet/Language-Runtime/ReflectionTest/DemoApp2/DemoApp.csproj",
+      "packagesPath": "/home/cdac/.nuget/packages/",
+      "outputPath": "/home/cdac/Samples/DotNet/Language-Runtime/ReflectionTest/DemoApp2/obj/",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "/home/cdac/.nuget/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net8.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "projectReferences": {
+            "/home/cdac/Samples/DotNet/Language-Runtime/ReflectionTest/FinLib/FinLib.csproj": {
+              "projectPath": "/home/cdac/Samples/DotNet/Language-Runtime/ReflectionTest/FinLib/FinLib.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      }
+    },
+    "frameworks": {
+      "net8.0": {
+        "targetAlias": "net8.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "/home/cdac/dotnet/sdk/8.0.203/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

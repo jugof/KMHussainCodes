@@ -1,0 +1,48 @@
+    1  cd Language-Runtime/ReflectionTest/
+    2  ls
+    3  dotnet new classlib -o FinLib
+    4  cd FinLib/
+    5  wget -qO- iitdac.met.edu/shared/dotnet/Finance.tar.gz | tar x
+    6  ls
+    7  rm Class1.cs 
+    8  code .
+    9  dotnet build
+   10  cd ..
+   11  dotnet new console -o DemoApp
+   12  cd DemoApp
+   13  dotnet add reference ../FinLib/
+   14  code .
+   15  dotnet run 2000000 EducationLoan
+   16  dotnet run 2000000 PersonalLoan
+   17  dotnet run 2000000 HomeLoan
+   18  dotnet run 2000000 CarLoan
+   19  dotnet run 2000000 EducationLoan
+   20  dotnet run 2000000 Finance.EducationLoan
+   21  ls bin/Debug/net8.0/*.dll
+   22  dotnet run 2000000 Finance.EducationLoan,FinLib
+   23  dotnet run 2000000 EducationLoan
+   24  dotnet run 2000000 HomeLoan
+   25  dotnet run 2000000 PersonalLoan
+   26  dotnet run 2000000 CarLoan
+   27  dotnet run 2000000 PersonalLoan
+   28  code ..
+   29  dotnet build
+   30  dotnet run 2000000 CarLoan
+   31  cd ..
+   32  mv DemoApp DemoApp2
+   33  cd DemoApp2
+   34  code .
+   35  dotnet run 2000000 EducationLoan Common
+   36  dotnet run 2000000 EducationLoan Scholar
+   37  dotnet run 2000000 PersonalLoan Common
+   38  dotnet run 2000000 PersonalLoan Employees
+   39  dotnet run 2000000 PersonalLoan Employee
+   40  dotnet run 2000000 HomeLoan Common
+   41  dotnet run 2000000 HomeLoan Woman
+   42  dotnet run 2000000 HomeLoan Welfare
+   43  dotnet run 2000000 CarLoan Common
+   44  dotnet run 2000000 CarLoan Commercial
+   45  dotnet run 2000000 CarLoan Luxary
+   46  dotnet run 2000000 HomeLoan Welfare
+   47  dotnet run 2000000 CarLoan Commercial
+   48  history > ../../../cmd06-05-2024evening.txt

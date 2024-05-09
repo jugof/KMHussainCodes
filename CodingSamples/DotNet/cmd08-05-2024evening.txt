@@ -1,0 +1,16 @@
+    1  cd PlatformInvokeTest/DemoApp/
+    2  code .
+    3  dotnet run 10 100 5
+    4  dotnet run 10 100 10
+    5  cd ..
+    6  ls
+    7  cd ..
+    8  mkdir NativeAotTest
+    9  cd NativeAotTest/
+   10* 
+   11  dotnet new classlib -o DemoApp
+   12  cd DemoApp/
+   13  code .
+   14  dotnet publish -r linux-x64
+   15  python Program.py 
+   16  history > ../../../cmd08-05-2024evening.txt

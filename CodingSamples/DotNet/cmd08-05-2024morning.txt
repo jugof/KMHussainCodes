@@ -1,0 +1,17 @@
+    1  cd ../..
+    2  mkdir PlatformInvokeTest
+    3  cd PlatformInvokeTest/
+    4  wget -qO- iitdac.met.edu/shared/dotnet/legacy.tar.gz | tar x
+    5  ls
+    6  dotnet new console -o DemoApp
+    7  cd DemoApp/
+    8  code .
+    9  dotnet run 10 20
+   10  cp ../NativeLib/libprimes.so bin/Debug/net8.0/
+   11  dotnet run 10 20
+   12  dotnet run 10 100
+   13  code .
+   14  dotnet run 10 100
+   15  dotnet run 10 100 5
+   16  dotnet run 10 100 10
+   17  history > ../../../cmd08-05-2024morning.txt

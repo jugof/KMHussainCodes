@@ -1,0 +1,11 @@
+/home/cdac/Samples/DotNet/Language-Runtime/NativeAotTest/DemoApp/bin/Release/net8.0/linux-x64/BizCalc.deps.json
+/home/cdac/Samples/DotNet/Language-Runtime/NativeAotTest/DemoApp/bin/Release/net8.0/linux-x64/BizCalc.dll
+/home/cdac/Samples/DotNet/Language-Runtime/NativeAotTest/DemoApp/bin/Release/net8.0/linux-x64/BizCalc.pdb
+/home/cdac/Samples/DotNet/Language-Runtime/NativeAotTest/DemoApp/obj/Release/net8.0/linux-x64/DemoApp.GeneratedMSBuildEditorConfig.editorconfig
+/home/cdac/Samples/DotNet/Language-Runtime/NativeAotTest/DemoApp/obj/Release/net8.0/linux-x64/DemoApp.AssemblyInfoInputs.cache
+/home/cdac/Samples/DotNet/Language-Runtime/NativeAotTest/DemoApp/obj/Release/net8.0/linux-x64/DemoApp.AssemblyInfo.cs
+/home/cdac/Samples/DotNet/Language-Runtime/NativeAotTest/DemoApp/obj/Release/net8.0/linux-x64/DemoApp.csproj.CoreCompileInputs.cache
+/home/cdac/Samples/DotNet/Language-Runtime/NativeAotTest/DemoApp/obj/Release/net8.0/linux-x64/BizCalc.dll
+/home/cdac/Samples/DotNet/Language-Runtime/NativeAotTest/DemoApp/obj/Release/net8.0/linux-x64/refint/BizCalc.dll
+/home/cdac/Samples/DotNet/Language-Runtime/NativeAotTest/DemoApp/obj/Release/net8.0/linux-x64/BizCalc.pdb
+/home/cdac/Samples/DotNet/Language-Runtime/NativeAotTest/DemoApp/obj/Release/net8.0/linux-x64/ref/BizCalc.dll

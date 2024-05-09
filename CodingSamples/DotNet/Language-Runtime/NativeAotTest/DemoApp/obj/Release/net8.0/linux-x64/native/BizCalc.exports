@@ -1,0 +1,6 @@
+V1.0 {
+    global: _init; _fini;
+        DotNetRuntimeDebugHeader;
+        asset_future_price;
+    local: *;
+};

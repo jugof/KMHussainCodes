@@ -1,0 +1,36 @@
+    1  mkdir Platform-Enterprise
+    2  cd Platform-Enterprise/
+    3  mkdir ThreadingTest
+    4  cd ThreadingTest/
+    5  cd ..
+    6  mv ThreadingTest/ ThreadTest
+    7  cd ThreadTest/
+    8  dotnet new console -n DemoApp -o DemoApp1 --use-program-main
+    9  cd DemoApp1/
+   10  code .
+   11  dotnet run
+   12  dotnet run 5
+   13  dotnet run
+   14  dotnet run 5
+   15  dotnet run 3
+   16  dotnet run 4
+   17  dotnet run 6
+   18  cd ..
+   19  dotnet new console -n DemoApp -o DemoApp2 --use-program-main
+   20  cd DemoApp2
+   21  cp ../DemoApp1/Activity.cs .
+   22  code .
+   23  dotnet run
+   24  cd ..
+   25  dotnet new console -n DemoApp -o DemoApp3 --use-program-main
+   26  cd DemoApp3
+   27  cp ../DemoApp1/Activity.cs .
+   28  code .
+   29  dotnet run
+   30  dotnet run 6
+   31  dotnet run 
+   32  dotnet run 3
+   33  dotnet run 4
+   34  dotnet run 7
+   35  dotnet run 3
+   36  history > ../../../cmd09-05-2024morning.txt 

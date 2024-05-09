@@ -1,0 +1,20 @@
+    1  pwd
+    2  code .
+    3  dotnet run items intel
+    4  dotnet run customers 1000
+    5  dotnet run customers 50000
+    6  dotnet run customers 80000
+    7  dotnet run customers 90000
+    8  dotnet run customers 120000
+    9  dotnet run customers 110000
+   10  dotnet run customers 90000
+   11  dotnet run customers 80000
+   12  cd ../..
+   13  mkdir ReflectionTest
+   14  cd ReflectionTest/
+   15  dotnet new console -n DemoApp -o DemoApp1 --use-program-main
+   16  cd DemoApp1/
+   17  cp ../../LinqTest/DemoApp/Shop.cs .
+   18  code .
+   19  dotnet run
+   20  history > ../../../cmd06-05-2024morning.txt 
