@@ -1,0 +1,22 @@
+    1  d ..
+    2  cd ..
+    3  mkdir AsyncParallelTest
+    4  cd AsyncParallelTest/
+    5  dotnet new console -o DemoApp
+    6  cd DemoApp/
+    7  cp ../../ThreadTest/DemoApp1/Activity.cs .
+    8  code .
+    9  dotnet run 5
+   10  dotnet run 10
+   11  dotnet run 20
+   12  dotnet run 30
+   13  dotnet run 10
+   14  dotnet run 20
+   15  dotnet run 10
+   16  dotnet run 20
+   17  dotnet run 30
+   18  dotnet run 20
+   19  dotnet run 30
+   20  cd ..
+   21  ls
+   22  history >cmd09-05-2024evening.txt 

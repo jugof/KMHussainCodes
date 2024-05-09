@@ -1,0 +1,41 @@
+﻿namespace DemoApp;
+
+using System.Diagnostics;
+
+class Program
+{
+    class Computation
+    {
+        private readonly Stopwatch watch = new ();
+
+        public long Compute(int first, int last)
+        {
+            watch.Start();
+            return Enumerable.Range(first, last - first + 1)
+                        .Select(Activity.Perform)
+                        .Sum();
+        }
+
+        public double Time()
+        {
+            watch.Stop();
+            return watch.ElapsedMilliseconds / 1000.0;
+        }
+
+    }
+
+    static void HandleJob(int jid)
+    {
+        Console.Write("Computing...");
+        var c = new Computation();
+        long r = c.Compute(1, jid);
+        Console.WriteLine("Done!");
+        Console.WriteLine("Result = {0}, computed in {1} seconds.", r, c.Time());
+    }
+
+    static void Main(string[] args)
+    {
+        int n = int.Parse(args[0]);
+        HandleJob(n);
+    }
+}
