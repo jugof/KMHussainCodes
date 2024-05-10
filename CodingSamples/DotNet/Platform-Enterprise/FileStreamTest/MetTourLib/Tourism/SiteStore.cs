@@ -1,3 +1,4 @@
+using System.IO.Compression;
 using System.Text.Json;
 
 namespace Tourism;
@@ -9,7 +10,7 @@ public static class SiteStore
         string doc = site.Title + ".store";
         try
         {
-            using var output = new FileStream(doc, FileMode.Create);
+            using var output = new DeflateStream(new FileStream(doc, FileMode.Create), CompressionMode.Compress);
             JsonSerializer.Serialize(output, site);
             return true;
         }
@@ -24,7 +25,7 @@ public static class SiteStore
         string doc = name + ".store";
         try
         {
-            using var input = new FileStream(doc, FileMode.Open);
+            using var input = new DeflateStream(new FileStream(doc, FileMode.Open), CompressionMode.Decompress);
             return JsonSerializer.Deserialize<Site>(input);
         }
         catch

@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "DemoApp/1.0.0": {
+        "dependencies": {
+          "MetTourLib": "1.0.0"
+        },
+        "runtime": {
+          "DemoApp.dll": {}
+        }
+      },
+      "MetTourLib/1.0.0": {
+        "runtime": {
+          "MetTourLib.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DemoApp/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MetTourLib/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
