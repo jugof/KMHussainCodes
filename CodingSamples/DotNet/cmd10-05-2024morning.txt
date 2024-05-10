@@ -1,0 +1,21 @@
+    1  clear
+    2  cd Platform-Enterprise/
+    3  ls
+    4  mkdir FileStreamTest
+    5  cd FileStreamTest/
+    6  dotnet new console -n DemoApp -o DemoApp1
+    7  cd DemoApp1/
+    8  code .
+    9  cp ../../AsyncParallelTest/DemoApp/Program3.cs odata.txt
+   10  ll
+   11  dotnet run first.txt second.txt
+   12  dotnet run odata.txt Program.cs 
+   13  dotnet run odata.txt edata.txt
+   14  dotnet run edata.txt eedata.txt
+   15  dotnet run odata.txt 
+   16  cd ..
+   17  dotnet new classlib -o MetTourLib
+   18  cd MetTourLib/
+   19  ls
+   20  code .
+   21  history > ../../../cmd10-05-2024morning.txt 
