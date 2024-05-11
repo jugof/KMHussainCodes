@@ -1,0 +1,11 @@
+/home/cdac/Samples/DotNet/Platform-Enterprise/FileStreamTest/MetTourLib/bin/Debug/net8.0/MetTourLib.deps.json
+/home/cdac/Samples/DotNet/Platform-Enterprise/FileStreamTest/MetTourLib/bin/Debug/net8.0/MetTourLib.dll
+/home/cdac/Samples/DotNet/Platform-Enterprise/FileStreamTest/MetTourLib/bin/Debug/net8.0/MetTourLib.pdb
+/home/cdac/Samples/DotNet/Platform-Enterprise/FileStreamTest/MetTourLib/obj/Debug/net8.0/MetTourLib.GeneratedMSBuildEditorConfig.editorconfig
+/home/cdac/Samples/DotNet/Platform-Enterprise/FileStreamTest/MetTourLib/obj/Debug/net8.0/MetTourLib.AssemblyInfoInputs.cache
+/home/cdac/Samples/DotNet/Platform-Enterprise/FileStreamTest/MetTourLib/obj/Debug/net8.0/MetTourLib.AssemblyInfo.cs
+/home/cdac/Samples/DotNet/Platform-Enterprise/FileStreamTest/MetTourLib/obj/Debug/net8.0/MetTourLib.csproj.CoreCompileInputs.cache
+/home/cdac/Samples/DotNet/Platform-Enterprise/FileStreamTest/MetTourLib/obj/Debug/net8.0/MetTourLib.dll
+/home/cdac/Samples/DotNet/Platform-Enterprise/FileStreamTest/MetTourLib/obj/Debug/net8.0/refint/MetTourLib.dll
+/home/cdac/Samples/DotNet/Platform-Enterprise/FileStreamTest/MetTourLib/obj/Debug/net8.0/MetTourLib.pdb
+/home/cdac/Samples/DotNet/Platform-Enterprise/FileStreamTest/MetTourLib/obj/Debug/net8.0/ref/MetTourLib.dll

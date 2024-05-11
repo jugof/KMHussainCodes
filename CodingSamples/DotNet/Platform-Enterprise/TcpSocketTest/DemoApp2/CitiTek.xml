@@ -1,0 +1,10 @@
+<shop>
+    <item id="cpu">price:19000,stock:50</item>
+    <item id="motherboard">price:8500,stock:65</item>
+    <item id="ddr">price:3500,stock:85</item>
+    <item id="ssd">price:4500,stock:30</item>
+    <item id="keyboard">price:900,stock:90</item>
+    <item id="mouse">price:550,stock:120</item>
+    <item id="monitor">price:8000,stock:15</item>
+</shop>
+

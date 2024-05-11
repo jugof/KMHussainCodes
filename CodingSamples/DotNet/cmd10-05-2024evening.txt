@@ -1,0 +1,67 @@
+    1  cd ..
+    2  ls
+    3  dotnet new console -n DemoApp -o DemoApp2
+    4  cd DemoApp2
+    5  ls
+    6  dotnet add reference ../MetTourLib/
+    7  code .
+    8  dotnet build
+    9  code .
+   10  dotnet run Jack
+   11  dotnet run Jill
+   12  dotnet run Jack
+   13  dotnet run
+   14  ll
+   15  dotnet run
+   16  code ..
+   17  rm CitiZoo.store 
+   18  dotnet build
+   19  dotnet run Jack
+   20  dotnet run Jill
+   21  dotnet run Jack
+   22  dotnet run
+   23  ls
+   24  ll
+   25  rm CitiZoo.store 
+   26  dotnet run
+   27  dotnet run Jack
+   28  dotnet run Jill
+   29  dotnet run Jack
+   30  dotnet run
+   31  ll
+   32  cd ..
+   33  mkdir TcpSocketTest
+   34  cd TcpSocketTest/
+   35  dotnet new console -n DemoApp -o DemoApp --use-program-main
+   36  mv DemoApp/ DemoApp1
+   37  cd DemoApp1/
+   38  ls
+   39  wget iitdac.met.edu/shared/deotnet/CitiTek.xml
+   40  wget iitdac.met.edu/shared/dotnet/CitiTek.xml
+   41  code .
+   42  ip addr
+   43  dotnet build
+   44  ./bin/Debug/net8.0/DemoApp &
+   45  netstat -pnlt
+   46  ./bin/Debug/net8.0/DemoApp 
+   47  nc localhost 4000
+   48  pkill -ef DemoApp
+   49  dotnet build
+   50  ./bin/Debug/net8.0/DemoApp &
+   51  nc localhost 4000
+   52  kill 10672
+   53  dotnet build
+   54  ./bin/Debug/net8.0/DemoApp &
+   55  nc localhost 4000
+   56  pkill -ef DemoApp
+   57  dotnet build
+   58  nc localhost 4000
+   59  ./bin/Debug/net8.0/DemoApp &
+   60  nc localhost 4000
+   61  pkill -ef DemoApp
+   62  ./bin/Debug/net8.0/DemoApp &
+   63  pkill -ef DemoApp
+   64  dotnet build
+   65  ./bin/Debug/net8.0/DemoApp &
+   66  nc localhost 4000
+   67  history >../../../cmd10-05-2024evening.txt 

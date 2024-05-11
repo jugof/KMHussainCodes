@@ -1,0 +1,15 @@
+    1  pwd
+    2  cd ..
+    3  dotnet new worker -n DemoApp -o DemoApp2
+    4  cd DemoApp2
+    5  code .
+    6  cp -r ../DemoApp1/Services/ .
+    7  cp -r ../DemoApp1/CitiTek.xml .
+    8  cd ..
+    9  dotnet new console -n DemoApp -o DemoApp3
+   10  nc localhost 4000
+   11  cd DemoApp3
+   12  ls
+   13  code .
+   14  dotnet run localhost
+   15  history >../../../cmd11-05-2024morning.txt

@@ -1,0 +1,44 @@
+    1  clear
+    2  cd TcpSocketTest/DemoApp3/
+    3  code .
+    4  netstat -pnlt
+    5* 
+    6  stty echo
+    7  dotnet run
+    8  stty echo
+    9  dotnet run
+   10  stty echo
+   11  dotnet run
+   12  cd ../..
+   13  mkdir AdoNetTest
+   14  cd AdoNetTest/
+   15  dotnet new console -n DemoApp -o DemoApp1
+   16  cd DemoApp1/
+   17  wget iitdac.met.edu/shared/data/shop.db
+   18  wget iitdac.met.edu/shared/dotnet/dbprov.txt
+   19  ls
+   20  sqlite3 shop.db 
+   21  dotnet add package Microsoft.Data.Sqlite
+   22  code .
+   23  dotnet run
+   24  dotnet run CU102
+   25  dotnet run
+   26  dotnet run CU105
+   27  dotnet run "';UPDATE CustomerInfo SET Credit=0 WHERE UserName!='"
+   28  dotnet run
+   29  rm shop.db 
+   30  wget iitdac.met.edu/shared/data/shop.db
+   31  dotnet run
+   32  dotnet run CU102
+   33  dotnet run
+   34  dotnet run CU105
+   35  dotnet run "';UPDATE CustomerInfo SET Credit=0 WHERE UserName!='"
+   36  cd ..
+   37  dotnet new console -n DemoApp -o DemoApp2
+   38  cd DemoApp2/
+   39  dotnet add package Microsoft.Data.SqlClient
+   40  wget iitdac.met.edu/shared/shopms.sql
+   41  wget iitdac.met.edu/shared/data/shopms.sql
+   42  code .
+   43  dotnet run
+   44  history > ../../../cmd11-05-2024evening.txt
