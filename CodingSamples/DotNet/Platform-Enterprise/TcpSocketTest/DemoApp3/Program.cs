@@ -2,7 +2,9 @@
 
 Console.Write("Item Name: ");
 string item = Console.ReadLine();
-var info = ShopHelper.FetchItemInfoTcp(item, args[0], 4000);
+var info = args.Length > 0 
+                ? ShopHelper.FetchItemInfoTcp(item, args[0], 4000)
+                : await ShopHelper.FetchItemInfoHttp(item);
 if(info.Stock > 0)
 {
     Console.Write("Quantity : ");
