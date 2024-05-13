@@ -1,0 +1,14 @@
+    1  cd AdoNetTest/DemoApp2
+    2  code .
+    3  dotnet run CU202 103 4
+    4  dotnet run CU202 203 4
+    5  dotnet run CU205 201 12
+    6  dotnet run CU204 201 12
+    7  cd ..
+    8  cp -r DemoApp2 DemoApp3
+    9  cd DemoApp3
+   10  code .
+   11  dotnet run CU201 205 15
+   12  dotnet run CU202 209 12
+   13  dotnet run CU202 202 12
+   14  history > ../../../cmd13-05-2024morning.txt 
