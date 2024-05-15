@@ -1,0 +1,12 @@
+    1  ls
+    2  cd Platform-Enterprise/
+    3  ls
+    4  mkdir AspNetCoreMiddlewareTest
+    5  cd AspNetCoreMiddlewareTest/
+    6  dotnet new web -o DemoApp
+    7  cd DemoApp/
+    8  dotnet run
+    9  code .
+   10  cp -r ../../AspNetCoreEndpointTest/DemoApp1/Endpoints/ .
+   11  dotnet run
+   12  history > ../../../cmd15-05-2024morning.txt 
