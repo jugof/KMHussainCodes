@@ -1,0 +1,14 @@
+    1  cd ../..
+    2  mkdir AspNetCoreMvcTest
+    3  cd AspNetCoreMvcTest/
+    4  dotnet new web -n DemoApp -o DemoApp1
+    5  code .
+    6  cd DemoApp1/
+    7  code .
+    8  dotnet run
+    9  cp -r ../../AspNetCoreEndpointTest/DemoApp2/Services/ .
+   10  dotnet run
+   11  wget iitdac.met.edu/web/greetui.html -P wwwroot
+   12  wget iitdac.met.edu/shared/web/greetui.html -P wwwroot
+   13  dotnet run
+   14  history > ../../../cmd15-05-2024evening.txt
