@@ -1,5 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 using DemoApp.Services;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DemoApp.Controllers;
@@ -7,7 +8,10 @@ namespace DemoApp.Controllers;
 [ApiController] //enable automatic data validation, service binding, etc
 public class BackController : ControllerBase
 {
-
+    //Browser only allows client-side script to render/submit data from/to
+    //the endpoint of its origin or an endpoint from which it has received
+    //headers required for enabling cross origin resource sharing (CORS)
+    [EnableCors("forPreview")] //see Program.cs 
     [HttpPut("/greet")]
     public ActionResult<GreetOutput> Greet(GreetInput guest, ICounter counter)
     {

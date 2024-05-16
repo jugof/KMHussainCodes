@@ -1,0 +1,44 @@
+@model IEnumerable<DemoApp.Models.VisitorInfo>
+<html>
+    <head>
+        <title>DemoApp</title>
+    </head>
+    <body>
+        <h1>Our Visitors</h1>
+        <table border="1">
+            <tr>
+                <th>Given Name</th>
+                <th>Visit Count</th>
+                <th>Last Visit</th>
+                <th>Star Rating</th>
+            </tr>
+            @foreach(var person in Model)
+            {
+                <tr>
+                    <td>@person.GivenName</td>
+                    <td>@person.VisitCount</td>
+                    <td>@person.LastVisit</td>
+                    <td>@person.StarRating</td>
+                </tr>
+            }
+        </table>
+        <hr/>
+        <form method="post" action="/Home/Register">
+            <p>
+                <b>Your Name:</b>
+                <input type="text" name="visitorId" required="required"/>
+            </p>
+            <p>
+                <b>Experience:</b>
+                <select name="visitorRating">
+                    <option value="5">Fantastic</option>
+                    <option value="4">Good</option>
+                    <option value="3">Average</option>
+                    <option value="2">Poor</option>
+                    <option value="1">Pathetic</option>
+                </select>
+            </p>
+            <input type="submit" value="Register"/>
+        </form>
+    </body>
+</html>
