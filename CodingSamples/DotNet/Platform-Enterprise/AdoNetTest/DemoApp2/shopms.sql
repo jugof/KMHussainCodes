@@ -70,16 +70,21 @@ CREATE PROCEDURE PlaceOrder(
 	@Quantity INT,
 	@OrderId INT OUTPUT) AS
 BEGIN
-	BEGIN TRAN
+	BEGIN TRANSACTION
 	UPDATE Counters SET CurrentValue=CurrentValue+1 WHERE Id='order'
 	SELECT @OrderId=CurrentValue+SeedValue FROM Counters WHERE Id='order'
 	INSERT INTO OrderDetail VALUES(@OrderId, GetDate(), @Customer, @Product, @Quantity)
-	IF @@error = 0 COMMIT TRAN
+	IF @@error = 0
+	BEGIN
+		COMMIT TRANSACTION
+		SELECT @Quantity*Price FROM ProductInfo WHERE ProductNo=@Product
+	END
 	ELSE
 	BEGIN
-		ROLLBACK TRAN
+		ROLLBACK TRANSACTION
 		SET @OrderId=0
+		SELECT 0
 	END
 END
-
 GO
+

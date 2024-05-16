@@ -1,0 +1,31 @@
+    1  cd ../..
+    2  mkdir AspNetCoreMvcTest
+    3  cd AspNetCoreMvcTest/
+    4  dotnet new web -n DemoApp -o DemoApp1
+    5  code .
+    6  cd DemoApp1/
+    7  code .
+    8  dotnet run
+    9  cp -r ../../AspNetCoreEndpointTest/DemoApp2/Services/ .
+   10  dotnet run
+   11  wget iitdac.met.edu/web/greetui.html -P wwwroot
+   12  wget iitdac.met.edu/shared/web/greetui.html -P wwwroot
+   13  dotnet run
+   14  history > ../../../cmd15-05-2024evening.txt
+   15  ls ../../../
+   16  dotnet run
+   17  cd ..
+   18  dotnet new console -n DemoApp -o DemoApp2
+   19  rm -r DemoApp2
+   20  dotnet new web -n DemoApp -o DemoApp2
+   21  cd DemoApp
+   22  cd DemoApp2
+   23  cp -r ../../EFCoreTest/DemoApp1/Data/ .
+   24  cp -r ../../EFCoreTest/DemoApp1/Models/ .
+   25  cp -r ../../EFCoreTest/DemoApp1/hotel.db .
+   26* dotnet add package Microsoft.EntityFrameworkCore.Sqlit
+   27  code .
+   28  sqlite3 hotel.db 
+   29  dotnet run
+   30  sqlite3 hotel.db 
+   31  history > ../../../cmd16-05-2024morning.txt 

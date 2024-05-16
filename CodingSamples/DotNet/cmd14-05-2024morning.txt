@@ -1,0 +1,16 @@
+    1  pwd
+    2  cd ..
+    3  dotnet new console -n DemoApp -o DemoApp2
+    4  cd DemoApp2/
+    5  dotnet add package Microsoft.EntityFrameworkCore.SqlServer
+    6  code .
+    7  dotnet run
+    8  dotnet run 208
+    9  dotnet run 202
+   10  dotnet run
+   11  dotnet run 202
+   12  dotnet run 203
+   13  dotnet run 201
+   14  dotnet run 204
+   15  dotnet run 205
+   16  history > ../../../cmd14-05-2024morning.txt 

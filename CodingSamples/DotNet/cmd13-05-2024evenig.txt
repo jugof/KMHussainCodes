@@ -1,0 +1,19 @@
+    1  clear
+    2  cd Samples/DotNet/Platform-Enterprise/
+    3  mkdir EFCoreTest
+    4  cd EFCoreTest/
+    5  dotnet new console -n DemoApp -o DemoApp1
+    6  cd DemoApp1/
+    7  dotnet add package Microsoft.EntityFrameworkCore.Sqlite
+    8  code .
+    9  ls
+   10  dotnet run Jack
+   11  ls
+   12  dotnet run Jill
+   13  dotnet run Jack
+   14  sqlite3 hotel.db 
+   15  dotnet run
+   16  dotnet run Jim
+   17  sqlite3 hotel.db 
+   18  dotnet run
+   19  history > ../../../cmd13-05-2024evenig.txt

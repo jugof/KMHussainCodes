@@ -1,0 +1,21 @@
+    1  cd ../..
+    2  mkdir AspNetCoreEndpointTest
+    3  cd AspNetCoreEndpointTest/
+    4  dotnet new console -n DemoApp -o DemoApp
+    5  cd DemoApp/
+    6  cd ..
+    7  mv DemoApp/ DemoApp1/
+    8  cd DemoApp1/
+    9  code .
+   10  dotnet run
+   11  dotnet run --urls "http://localhost:5001"
+   12  dotnet run
+   13  dotnet run --urls "http://localhost:5001"
+   14  dotnet run
+   15  dotnet watch
+   16  cd ..
+   17  cp -r DemoApp1/ DemoApp2
+   18  cd DemoApp2/
+   19  code .
+   20  dotnet watch
+   21  history > ../../../cmd14-05-2024evening.txt

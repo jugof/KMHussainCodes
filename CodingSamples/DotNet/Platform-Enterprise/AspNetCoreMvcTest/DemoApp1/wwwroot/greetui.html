@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DemoApp</title>
+    </head>
+    <body>
+        <h1 id="greetingHeader">Welcome Visitor</h1>
+        <p>
+            <b>Your Name</b><br/>
+            <input type="text" id="nameInput"/>
+        </p>
+        <p>
+            <b>Your Age</b><br/>
+            <input type="number" id="ageInput"/>
+        </p>
+        <button id="greetButton">Greet</button>
+        <p>
+            <i>
+                <span id="outputSpan"></span>
+            </i>
+        </p>
+        <script type="text/javascript">
+            let greetingHeader = document.getElementById("greetingHeader")
+            let nameInput = document.getElementById("nameInput");
+            let ageInput = document.getElementById("ageInput");
+            let greetButton = document.getElementById("greetButton");
+            let outputSpan = document.getElementById("outputSpan");
+            greetButton.onclick = async function() {
+                let request = {
+                    method: "put",
+                    headers: {"Content-Type": "application/json"},
+                    body: JSON.stringify({
+                        "name": nameInput.value,
+                        "age": new Number(ageInput.value)
+                    })
+                };
+                let response = await fetch("http://localhost:5000/greet", request);
+                if(response.ok){
+                    let result = await response.json();
+                    greetingHeader.innerText = result.message;
+                    outputSpan.innerText = `Number of greetings is ${result.count}`;
+                }else{
+                    greetingHeader.innerText = "Welcome Visitor";
+                    outputSpan.innerText = "Invalid input";
+                }                    
+            };
+        </script>
+    </body>
+</html>
