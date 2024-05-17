@@ -1,0 +1,7 @@
+    1  cd ..
+    2  dotnet new web -n DemoApp -o DemoApp2
+    3  cd DemoApp2/
+    4  dotnet add package Microsoft.EntityFrameworkCore.SqlServer
+    5  code .
+    6  dotnet run
+    7  history > ../../../cmd17-05-2024evening.txt
