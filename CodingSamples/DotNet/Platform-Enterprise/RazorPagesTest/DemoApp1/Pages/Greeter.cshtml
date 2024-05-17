@@ -1,0 +1,18 @@
+@page
+@inject DemoApp.Services.ICounter ctr
+<html>
+    <head>
+        <title>DemoApp</title>
+    </head>
+    <body>
+        @if((ctr.CountNext("Visitor") % 2) == 1)
+        {
+            <h1>Welcome Visitor</h1>
+        }
+        else
+        {
+            <h1>Hello Visitor</h1>
+        }
+        <b>Current Time: </b>@DateTime.Now
+    </body>
+</html>

@@ -1,0 +1,11 @@
+    1  ls
+    2  cd ..
+    3  mkdir RazorPagesTest
+    4  cd RazorPagesTest/
+    5  dotnet new web -n DemoApp -o DemoApp1
+    6  cd DemoApp1/
+    7  cp -r ../../AspNetCoreEndpointTest/DemoApp2/Services/ .
+    8  ls
+    9  code .
+   10  dotnet run
+   11  history > ../../../cmd17-05-2024morning.txt
