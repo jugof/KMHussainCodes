@@ -1,0 +1,32 @@
+    1  pwd
+    2  cd ..
+    3  mkdir GrpcServiceTest
+    4  cd GrpcServiceTest/
+    5  dotnet new classlib -o ContractLib
+    6  cd ContractLib/
+    7  cp ~/Samples/Java/Platform-Enterprise/MicroserviceTest/contract/src/main/proto/order_manager.proto  .
+    8  dotnet add package Google.Protobuf
+    9  dotnet add package Grpc
+   10  dotnet add package Grpc.Tools
+   11  code .
+   12  dotnet build
+   13  cd ..
+   14  dotnet new web -o ServerApp
+   15  cd ServerApp/
+   16  dotnet add reference ../ContractLib/
+   17  dotnet add package Grpc.AspNetCore.Server
+   18  dotnet add package Microsoft.EntityFrameworkCore.SqlServer
+   19  code .
+   20  cd ..
+   21  cp -r ~/Samples/Java/Platform-Enterprise/MicroserviceTest/demo/ DemoApp
+   22  cd DemoApp/
+   23  ls
+   24  python Program.py CU202
+   25  python Program.py CU203
+   26  python Program.py CU203 204 10 
+   27  python Program.py CU203
+   28  python Program.py CU206 202 20 
+   29  cd ~/Samples/Java/Platform-Enterprise/RestApiTest/demo/
+   30  mvn spring-boot:run
+   31  cd ~/Samples/DotNet/Platform-Enterprise/GrpcServiceTest/ServerApp/
+   32  history > ../../../cmd18-05-2024morning.txt 

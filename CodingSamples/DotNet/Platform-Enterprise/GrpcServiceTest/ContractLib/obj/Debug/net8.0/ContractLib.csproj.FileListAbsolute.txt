@@ -1,0 +1,12 @@
+/home/cdac/Samples/DotNet/Platform-Enterprise/GrpcServiceTest/ContractLib/bin/Debug/net8.0/ContractLib.deps.json
+/home/cdac/Samples/DotNet/Platform-Enterprise/GrpcServiceTest/ContractLib/bin/Debug/net8.0/ContractLib.dll
+/home/cdac/Samples/DotNet/Platform-Enterprise/GrpcServiceTest/ContractLib/bin/Debug/net8.0/ContractLib.pdb
+/home/cdac/Samples/DotNet/Platform-Enterprise/GrpcServiceTest/ContractLib/obj/Debug/net8.0/ContractLib.csproj.AssemblyReference.cache
+/home/cdac/Samples/DotNet/Platform-Enterprise/GrpcServiceTest/ContractLib/obj/Debug/net8.0/ContractLib.GeneratedMSBuildEditorConfig.editorconfig
+/home/cdac/Samples/DotNet/Platform-Enterprise/GrpcServiceTest/ContractLib/obj/Debug/net8.0/ContractLib.AssemblyInfoInputs.cache
+/home/cdac/Samples/DotNet/Platform-Enterprise/GrpcServiceTest/ContractLib/obj/Debug/net8.0/ContractLib.AssemblyInfo.cs
+/home/cdac/Samples/DotNet/Platform-Enterprise/GrpcServiceTest/ContractLib/obj/Debug/net8.0/ContractLib.csproj.CoreCompileInputs.cache
+/home/cdac/Samples/DotNet/Platform-Enterprise/GrpcServiceTest/ContractLib/obj/Debug/net8.0/ContractLib.dll
+/home/cdac/Samples/DotNet/Platform-Enterprise/GrpcServiceTest/ContractLib/obj/Debug/net8.0/refint/ContractLib.dll
+/home/cdac/Samples/DotNet/Platform-Enterprise/GrpcServiceTest/ContractLib/obj/Debug/net8.0/ContractLib.pdb
+/home/cdac/Samples/DotNet/Platform-Enterprise/GrpcServiceTest/ContractLib/obj/Debug/net8.0/ref/ContractLib.dll
