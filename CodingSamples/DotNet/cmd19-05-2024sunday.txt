@@ -1,0 +1,17 @@
+    1  pwd
+    2  cd ../..
+    3  mkdir MinimalApiTest
+    4  cd MinimalApiTest/
+    5  dotnet new web -o DemoApp
+    6  cd DemoApp/
+    7  dotnet add reference ../../GrpcServiceTest/ContractLib/
+    8  dotnet add package Grpc.Net.ClientFactory
+    9  dotnet add package Swashbuckle.AspNetCore
+   10  code .
+   11  dotnet run
+   12  ./bin/Debug/net8.0/DemoApp 
+   13  cp -r ~/Samples/Java/Platform-Enterprise/RestApiTest/demo/src/main/resources/static/* wwwroot/
+   14  dotnet run
+   15  code .
+   16  dotnet run
+   17  history > ../../../cmd19-05-2024sunday.txt
