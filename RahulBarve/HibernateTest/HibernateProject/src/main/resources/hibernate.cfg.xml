@@ -14,7 +14,7 @@
         	root
         </property>
     	<property name="hibernate.connection.password">
-    		root
+    		password
     	</property>
         <property name="hibernate.show_sql">
         	true
