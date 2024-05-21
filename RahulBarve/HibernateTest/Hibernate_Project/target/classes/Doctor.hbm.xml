@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+   <class 
+   name = "example.hibernate.entity.Doctor" 
+   table = "Doctor_Master">
+      <id name = "doctorId" type = "int" column = "doc_id"/>        
+      <property name = "name" column = "doc_name" type = "string"/>
+      <property name = "specialization" column = "doc_spec" type = "string"/>      
+   </class>
+</hibernate-mapping>
