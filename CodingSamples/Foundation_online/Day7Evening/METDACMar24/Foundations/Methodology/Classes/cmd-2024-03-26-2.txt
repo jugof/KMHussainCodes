@@ -1,0 +1,20 @@
+    1  cp banner1.h banner2.h
+    2  vi banner1.h 
+    3  c++ classtest1.cpp -o program
+    4  vi banner1.h 
+    5  vi banner2.h 
+    6  cp classtest1.cpp classtest2.cpp
+    7  vi classtest2.cpp 
+    8  c++ classtest2.cpp -o program
+    9  ./program 
+   10  vi ../notes.txt 
+   11  vi classtest2.cpp 
+   12  vi banner2.h 
+   13  vi classtest2.cpp 
+   14  c++ classtest2.cpp -o program
+   15  ./program 
+   16  vi banner2.h 
+   17  cp banner2.h banner3.h
+   18  vi banner3.h 
+   19  vi objptrtest.cpp
+   20  c++ objptrtest.cpp -o program

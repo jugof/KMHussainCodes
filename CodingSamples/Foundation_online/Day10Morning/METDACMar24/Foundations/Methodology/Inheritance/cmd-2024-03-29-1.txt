@@ -1,0 +1,15 @@
+    1  vi ../notes.txt 
+    2  vi series1.h
+    3  vi series1.cpp 
+    4  c++ -c series1.cpp 
+    5  ls
+    6  vi adttest.cpp
+    7  c++ adttest.cpp series1.o -o program
+    8  ./program 
+    9  vi adttest.cpp
+   10  c++ adttest.cpp series1.o -o program
+   11  ./program 
+   12  vi adttest.cpp
+   13  vi series1.h
+   14  vi adttest.cpp
+   15  history >> cmd-2024-03-29-1.txt 
