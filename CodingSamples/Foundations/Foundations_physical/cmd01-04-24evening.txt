@@ -1,0 +1,82 @@
+    1  ls
+    2  cd Methodology/
+    3  ls
+    4  cd Inheritance/
+    5  ls
+    6  cd ..
+    7  mkdir Templates
+    8  cd Templates/
+    9  vi functmplttest.cpp
+   10  c++ functmplttest.cpp -o program
+   11  ./program 
+   12  vi functmplttest.cpp
+   13  c++ functmplttest.cpp -o program
+   14  vi functmplttest.cpp
+   15  c++ functmplttest.cpp -o program
+   16  ./program 
+   17  vi functmplttest.cpp
+   18  c++ functmplttest.cpp -o program
+   19  vi functmplttest.cpp
+   20  c++ functmplttest.cpp -o program
+   21  ./program 
+   22  vi functmplttest.cpp
+   23  objdump -t program 
+   24  vi functmplttest.cpp
+   25  c++ functmplttest.cpp -o program
+   26  vi functmplttest.cpp
+   27  cp functmplttest.cpp functmpltsptest.cpp 
+   28  vi functmpltsptest.cpp 
+   29  c++ functmpltsptest.cpp -o program 
+   30  vi functmpltsptest.cpp 
+   31  c++ functmpltsptest.cpp -o program 
+   32  ./program 
+   33  vi functmpltsptest.cpp 
+   34  c++ functmpltsptest.cpp -o program 
+   35  ./program 
+   36  vi functmpltsptest.cpp 
+   37  c++ functmpltsptest.cpp -o program 
+   38  ./program 
+   39  vi functmpltsptest.cpp 
+   40  ./program 
+   41  vi functmpltsptest.cpp 
+   42  c++ functmpltsptest.cpp -o program 
+   43  ./program 
+   44  vi functmpltsptest.cpp 
+   45  c++ functmpltsptest.cpp -o program 
+   46  ./program 
+   47  vi functmpltsptest.cpp 
+   48  c++ functmpltsptest.cpp -o program 
+   49  vi functmpltsptest.cpp 
+   50  c++ functmpltsptest.cpp -o program 
+   51  ./program 
+   52  c++ functmpltsptest.cpp -o program 
+   53  vi interval.h
+   54  vi functmpltsptest.cpp 
+   55  c++ functmpltsptest.cpp -o program 
+   56  vi functmpltsptest.cpp 
+   57  vi interval.h
+   58  c++ functmpltsptest.cpp -o program 
+   59  ./program 
+   60  vi functmpltsptest.cpp 
+   61  c++ functmpltsptest.cpp -o program 
+   62  ./program 
+   63  vi functmpltsptest.cpp 
+   64  c++ functmpltsptest.cpp -o program 
+   65  ./program 
+   66  vi functmpltsptest.cpp 
+   67  c++ functmpltsptest.cpp -o program 
+   68  ./program 
+   69  vi functmpltsptest.cpp 
+   70  c++ functmpltsptest.cpp -o program 
+   71  ./program 
+   72  vi functmpltsptest.cpp 
+   73  c++ functmpltsptest.cpp -o program 
+   74  ./program 
+   75  vi functmpltsptest.cpp 
+   76  c++ functmpltsptest.cpp -o program 
+   77  ./program 
+   78  vi functmpltsptest.cpp 
+   79  cd ..
+   80  ls
+   81  cd Foundations/
+   82  history >cmd01-04-24evening.txt 
