@@ -1,0 +1,13 @@
+Modularization: Dividing the implementation of a large software into smaller
+sets of related functions known as modules is called modularization. 
+A module can publish a subset of its functions so that they can be called 
+from external modules.
+
+Modularization can enable multiple programmers to simultaneously and 
+independently implement, test and maintain different parts of a software
+provided it is performed according to following rules
+1. Functions whose internal implementations depend upon each other
+   should be defined within the same module.
+2. A module should only share the immutable information required to
+   call its published functions with external modules.
+

@@ -1,0 +1,80 @@
+    1  ls
+    2  vi callfunctest.cpp 
+    3  vi funcovldtest.cpp
+    4  c++ funcovldtest.cpp -o program
+    5  ./program 
+    6  vi funcovldtest.cpp
+    7  c++ funcovldtest.cpp -o program
+    8  ./program 
+    9  vi funcovldtest.cpp
+   10  objdump -t program 
+   11  vi funcovldtest.cpp
+   12  vi callfunctest.cpp 
+   13  c++ callfunctest.cpp
+   14  ls
+   15  objdump -t a.out
+   16  cp ../Machine/dijkstra.o .
+   17  vi externfunctest.cpp
+   18  c++ externfunctest.cpp -o program
+   19  c++ externfunctest.cpp dijkstra.o -o program
+   20  objdump -t dijkstra.o 
+   21  vi externfunctest.cpp
+   22  c++ externfunctest.cpp dijkstra.o -o program
+   23  ./program 
+   24  vi externfunctest.cpp
+   25  vi ../Machine/callconv.txt 
+   26  vi exceptiontest.cpp
+   27  vi coputation.cpp
+   28  vi exceptiontest.cpp
+   29  ls
+   30  mv coputation.cpp computation.cpp
+   31  ls
+   32  c++ -c computation.cpp 
+   33  ls
+   34  vi computation.cpp 
+   35  c++ -c computation.cpp 
+   36  vi computation.o
+   37  vi exceptiontest.cpp 
+   38  objdump -t computation.o
+   39  vi exceptiontest.cpp 
+   40  c++ exceptiontest.cpp -o program
+   41  c++ exceptiontest.cpp computation.o -o program
+   42  ./program 
+   43  vi exceptiontest.cpp 
+   44  c++ exceptiontest.cpp computation.o -o program
+   45  vi exceptiontest.cpp 
+   46  c++ exceptiontest.cpp computation.o -o program
+   47  ./program 
+   48  vi exceptiontest.cpp 
+   49  c++ exceptiontest.cpp computation.o -o program
+   50  ./program 
+   51  vi exceptiontest.cpp 
+   52  c++ exceptiontest.cpp computation.o -o program
+   53  ./program 
+   54  vi exceptiontest.cpp 
+   55  vi computation.cpp 
+   56  vi exceptiontest.cpp 
+   57  c++ exceptiontest.cpp computation.o -o program
+   58  ./program 
+   59  vi exceptiontest.cpp 
+   60  ./program 
+   61  vi exceptiontest.cpp 
+   62  vi computation.cpp 
+   63  vi exceptiontest.cpp 
+   64  vi computation.cpp 
+   65  vi exceptiontest.cpp 
+   66  c++ -c computation.cpp 
+   67  vi exceptiontest.cpp 
+   68  c++ exceptiontest.cpp computation.o -o program
+   69  ./program 
+   70  vi exceptiontest.cpp 
+   71  c++ exceptiontest.cpp computation.o -o program
+   72  ./program 
+   73  vi exceptiontest.cpp 
+   74  c++ exceptiontest.cpp computation.o -o program
+   75  ./program 
+   76  vi exceptiontest.cpp 
+   77  c++ exceptiontest.cpp computation.o -o program
+   78  ./program 
+   79  vi exceptiontest.cpp 
+   80  history >> cmd-2024-03-21-1.txt 

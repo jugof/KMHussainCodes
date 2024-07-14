@@ -1,0 +1,16 @@
+    1  vi ../notes.txt 
+    2  vi adttest.cpp 
+    3  cp series1.h series2.h
+    4  cp series1.cpp series2.cpp
+    5  vi series2.h
+    6  vi series2.cpp 
+    7  c++ -c series2.cpp 
+    8  cp adttest.cpp rttitest.cpp
+   10  vi rttitest.cpp 
+   11  c++ rttitest.cpp series2.o -o program 
+   12  vi rttitest.cpp 
+   13  vi series2.h
+   14  vi rttitest.cpp 
+   15  c++ rttitest.cpp series2.o -o program 
+   16  ./program 
+   17  vi rttitest.cpp 
