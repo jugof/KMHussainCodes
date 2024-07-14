@@ -1,0 +1,29 @@
+Modularization: Dividing the implementation of a large software into smaller
+sets of related functions known as modules is called modularization. 
+A module can publish a subset of its functions so that they can be called 
+from external modules.
+
+Modularization can enable multiple programmers to simultaneously and 
+independently implement, test and maintain different parts of a software
+provided it is performed according to following rules
+1. Functions whose internal implementations depend upon each other
+   should be defined within the same module.
+2. A module should only share the immutable information required to
+   call its published functions with external modules.
+
+
+Data Abstraction: It is a modularization methodology (systamatic style) 
+in which the data processed by a program is divided into smaller blocks 
+known as objects so that each object controls its own state (data) and 
+supports its own behaviour (code).
+  A class defines a set of members for a particular type of object and
+these members include fields (variables) whose values indicate the state
+of that object and methods (functions) whose implementation describe the
+behaviour of the that object. It provides support for following mechanisms
+1. Activation - Each object refers to a block of memory known as the
+   instance of its class and this block contains separate values of 
+   the fields defined by that class initialized by calling a special 
+   method known as the constructor of that class.
+2. Binding - Every instance has unique identity and when a method defined
+   by a class is called on its object the identity of the instance it
+   refers to is passed to the implementation of that method.

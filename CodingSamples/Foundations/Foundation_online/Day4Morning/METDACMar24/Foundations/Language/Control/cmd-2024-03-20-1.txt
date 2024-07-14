@@ -1,0 +1,26 @@
+    1  ls
+    2  vi variabletest.cpp 
+    3  vi arraytest.cpp
+    4  c++ arraytest.cpp -o program
+    5  ./program 
+    6  vi arraytest.cpp
+    7  vi ifelsetest.cpp
+    8  c++ ifelsetest.cpp -o program 
+    9  ./program 
+   10  vi ifelsetest.cpp
+   11  vi switchtest.cpp
+   12  c++ switchtest.cpp -o program
+   13  vi switchtest.cpp
+   14  c++ switchtest.cpp -o program
+   15  ./program 
+   16  vi switchtest.cpp
+   17  vi dowhiletest.cpp
+   18  c++ dowhiletest.cpp  -o program
+   19  vi dowhiletest.cpp
+   20  c++ dowhiletest.cpp  -o program
+   21  ./program 
+   22  vi dowhiletest.cpp
+   23  c++ dowhiletest.cpp  -o program
+   24  ./program 
+   25  vi dowhiletest.cpp
+   26  ls

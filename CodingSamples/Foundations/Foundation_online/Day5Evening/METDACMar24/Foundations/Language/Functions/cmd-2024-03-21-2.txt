@@ -1,0 +1,32 @@
+ 1997  vi computation.cpp 
+ 1998  vi exceptiontest.cpp 
+ 1999  vi pointertest.cpp
+ 2000  c++ pointertest.cpp -o program 
+ 2001  ./program 
+ 2002  vi pointertest.cpp
+ 2003  c++ pointertest.cpp -o program 
+ 2004  ./program 
+ 2005  vi pointertest.cpp
+ 2006  c++ pointertest.cpp -o program 
+ 2007  vi pointertest.cpp
+ 2008  c++ pointertest.cpp -o program 
+ 2009  ./program 
+ 2010  vi pointertest.cpp
+ 2011  objdump program 
+ 2012  objdump -t program 
+ 2013  vi pointertest.cpp
+ 2014  c++ pointertest.cpp -o program 
+ 2015  ./program 
+ 2016  objdump -t program 
+ 2017  mv pointertest.cpp pointertest1.cpp
+ 2018  vi pointertest2.cpp 
+ 2019  c++ pointertest2.cpp -o program
+ 2020  ./program 
+ 2021  vi pointertest2.cpp 
+ 2022  c++ pointertest2.cpp -o program
+ 2023  ./program 
+ 2024  vi pointertest2.cpp 
+ 2025  c++ pointertest2.cpp -o program
+ 2026  ./program 
+ 2027  vi pointertest2.cpp 
+ 2028  history >> cmd-2024-03-21-2.txt

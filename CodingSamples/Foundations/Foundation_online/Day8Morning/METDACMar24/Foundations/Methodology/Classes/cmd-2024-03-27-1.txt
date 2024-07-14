@@ -1,0 +1,33 @@
+    1  vi objptrtest.cpp 
+    2  vi banner3.h 
+    3  vi objptrtest.cpp 
+    4  c++ objptrtest.cpp -o program 
+    5  ./program 
+    6  vi objptrtest.cpp 
+    7  vi newoperatortest.cpp
+    8  ulimit -s
+    9  vi newoperatortest.cpp
+   10  c++ newoperatortest.cpp -o program
+   11  ./program 
+   12  vi newoperatortest.cpp
+   13  c++ newoperatortest.cpp -o program
+   14  ./program 
+   15  vi newoperatortest.cpp
+   16  c++ newoperatortest.cpp -o program
+   17  ./program 
+   18  vi newoperatortest.cpp
+   19  c++ newoperatortest.cpp -o program
+   20  ./program 
+   21  vi newoperatortest.cpp
+   22  c++ newoperatortest.cpp -o program
+   23  ./program 
+   24  vi newoperatortest.cpp
+   25  c++ newoperatortest.cpp -o program
+   26  vi newoperatortest.cpp
+   27  c++ newoperatortest.cpp -o program
+   28  ./program 
+   29  vi newoperatortest.cpp
+   30  vi banner3.h 
+   31  vi newoperatortest.cpp
+   32  vi objptrtest.cpp 
+   33  history >> cmd-2024-03-27-1.txt

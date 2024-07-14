@@ -1,0 +1,50 @@
+    1  vi hello1.s 
+    2  as hello1.s -o hello1.o
+    3  ld hello1.o system.o -o hello
+    4  ./hello 
+    5  vi registertest.s
+    6  as registertest.s -o registertest.o
+    7  ld registertest.o system.o -o program
+    8  ./program 
+    9  vi registertest.s
+   10  as registertest.s -o registertest.o
+   11  ./program 
+   12  ld registertest.o system.o -o program
+   13  ./program 
+   14  vi registertest.s
+   15  as registertest.s -o registertest.o
+   16  ld registertest.o system.o -o program
+   17  ./program 
+   18  vi registertest.s
+   19  as registertest.s -o registertest.o
+   20  ld registertest.o system.o -o program
+   21  ./program 
+   22  vi registertest.s
+   23  as registertest.s -o registertest.o
+   24  ld registertest.o system.o -o program
+   25  ./program 
+   26  vi registertest.s
+   27  as registertest.s -o registertest.o
+   28  vi registertest.s
+   29  as registertest.s -o registertest.o
+   30  ld registertest.o system.o -o program
+   31  ./program 
+   32  vi registertest.s
+   33  as registertest.s -o registertest.o
+   34  ld registertest.o system.o -o program
+   35  ./program 
+   36  vi registertest.s
+   37  vi condjumptest.s
+   38  as condjumptest.s -o condjumptest.o
+   39  ld condjumptest.o system.o -o program
+   40  ./program 
+   41  vi condjumptest.s
+   42  ./program 
+   43  vi condjumptest.s
+   44  as condjumptest.s -o condjumptest.o
+   45  ld condjumptest.o system.o -o program
+   46  ./program 
+   47  vi condjumptest.s
+   48  ./program 
+   49  vi condjumptest.s
+   50  history >> cmd-2024-03-18-1.txt 
